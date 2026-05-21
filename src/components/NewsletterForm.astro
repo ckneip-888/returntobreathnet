@@ -1,0 +1,61 @@
+---
+export interface Props {
+  lang: 'en' | 'de';
+  /** Buttondown username — defaults to returntobreath */
+  buttondownUser?: string;
+}
+
+const { lang, buttondownUser = 'returntobreath' } = Astro.props;
+
+const t = {
+  en: {
+    eyebrow: '02 · THE QUIET PROTOCOL',
+    title: 'One protocol. Each week. That\u2019s it.',
+    description: 'One quiet, practical protocol every week. No spam. No growth hacks. Unsubscribe with one click.',
+    placeholder: 'your@email.com',
+    button: 'Subscribe',
+    footnote: 'Powered by Buttondown · Read by founders, parents, knowledge workers in 14 countries.',
+  },
+  de: {
+    eyebrow: '02 · DAS STILLE PROTOKOLL',
+    title: 'Ein Protokoll. Jede Woche. Mehr nicht.',
+    description: 'Ein stilles, praktisches Atem-Protokoll pro Woche. Kein Spam. Keine Wachstums-Tricks. Mit einem Klick abbestellen.',
+    placeholder: 'deine@email.com',
+    button: 'Abonnieren',
+    footnote: 'Versendet über Buttondown · Gelesen von Gründer:innen, Eltern, Wissensarbeitenden in 14 Ländern.',
+  },
+}[lang];
+---
+
+<div>
+  <div class="micro-label-accent mb-4">{t.eyebrow}</div>
+  <h3 class="text-lg font-medium text-slate-100 leading-snug mb-3" set:html={t.title}></h3>
+  <p class="text-[14px] text-slate-400 leading-relaxed mb-5">{t.description}</p>
+
+  <form
+    action={`https://buttondown.email/api/emails/embed-subscribe/${buttondownUser}`}
+    method="post"
+    target="popupwindow"
+    onsubmit={`window.open('https://buttondown.email/${buttondownUser}', 'popupwindow')`}
+    class="space-y-3"
+  >
+    <label class="block">
+      <span class="sr-only">Email</span>
+      <input
+        type="email"
+        name="email"
+        required
+        placeholder={t.placeholder}
+        class="w-full bg-slate-900/60 border border-slate-800 hover:border-slate-700 focus:border-sapphire-500 px-3.5 py-2.5 rounded-md text-[14px] text-slate-100 placeholder:text-slate-600 transition-colors outline-none"
+      />
+    </label>
+    <button
+      type="submit"
+      class="w-full inline-flex items-center justify-center gap-2 px-3.5 py-2.5 rounded-md text-[13px] font-medium text-slate-100 border border-slate-700 bg-slate-900/40 hover:bg-sapphire/10 hover:border-sapphire-700 transition-all"
+    >
+      <span>{t.button}</span>
+      <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+    </button>
+    <p class="text-[11px] text-slate-600 leading-relaxed pt-1">{t.footnote}</p>
+  </form>
+</div>

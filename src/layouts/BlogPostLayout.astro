@@ -1,0 +1,87 @@
+---
+import BaseLayout from './BaseLayout.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  author: string;
+  tags: string[];
+  slug: string; // post.id passed in from [slug].astro
+  lang: 'en' | 'de';
+}
+
+const { title, description, pubDate, updatedDate, author, tags, slug, lang } = Astro.props;
+
+const formattedDate = pubDate.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', {
+  day: '2-digit',
+  month: '2-digit',
+  year: '2-digit',
+});
+
+const siteUrl = 'https://returntobreath.net';
+
+const articleJsonLd = [
+  {
+    '@type': 'Article',
+    '@id': `${siteUrl}/${lang}/writing/${slug}/`,
+    headline: title,
+    description,
+    author: { '@id': `${siteUrl}/#person-christoph` },
+    datePublished: pubDate.toISOString(),
+    ...(updatedDate ? { dateModified: updatedDate.toISOString() } : {}),
+    keywords: tags.join(', '),
+    inLanguage: lang,
+    publisher: { '@id': `${siteUrl}/#person-christoph` },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/${lang}/writing/${slug}/` },
+  },
+];
+---
+
+<BaseLayout title={`${title} — Return to Breath`} description={description} lang={lang} jsonLd={articleJsonLd}>
+  <article class="max-w-3xl mx-auto px-6 lg:px-8 pt-32 pb-24">
+    <!-- Eyebrow -->
+    <div class="flex items-baseline gap-4 mb-8 flex-wrap">
+      <a href={`/${lang}/writing/`} class="micro-label-accent hover:text-sapphire-300 transition-colors">
+        ← {lang === 'de' ? 'SCHREIBEN' : 'WRITING'}
+      </a>
+      <time datetime={pubDate.toISOString()} class="micro-label">{formattedDate}</time>
+      {tags.length > 0 && <span class="micro-label">{tags.slice(0, 3).join(' · ').toUpperCase()}</span>}
+    </div>
+
+    <!-- Title block -->
+    <header class="mb-12">
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-slate-50 leading-[1.15] mb-6">
+        {title}
+      </h1>
+      <p class="text-lg text-slate-400 leading-relaxed font-light max-w-2xl">{description}</p>
+      <div class="micro-label mt-6">{lang === 'de' ? 'VON' : 'BY'} {author.toUpperCase()}</div>
+    </header>
+
+    <div class="hairline mb-12"></div>
+
+    <!-- Content -->
+    <div
+      class="prose prose-slate prose-lg max-w-none
+             prose-headings:font-light prose-headings:tracking-tight
+             prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4
+             prose-p:font-light prose-p:leading-relaxed prose-p:text-slate-300
+             prose-a:text-sapphire-400 prose-a:no-underline hover:prose-a:text-sapphire-300
+             prose-strong:text-slate-100 prose-strong:font-medium
+             prose-em:text-slate-200
+             prose-hr:border-slate-800 prose-hr:my-12
+             prose-blockquote:border-l-sapphire-600 prose-blockquote:text-slate-200
+             prose-li:font-light prose-li:text-slate-300"
+    >
+      <slot />
+    </div>
+
+    <!-- Footer / navigation -->
+    <div class="mt-20 pt-10 border-t border-slate-900">
+      <a href={`/${lang}/writing/`} class="micro-label-accent hover:text-sapphire-300 transition-colors">
+        ← {lang === 'de' ? 'ALLE ESSAYS' : 'ALL WRITING'}
+      </a>
+    </div>
+  </article>
+</BaseLayout>

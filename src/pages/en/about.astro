@@ -1,0 +1,30 @@
+---
+import { getEntry, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const entry = await getEntry('pages', 'en/about');
+if (!entry) throw new Error('about page content missing — expected src/content/pages/en/about.md');
+const { Content } = await render(entry);
+---
+
+<BaseLayout
+  title="About — Return to Breath"
+  description="About Return to Breath — the project, the people, the intent. By Christoph Kneip, with contributor Rickard Strongert."
+  lang="en"
+>
+  <article class="max-w-3xl mx-auto px-6 lg:px-8 pt-32 pb-24">
+    <div
+      class="prose prose-slate prose-lg max-w-none
+             prose-headings:font-light prose-headings:tracking-tight
+             prose-h1:text-4xl sm:prose-h1:text-5xl prose-h1:mb-10
+             prose-h2:text-2xl prose-h2:mt-16 prose-h2:mb-4
+             prose-p:font-light prose-p:leading-relaxed prose-p:text-slate-300
+             prose-a:text-sapphire-400 prose-a:no-underline hover:prose-a:text-sapphire-300
+             prose-strong:text-slate-100 prose-strong:font-medium
+             prose-em:text-slate-200
+             prose-hr:border-slate-800 prose-hr:my-12"
+    >
+      <Content />
+    </div>
+  </article>
+</BaseLayout>

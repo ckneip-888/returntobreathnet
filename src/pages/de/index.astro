@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SapphirePulse from '../../components/SapphirePulse.astro';
+---
+
+<BaseLayout
+  title="Return to Breath — Die Return-App"
+  description="Return ist ein stilles Atem-Werkzeug zur Regulation des Nervensystems unter akuter kognitiver Belastung, Identitätswandel und Zukunftsangst."
+  lang="de"
+>
+  <section class="atmosphere relative pt-32 pb-24 lg:pt-44 lg:pb-32 overflow-hidden">
+    <div class="absolute inset-0 hex-bg opacity-30 pointer-events-none" aria-hidden="true"></div>
+
+    <div class="relative max-w-3xl mx-auto px-6 text-center z-10">
+      <div class="flex justify-center mb-12">
+        <SapphirePulse size="lg" />
+      </div>
+
+      <div class="micro-label-accent mb-6">DIE DEUTSCHE AUSGABE · IN VORBEREITUNG</div>
+
+      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight text-slate-50 leading-[1.05] mb-7">
+        Zurück zum Atem.
+      </h1>
+
+      <p class="text-xl sm:text-2xl font-light text-slate-300 max-w-2xl mx-auto leading-relaxed mb-4">
+        Wenn die Welt nicht langsamer wird, kann dein Atem es.
+      </p>
+
+      <p class="text-[15px] text-slate-500 max-w-2xl mx-auto leading-relaxed mb-12 font-light">
+        Die deutschsprachige Ausgabe von returntobreath.net erscheint in Kürze. Bis dahin verweisen wir auf die englische Ausgabe.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-3 justify-center mb-16">
+        <a
+          href="/en/"
+          class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-md text-[14px] font-medium text-slate-100 tracking-wide border border-slate-700 bg-slate-900/40 hover:bg-slate-900/80 hover:border-slate-600 transition-all"
+        >
+          <span>Zur englischen Ausgabe →</span>
+        </a>
+      </div>
+
+      <div class="micro-label">DEUTSCHE AUSGABE · GEPLANT 2026</div>
+    </div>
+  </section>
+</BaseLayout>

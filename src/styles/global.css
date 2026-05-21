@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500&display=swap');
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* ──────────────────────────────────────────────────────────
+   THEME TOKENS — Tailwind 4 @theme block
+   These auto-generate utility classes (bg-sapphire-600, text-sapphire-400, etc.)
+   ────────────────────────────────────────────────────────── */
+@theme {
+  --color-sapphire-50: #eaf2fb;
+  --color-sapphire-100: #cfdff6;
+  --color-sapphire-200: #9ec0ec;
+  --color-sapphire-300: #6ea1e3;
+  --color-sapphire-400: #3e82d9;
+  --color-sapphire-500: #1e6fd9;
+  --color-sapphire-600: #0F52BA;
+  --color-sapphire-700: #0a3d8f;
+  --color-sapphire-800: #072a64;
+  --color-sapphire-900: #031a3f;
+  --color-sapphire: #0F52BA;
+
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+
+  --tracking-caps: 0.18em;
+  --tracking-wide-caps: 0.28em;
+}
+
+/* ──────────────────────────────────────────────────────────
+   ROOT VARS — non-Tailwind CSS variables for custom utilities
+   ────────────────────────────────────────────────────────── */
+:root {
+  --sapphire: #0F52BA;
+  --sapphire-light: #1e6fd9;
+  --slate-950: #020617;
+  --slate-900: #0f172a;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  --slate-100: #f1f5f9;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--slate-950);
+  color: var(--slate-100);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  font-feature-settings: 'ss01', 'ss02', 'cv11';
+  overflow-x: hidden;
+}
+
+/* ──────────────────────────────────────────────────────────
+   ATMOSPHERE — radial glow behind hero
+   ────────────────────────────────────────────────────────── */
+.atmosphere::before {
+  content: '';
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  height: 1200px;
+  background: radial-gradient(
+    circle at center,
+    rgba(15, 82, 186, 0.18) 0%,
+    rgba(15, 82, 186, 0.08) 25%,
+    rgba(139, 92, 246, 0.04) 50%,
+    transparent 70%
+  );
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ──────────────────────────────────────────────────────────
+   HEXAGONAL GRID — very faint background pattern
+   ────────────────────────────────────────────────────────── */
+.hex-bg {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='56' height='48' viewBox='0 0 56 48'><g fill='none' stroke='%230F52BA' stroke-width='0.4' stroke-opacity='0.12'><polygon points='14,4 28,12 28,28 14,36 0,28 0,12'/><polygon points='42,4 56,12 56,28 42,36 28,28 28,12'/></g></svg>");
+  background-repeat: repeat;
+}
+
+/* ──────────────────────────────────────────────────────────
+   BREATH ANIMATIONS — 11s cycle (5.5s inhale / 5.5s exhale)
+   ────────────────────────────────────────────────────────── */
+@keyframes breathe {
+  0%, 100% { transform: scale(0.92); opacity: 0.55; }
+  50%      { transform: scale(1.08); opacity: 1; }
+}
+@keyframes breathe-outer {
+  0%, 100% { transform: scale(1); opacity: 0.25; }
+  50%      { transform: scale(1.06); opacity: 0.6; }
+}
+@keyframes slow-rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+@keyframes counter-rotate {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(-360deg); }
+}
+
+.breathe-core   { animation: breathe 11s ease-in-out infinite; transform-origin: center; }
+.breathe-ring   { animation: breathe-outer 11s ease-in-out infinite; transform-origin: center; }
+.rotate-slow    { animation: slow-rotate 120s linear infinite; transform-origin: center; }
+.rotate-counter { animation: counter-rotate 200s linear infinite; transform-origin: center; }
+
+@media (prefers-reduced-motion: reduce) {
+  .breathe-core,
+  .breathe-ring,
+  .rotate-slow,
+  .rotate-counter {
+    animation: none;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────
+   TYPOGRAPHIC UTILITIES
+   ────────────────────────────────────────────────────────── */
+.micro-label {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: #64748b;
+}
+.micro-label-accent {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: var(--sapphire-light);
+}
+.seal {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+
+/* ──────────────────────────────────────────────────────────
+   STRUCTURAL ELEMENTS
+   ────────────────────────────────────────────────────────── */
+.hairline {
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(241, 245, 249, 0.12), transparent);
+}
+.hairline-v {
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgba(241, 245, 249, 0.10), transparent);
+}
+
+::selection {
+  background: rgba(15, 82, 186, 0.4);
+  color: #fff;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 1px solid var(--sapphire-light);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ──────────────────────────────────────────────────────────
+   BUTTONS
+   ────────────────────────────────────────────────────────── */
+.btn-primary {
+  background: linear-gradient(180deg, #1660cf 0%, #0F52BA 100%);
+  box-shadow: 0 0 0 1px rgba(30, 111, 217, 0.5), 0 8px 24px -8px rgba(15, 82, 186, 0.4);
+}
+.btn-primary:hover {
+  box-shadow: 0 0 0 1px rgba(30, 111, 217, 0.8), 0 12px 32px -8px rgba(15, 82, 186, 0.55);
+}
+
+/* ──────────────────────────────────────────────────────────
+   CARDS
+   ────────────────────────────────────────────────────────── */
+.hex-border {
+  position: relative;
+  background: linear-gradient(180deg, rgba(15, 82, 186, 0.04) 0%, rgba(2, 6, 23, 0) 100%);
+  border: 1px solid rgba(15, 82, 186, 0.18);
+  transition: border-color 0.3s ease;
+}
+.hex-border:hover {
+  border-color: rgba(15, 82, 186, 0.4);
+}
+
+.article-card {
+  border-bottom: 1px solid rgba(30, 41, 59, 0.7);
+  transition: border-color 0.4s ease, transform 0.4s ease;
+}
+.article-card:hover {
+  border-color: rgba(15, 82, 186, 0.5);
+}

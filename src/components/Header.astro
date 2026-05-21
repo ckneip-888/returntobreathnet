@@ -1,0 +1,47 @@
+---
+export interface Props {
+  lang: 'en' | 'de';
+  currentPath: string;
+}
+
+const { lang, currentPath } = Astro.props;
+
+// Build the alternate-language path
+const stripped = currentPath.replace(/^\/(en|de)/, '') || '/';
+const enPath = `/en${stripped}`;
+const dePath = `/de${stripped}`;
+---
+
+<header class="fixed top-0 inset-x-0 z-50 border-b border-slate-900/70 bg-slate-950/70 backdrop-blur-xl">
+  <div class="max-w-[1440px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
+    <a href={`/${lang}/`} class="flex items-center gap-3 group" aria-label="Return to Breath — home">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <polygon points="10,2 17,6 17,14 10,18 3,14 3,6" stroke="#0F52BA" stroke-width="1" fill="none" />
+        <circle cx="10" cy="10" r="2.2" fill="#0F52BA" />
+      </svg>
+      <span class="text-[13px] font-medium tracking-[0.18em] text-slate-100 group-hover:text-white transition-colors">
+        RETURNTOBREATH.NET
+      </span>
+    </a>
+
+    <nav class="flex items-center gap-6">
+      <div class="hidden sm:flex items-center gap-1 text-[11px] font-mono tracking-wider" role="group" aria-label="Language">
+        <a
+          href={enPath}
+          class={`px-2 py-1 ${lang === 'en' ? 'text-slate-100' : 'text-slate-500 hover:text-slate-300'} transition-colors`}
+          aria-current={lang === 'en' ? 'page' : undefined}
+        >
+          EN
+        </a>
+        <span class="text-slate-700">/</span>
+        <a
+          href={dePath}
+          class={`px-2 py-1 ${lang === 'de' ? 'text-slate-100' : 'text-slate-500 hover:text-slate-300'} transition-colors`}
+          aria-current={lang === 'de' ? 'page' : undefined}
+        >
+          DE
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>

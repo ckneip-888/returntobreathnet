@@ -1,0 +1,152 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  lang?: 'en' | 'de';
+  ogImage?: string;
+  canonical?: string;
+  /** Schema.org JSON-LD additions, merged into the @graph array */
+  jsonLd?: object[];
+}
+
+const {
+  title,
+  description,
+  lang = 'en',
+  ogImage = '/og-default.png',
+  canonical,
+  jsonLd = [],
+} = Astro.props;
+
+const siteUrl = 'https://returntobreath.net';
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, siteUrl).toString();
+const ogImageAbsolute = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+
+// Site-wide JSON-LD always included
+const baseGraph = [
+  {
+    '@type': 'WebSite',
+    '@id': `${siteUrl}/#website`,
+    url: `${siteUrl}/`,
+    name: 'Return to Breath',
+    description:
+      'The Return App and writing on breath, coherence, and the practice of return. Practical tools for using breath to access clarity, calm, and coherence.',
+    inLanguage: ['en', 'de'],
+    publisher: { '@id': `${siteUrl}/#person-christoph` },
+  },
+  {
+    '@type': 'Person',
+    '@id': `${siteUrl}/#person-christoph`,
+    name: 'Christoph Kneip',
+    url: `${siteUrl}/en/about/`,
+    jobTitle: 'Author, breath educator',
+    knowsAbout: [
+      'breath practice',
+      'nervous system regulation',
+      'coherence',
+      'sacred geometry',
+      'harmonic frameworks',
+    ],
+  },
+  {
+    '@type': 'Person',
+    '@id': `${siteUrl}/#person-rickard`,
+    name: 'Rickard Strongert',
+    jobTitle: 'Post-identity coach',
+    address: { '@type': 'PostalAddress', addressLocality: 'Marbella', addressCountry: 'ES' },
+    knowsAbout: ['post-identity work', 'coaching', 'identity transition'],
+  },
+  {
+    '@type': 'MobileApplication',
+    '@id': `${siteUrl}/#app`,
+    name: 'Return',
+    applicationCategory: 'HealthApplication',
+    operatingSystem: 'iOS, Android',
+    description:
+      'A quiet breath utility for nervous system regulation. No streaks. No community. No gamification.',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  },
+];
+
+const fullGraph = [...baseGraph, ...jsonLd];
+---
+
+<!doctype html>
+<html lang={lang} class="bg-slate-950">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#020617" />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content="Christoph Kneip" />
+
+    <!-- ╔══════════════════════════════════════════════════════════════╗ -->
+    <!-- ║  PRIVATE / PRE-LAUNCH                                         ║ -->
+    <!-- ║  Block all crawlers + AI from indexing.                       ║ -->
+    <!-- ║  Remove or change to "index,follow,max-image-preview:large"   ║ -->
+    <!-- ║  when ready to go public.                                     ║ -->
+    <!-- ╚══════════════════════════════════════════════════════════════╝ -->
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <meta name="bingbot" content="noindex, nofollow" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Return to Breath" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:locale" content={lang === 'de' ? 'de_DE' : 'en_US'} />
+    <meta property="og:locale:alternate" content={lang === 'de' ? 'en_US' : 'de_DE'} />
+    <meta property="og:image" content={ogImageAbsolute} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImageAbsolute} />
+
+    <!-- Canonical + hreflang -->
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={`${siteUrl}/en${Astro.url.pathname.replace(/^\/(en|de)/, '')}`} />
+    <link rel="alternate" hreflang="de" href={`${siteUrl}/de${Astro.url.pathname.replace(/^\/(en|de)/, '')}`} />
+    <link rel="alternate" hreflang="x-default" href={`${siteUrl}/en${Astro.url.pathname.replace(/^\/(en|de)/, '')}`} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- JSON-LD -->
+    <script
+      type="application/ld+json"
+      set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': fullGraph })}
+    />
+
+    <!-- Lucide -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" is:inline></script>
+  </head>
+
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <Header lang={lang} currentPath={Astro.url.pathname} />
+
+    <slot />
+
+    <Footer lang={lang} />
+
+    <script is:inline>
+      // Initialize lucide icons after DOM is ready
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+      } else {
+        document.addEventListener('DOMContentLoaded', () => {
+          if (typeof lucide !== 'undefined') lucide.createIcons();
+        });
+      }
+    </script>
+  </body>
+</html>

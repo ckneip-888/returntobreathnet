@@ -1,0 +1,64 @@
+---
+export interface Props {
+  /** Size class — default makes it the main hero size */
+  size?: 'sm' | 'md' | 'lg';
+}
+
+const { size = 'lg' } = Astro.props;
+
+const sizeMap = {
+  sm: 'w-24 h-24',
+  md: 'w-32 h-32',
+  lg: 'w-44 h-44 sm:w-52 sm:h-52',
+};
+---
+
+<div class={`relative ${sizeMap[size]}`}>
+  <svg viewBox="0 0 200 200" class="absolute inset-0 w-full h-full" aria-hidden="true">
+    <defs>
+      <radialGradient id="coreGrad" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#3e82d9" stop-opacity="0.95" />
+        <stop offset="60%" stop-color="#0F52BA" stop-opacity="0.6" />
+        <stop offset="100%" stop-color="#0F52BA" stop-opacity="0" />
+      </radialGradient>
+      <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feMerge>
+          <feMergeNode in="blur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+    </defs>
+
+    <!-- Outermost slow counter-rotating hex ring -->
+    <g class="rotate-counter" style="transform-origin: 100px 100px;">
+      <polygon points="100,12 176,55 176,145 100,188 24,145 24,55" fill="none" stroke="#0F52BA" stroke-width="0.4" stroke-opacity="0.35" />
+      <g fill="#0F52BA" fill-opacity="0.5">
+        <circle cx="100" cy="12" r="1.2" />
+        <circle cx="176" cy="55" r="1.2" />
+        <circle cx="176" cy="145" r="1.2" />
+        <circle cx="100" cy="188" r="1.2" />
+        <circle cx="24" cy="145" r="1.2" />
+        <circle cx="24" cy="55" r="1.2" />
+      </g>
+    </g>
+
+    <!-- Mid rotating hexagram (Star of David) — more visible -->
+    <g class="rotate-slow" style="transform-origin: 100px 100px;">
+      <polygon points="100,38 152,130 48,130" fill="none" stroke="#3e82d9" stroke-width="0.9" stroke-opacity="0.95" />
+      <polygon points="100,162 48,70 152,70" fill="none" stroke="#3e82d9" stroke-width="0.9" stroke-opacity="0.95" />
+    </g>
+
+    <!-- Inner hex outline — breathing -->
+    <g class="breathe-ring" style="transform-origin: 100px 100px;">
+      <polygon points="100,55 138,77 138,123 100,145 62,123 62,77" fill="none" stroke="#1e6fd9" stroke-width="1.1" stroke-opacity="0.95" />
+    </g>
+
+    <!-- Center pulse -->
+    <g class="breathe-core" style="transform-origin: 100px 100px;" filter="url(#glow)">
+      <circle cx="100" cy="100" r="28" fill="url(#coreGrad)" />
+      <circle cx="100" cy="100" r="14" fill="#1e6fd9" fill-opacity="0.9" />
+      <circle cx="100" cy="100" r="6" fill="#cfdff6" fill-opacity="0.95" />
+    </g>
+  </svg>
+</div>
