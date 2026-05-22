@@ -4,17 +4,17 @@ export interface Props {
   currentPath: string;
 }
 
-const { lang, currentPath } = Astro.props;
+const { lang } = Astro.props;
 
-// Build the alternate-language path
-const stripped = currentPath.replace(/^\/(en|de)/, '') || '/';
-const enPath = `/en${stripped}`;
-const dePath = `/de${stripped}`;
+// EN always serves from root; DE always goes to /de/ homepage
+// (DE essay/about pages don't exist yet — phase 2)
+const enPath = '/';
+const dePath = '/de/';
 ---
 
 <header class="fixed top-0 inset-x-0 z-50 border-b border-slate-900/70 bg-slate-950/70 backdrop-blur-xl">
   <div class="max-w-[1440px] mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
-    <a href={`/${lang}/`} class="flex items-center gap-3 group" aria-label="Return to Breath — home">
+    <a href={enPath} class="flex items-center gap-3 group" aria-label="Return to Breath — home">
       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
         <polygon points="10,2 17,6 17,14 10,18 3,14 3,6" stroke="#0F52BA" stroke-width="1" fill="none" />
         <circle cx="10" cy="10" r="2.2" fill="#0F52BA" />

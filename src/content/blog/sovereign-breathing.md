@@ -74,4 +74,4 @@ Three quiet things you can do now.
 
 → **Watch the 90-second explainer** — on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
 
-→ **Subscribe to the weekly protocol** — quiet correspondence from a destabilized era. One protocol per week. That is all. [Sign up](/en/#newsletter).
+→ **Subscribe to the weekly protocol** — quiet correspondence from a destabilized era. One protocol per week. That is all. [Sign up](/#newsletter).

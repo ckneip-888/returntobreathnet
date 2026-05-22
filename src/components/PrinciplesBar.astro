@@ -8,13 +8,11 @@ const { lang } = Astro.props;
 const items = {
   en: [
     { icon: 'circle-slash', label: 'NO STREAKS', text: 'Tools should not gamify your nervous system.' },
-    { icon: 'users-round', label: 'NO COMMUNITY', text: 'Your breath is yours. Not a feed.' },
     { icon: 'trending-up', label: 'NO OPTIMIZATION', text: 'You are already enough. The work is to return.' },
     { icon: 'hourglass', label: 'USED, NOT LIVED IN', text: 'Open. Breathe. Close. The opposite of attention capture.' },
   ],
   de: [
     { icon: 'circle-slash', label: 'KEINE STREAKS', text: 'Werkzeuge sollten dein Nervensystem nicht gamifizieren.' },
-    { icon: 'users-round', label: 'KEINE COMMUNITY', text: 'Dein Atem gehört dir. Nicht einem Feed.' },
     { icon: 'trending-up', label: 'KEINE OPTIMIERUNG', text: 'Du bist bereits genug. Die Arbeit ist zurückzukehren.' },
     { icon: 'hourglass', label: 'BENUTZT, NICHT BEWOHNT', text: 'Öffnen. Atmen. Schließen. Das Gegenteil von Aufmerksamkeitsfang.' },
   ],
@@ -25,7 +23,7 @@ const t = items[lang];
 
 <section class="border-t border-b border-slate-900 bg-slate-950/50">
   <div class="max-w-[1440px] mx-auto px-6 lg:px-12 py-14">
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-y-8 gap-x-10">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-8 gap-x-10">
       {t.map((item) => (
         <div>
           <div class="flex items-center justify-center w-10 h-10 rounded-md border border-sapphire-800/50 mb-4">

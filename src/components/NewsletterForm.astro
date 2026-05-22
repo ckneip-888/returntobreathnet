@@ -1,7 +1,6 @@
 ---
 export interface Props {
   lang: 'en' | 'de';
-  /** Buttondown username — defaults to returntobreath */
   buttondownUser?: string;
 }
 
@@ -14,7 +13,7 @@ const t = {
     description: 'One quiet, practical protocol every week. No spam. No growth hacks. Unsubscribe with one click.',
     placeholder: 'your@email.com',
     button: 'Subscribe',
-    footnote: 'Powered by Buttondown · Read by founders, parents, knowledge workers in 14 countries.',
+    footnote: 'Powered by Buttondown.',
   },
   de: {
     eyebrow: '02 · DAS STILLE PROTOKOLL',
@@ -22,12 +21,12 @@ const t = {
     description: 'Ein stilles, praktisches Atem-Protokoll pro Woche. Kein Spam. Keine Wachstums-Tricks. Mit einem Klick abbestellen.',
     placeholder: 'deine@email.com',
     button: 'Abonnieren',
-    footnote: 'Versendet über Buttondown · Gelesen von Gründer:innen, Eltern, Wissensarbeitenden in 14 Ländern.',
+    footnote: 'Versendet über Buttondown.',
   },
 }[lang];
 ---
 
-<div>
+<div id="newsletter">
   <div class="micro-label-accent mb-4">{t.eyebrow}</div>
   <h3 class="text-lg font-medium text-slate-100 leading-snug mb-3" set:html={t.title}></h3>
   <p class="text-[14px] text-slate-400 leading-relaxed mb-5">{t.description}</p>

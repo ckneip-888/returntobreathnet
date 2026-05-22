@@ -64,4 +64,4 @@ Three quiet things you can do now.
 
 → **Watch the 90-second explainer** — on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
 
-→ **Subscribe to the weekly protocol** — quiet correspondence for people learning to exist through being, not doing. [Sign up](/en/#newsletter).
+→ **Subscribe to the weekly protocol** — quiet correspondence for people learning to exist through being, not doing. [Sign up](/#newsletter).

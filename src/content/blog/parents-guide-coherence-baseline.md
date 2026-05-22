@@ -62,4 +62,4 @@ Three quiet things you can do now.
 
 → **Watch the 90-second explainer** — how the doorway protocol works, on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
 
-→ **Subscribe to the weekly protocol** — one quiet, parent-tested protocol per week. [Sign up](/en/#newsletter).
+→ **Subscribe to the weekly protocol** — one quiet, parent-tested protocol per week. [Sign up](/#newsletter).

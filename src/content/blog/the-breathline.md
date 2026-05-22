@@ -60,4 +60,4 @@ Three quiet things you can do now.
 
 → **Watch the 90-second explainer** — on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
 
-→ **Subscribe to the weekly protocol** — one practice per week. Every one of them, at its core, is a way to access the Breathline. [Sign up](/en/#newsletter).
+→ **Subscribe to the weekly protocol** — one practice per week. Every one of them, at its core, is a way to access the Breathline. [Sign up](/#newsletter).

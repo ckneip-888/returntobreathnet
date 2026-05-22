@@ -66,4 +66,4 @@ Three quiet things you can do now.
 
 → **Watch the 90-second explainer** — how a finite breath utility works, on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
 
-→ **Subscribe to the weekly protocol** — one quiet email per week. You can unsubscribe with one click and we will not chase you. [Sign up](/en/#newsletter).
+→ **Subscribe to the weekly protocol** — one quiet email per week. You can unsubscribe with one click and we will not chase you. [Sign up](/#newsletter).

@@ -70,4 +70,4 @@ Three quiet things you can do now.
 
 → **Watch the 90-second explainer** — on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
 
-→ **Subscribe to the weekly protocol** — one practical breath protocol for the chemistry of modern life. [Sign up](/en/#newsletter).
+→ **Subscribe to the weekly protocol** — one practical breath protocol for the chemistry of modern life. [Sign up](/#newsletter).

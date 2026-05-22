@@ -8,7 +8,7 @@ export interface Props {
   updatedDate?: Date;
   author: string;
   tags: string[];
-  slug: string; // post.id passed in from [slug].astro
+  slug: string;
   lang: 'en' | 'de';
 }
 
@@ -21,11 +21,12 @@ const formattedDate = pubDate.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-G
 });
 
 const siteUrl = 'https://returntobreath.net';
+const writingHref = lang === 'de' ? '/de/writing/' : '/writing/';
 
 const articleJsonLd = [
   {
     '@type': 'Article',
-    '@id': `${siteUrl}/${lang}/writing/${slug}/`,
+    '@id': `${siteUrl}/writing/${slug}/`,
     headline: title,
     description,
     author: { '@id': `${siteUrl}/#person-christoph` },
@@ -34,23 +35,21 @@ const articleJsonLd = [
     keywords: tags.join(', '),
     inLanguage: lang,
     publisher: { '@id': `${siteUrl}/#person-christoph` },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/${lang}/writing/${slug}/` },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/writing/${slug}/` },
   },
 ];
 ---
 
 <BaseLayout title={`${title} — Return to Breath`} description={description} lang={lang} jsonLd={articleJsonLd}>
   <article class="max-w-3xl mx-auto px-6 lg:px-8 pt-32 pb-24">
-    <!-- Eyebrow -->
     <div class="flex items-baseline gap-4 mb-8 flex-wrap">
-      <a href={`/${lang}/writing/`} class="micro-label-accent hover:text-sapphire-300 transition-colors">
+      <a href={writingHref} class="micro-label-accent hover:text-sapphire-300 transition-colors">
         ← {lang === 'de' ? 'SCHREIBEN' : 'WRITING'}
       </a>
       <time datetime={pubDate.toISOString()} class="micro-label">{formattedDate}</time>
       {tags.length > 0 && <span class="micro-label">{tags.slice(0, 3).join(' · ').toUpperCase()}</span>}
     </div>
 
-    <!-- Title block -->
     <header class="mb-12">
       <h1 class="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-slate-50 leading-[1.15] mb-6">
         {title}
@@ -61,7 +60,6 @@ const articleJsonLd = [
 
     <div class="hairline mb-12"></div>
 
-    <!-- Content -->
     <div
       class="prose prose-slate prose-lg max-w-none
              prose-headings:font-light prose-headings:tracking-tight
@@ -77,9 +75,8 @@ const articleJsonLd = [
       <slot />
     </div>
 
-    <!-- Footer / navigation -->
     <div class="mt-20 pt-10 border-t border-slate-900">
-      <a href={`/${lang}/writing/`} class="micro-label-accent hover:text-sapphire-300 transition-colors">
+      <a href={writingHref} class="micro-label-accent hover:text-sapphire-300 transition-colors">
         ← {lang === 'de' ? 'ALLE ESSAYS' : 'ALL WRITING'}
       </a>
     </div>
