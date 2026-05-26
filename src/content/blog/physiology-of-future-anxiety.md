@@ -1,5 +1,5 @@
 ---
-title: "The Physiology of Future Anxiety: How Geopolitical Stress Alters Blood Chemistry"
+title: "The Physiology of Future Anxiety: How Geopolitical Uncertainty Alters Blood Chemistry"
 description: "Your nervous system does not distinguish a tiger from a headline about AI taking your job. It runs the same protocol. Here is what happens in your body when you scroll the news — and the breath pattern that interrupts the cascade."
 pubDate: 2026-02-22
 author: "Christoph Kneip"
@@ -46,7 +46,7 @@ Here is what is possible.
 
 A protocol I would put in front of every person experiencing future anxiety:
 
-**The Geopolitical Reset.** Before you check the news, before you open the app, before you respond to the message that just landed — three breaths. Inhale four seconds through the nose. Exhale six seconds through the nose. Three rounds. Thirty seconds total.
+**The Geopolitical Reset.** Before you check the news, before you open the app, before you respond to the message that just landed — three breaths. Inhale four seconds through the nose. Exhale six seconds through the nose. Three rounds. 30 seconds total.
 
 You are not avoiding the information. You are shifting the chemistry you read it in.
 
@@ -66,7 +66,7 @@ Return to that.
 
 Three quiet things you can do now.
 
-→ **Download Return** — open it before you open the news. Thirty seconds. That is the protocol. [App Store](#) · [Google Play](#)
+→ **Download Return** — open it before you open the news. 30 seconds. That is the protocol. [App Store](#) · [Google Play](#)
 
 → **Watch the 90-second explainer** — on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
 

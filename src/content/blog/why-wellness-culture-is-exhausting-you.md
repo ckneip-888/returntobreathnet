@@ -12,7 +12,7 @@ Here is the trap most people do not see.
 
 The category of tools that was supposed to calm you down has been quietly redesigned to do the opposite.
 
-I am thinking specifically of the meditation app that asks you not to break your streak. The breathwork platform that rewards you with badges. The mindfulness service that nudges you with notifications, builds a community feed, runs a leaderboard, suggests you upgrade your subscription, sends you a recap of your *practice statistics* on Sundays.
+I am thinking specifically of the meditation app that asks you not to break your streak. The breathwork platform that rewards you with badges, the mindfulness service that nudges you with notifications, builds a community feed, runs a leaderboard, suggests you upgrade your subscription, sends you a recap of your *practice statistics* on Sundays.
 
 I do not think the people building these things are bad people. I think they are running a business model that needs your attention to survive. Attention is what they sell to investors. Streaks generate attention. Communities generate attention. Notifications generate attention.
 
@@ -48,7 +48,7 @@ A finite tool does not optimize. It does not get smarter at extracting your time
 
 A finite tool is the opposite of an attention economy.
 
-I am writing this in the spirit of full disclosure: this is the philosophy that Return, the app we are building, is committed to. No streaks. No community. No infinite optimization. You open it. You breathe. You close it. That is the product.
+I am writing this in the spirit of full disclosure: this is the philosophy that Return, the app we are building, is committed to. No streaks. No infinite optimization. You open it. You breathe. You close it. That is the product.
 
 I am not interested in your attention. I am interested in your nervous system.
 

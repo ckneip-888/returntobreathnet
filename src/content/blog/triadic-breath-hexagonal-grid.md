@@ -34,7 +34,7 @@ Here is what is possible.
 
 **The Triadic Breath.** Three counts in. Three counts hold. Three counts out. Repeat for nine cycles.
 
-Nine cycles is not arbitrary. Three by three. The triangular structure, spiralled. Each cycle is similar to the last but not identical — your physiology is not the same on cycle nine as it was on cycle one. The form repeats. The state evolves. This is the geometry of growth: the spiral, not the loop.
+Nine cycles is not a random choice. Three by three. The triangular structure, spiralled. Each cycle is similar to the last but not identical — your physiology is not the same on cycle nine as it was on cycle one. The form repeats. The state evolves. This is the geometry of growth: the spiral, not the loop.
 
 I will say something here that may sound abstract until you feel it. When the triadic breath is sustained for the full nine cycles, the experience is not of *doing* a breath exercise. It is of being held by a pattern that was already organizing everything you are made of. The pattern was there before you started. The breath simply tuned you to it.
 

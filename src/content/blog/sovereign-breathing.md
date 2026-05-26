@@ -10,9 +10,9 @@ lang: "en"
 
 Here is the situation, as I see it.
 
-The map you were taught to navigate by is no longer matching the territory.
+The map you were taught to navigate by is no longer matching the territory. The rules of the game have changed. 
 
-The career path you trained for has changed shape mid-career. The institutions you trusted to mean what they said are saying something else now. The economic logic of the last forty years is being rewritten by software in eighteen-month cycles. The geopolitical assumptions of the last thirty are unraveling on a monthly basis. The identity scaffolding that worked for your parents will not work for you. The identity scaffolding that worked for you last year may not work for you next year.
+The career path you trained for has changed shape mid-career. The institutions you trusted to mean what they said are saying something else now. The economic logic of the last forty years is being rewritten by software in eighteen-month cycles. The geopolitical assumptions of the last thirty years are changing on a monthly basis. The identity structure that worked for your parents will not work for you. The identity structure that worked for you last year may not work for you next year.
 
 The map is dissolving. The territory is not.
 
@@ -40,7 +40,7 @@ This is not optimism. It is closer to the opposite. It is the willingness to be 
 
 Here is what is possible.
 
-If you build a daily practice of returning — five minutes in the morning, ninety seconds before any difficult moment, one breath when you notice you have drifted — you build a self that does not require the map to function.
+If you build a daily practice of breathing — five minutes in the morning, ninety seconds before any difficult moment, one breath when you notice you have drifted — you build a self that does not require the map to function.
 
 Decisions become clearer because they are no longer trying to predict the future. They are arising from a regulated body responding to what is actually in front of it. Anxiety does not disappear. It loses its grip. The story-making part of your mind becomes less authoritative. The breathing part becomes more.
 

@@ -16,13 +16,13 @@ A senior manager retires on a Friday. By Tuesday, the meetings he organized his 
 
 I am writing this in 2026. A growing number of people are arriving at this question much earlier than retirement, and through a door no one chose. A senior engineer trained the model that replaced her team. A marketer watched generative tools absorb her function in eighteen months. A copywriter is being asked to *manage workflows* now, which is a polite term for being downstream of the thing she used to be.
 
-They are not without skills. They are without the scaffolding of identity that the skills used to live inside.
+They are not without skills. They are without the structure of identity that the skills used to live inside.
 
 Here is what I have noticed about this.
 
 The pain is not loss of income. The pain is loss of *coherence between self and function*. For most adults in achievement-shaped cultures, the answer to *who are you?* has been a job, a title, a role, a project. When that scaffolding dissolves, the question goes unanswered for the first time in decades.
 
-This is what I mean by identity collapse. It is not depression, although it can look like it. It is the experience of meeting yourself without the structure that used to do the introducing.
+This is what I mean by identity collapse. It is not depression, although it can look like it. Finding out who you are when nothing else is defining you.
 
 Here is what I believe.
 

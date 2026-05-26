@@ -26,7 +26,7 @@ Inhalation is wind. Exhalation is wind. The pause is where you can hear what the
 
 Here is something I want to be careful about.
 
-I am not claiming the Breathline is mystical. It is mechanical. It is the moment of zero motion in a cyclical system, and in any oscillating system, the still points are where measurement becomes possible. Engineers know this. Physicists know this. You know this — you have felt the moment of zero motion at the top of a swing's arc, the pause at the peak of a thrown ball. That same physics applies inside you. The pause is when the system is not in fluctuation, and therefore not in noise.
+I am not claiming the Breathline is mystical. It is mechanical. It is the moment of zero motion in a cyclical system, and in any oscillating system, the still points are where measurement becomes possible. Engineers know this. Physicists know this. You know this — you have felt the moment of zero motion at the top of a swing's arc, the pause at the peak of a thrown ball up in the air. That same physics applies inside you. The pause is when the system is not in fluctuation, and therefore not in noise.
 
 What is mystical is not the mechanism. It is what becomes available when you stop generating noise.
 

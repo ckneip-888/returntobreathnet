@@ -1,10 +1,10 @@
 ---
-title: "Nervous System Regulation for Knowledge Workers Under Acute Cognitive Load"
+title: "Nervous System Regulation for Professionals Under Acute Cognitive Load"
 description: "You are not weak for feeling overwhelmed. Your nervous system is doing exactly what it was designed to do — but it is stuck in the wrong mode. Here is the mechanism, and here is the 5.5-second interruption that resets it."
 pubDate: 2026-02-08
 author: "Christoph Kneip"
 tags: ["cognitive-load", "knowledge-workers", "vagus-nerve", "nervous-system"]
-slug: "nervous-system-regulation-knowledge-workers"
+slug: "nervous-system-regulation-professionals"
 lang: "en"
 ---
 
@@ -20,7 +20,7 @@ The problem is what happens when forty-five seconds becomes seven years.
 
 Here is what I believe.
 
-A knowledge worker under acute cognitive load is not having a *psychological* problem. They are having a *physiological* one. The reason your meeting prep feels like a panic attack is not because the meeting matters. It is because your body cannot tell the difference between a Slack notification and a tiger. Same chemistry. Same cascade. Same cost.
+A professional under acute cognitive load is not having a *psychological* problem. They are having a *physiological* one. The reason your meeting prep feels like a panic attack is not because the meeting matters. It is because your body cannot tell the difference between a Slack notification and a tiger. Same chemistry. Same cascade. Same cost.
 
 You cannot think your way out of this. You have to interrupt it at the level it is operating.
 
@@ -38,7 +38,7 @@ When the exhale extends past the inhale, the vagus fires. The fire spreads. Hear
 
 Here is what is possible.
 
-A protocol I give every knowledge worker before a hard meeting:
+A protocol I give every professional before a hard meeting:
 
 **The 5.5 Reset.** Inhale through the nose for 5.5 seconds. Exhale through the nose for 5.5 seconds. Six rounds. Sixty-six seconds total.
 
@@ -60,6 +60,6 @@ Three quiet things you can do now.
 
 → **Download Return** — built around the 5.5 protocol. Open it before your next hard meeting. Close it. That is the whole flow. [App Store](#) · [Google Play](#)
 
-→ **Watch the 90-second explainer** — how Return works in cognitively hot environments, on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
+→ **Watch the 90-second explainer** — how Return works in cognitively challenging environments, on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
 
 → **Subscribe to the weekly protocol** — one quiet, practical breath protocol every week. For people who do not have time for more than one. [Sign up](/#newsletter).

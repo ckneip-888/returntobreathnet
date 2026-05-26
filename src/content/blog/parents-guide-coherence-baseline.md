@@ -18,7 +18,7 @@ You are setting the baseline. Whether you intend to or not.
 
 So when you come home from work cognitively spiked, with shallow chest breath and a clenched jaw, and you sit down at dinner — you are not just having a hard day. You are uploading dysregulation into the system of the child sitting opposite you. Their meltdown an hour later is not bad behavior. It is your nervous system rendered through theirs.
 
-I know this is hard to read. I am writing it because I needed it written for me.
+I know this is hard to read. I am writing it because I needed it written as a reminder for me.
 
 Here is what I believe.
 
@@ -38,7 +38,7 @@ Here is what is possible.
 
 A protocol I would put in front of every parent.
 
-**The Doorway Reset.** Twice a day — once before you walk into the house, once before you sit down to dinner — pause in the doorway for ninety seconds. Inhale four seconds through the nose. Hold two. Exhale six seconds through the nose. Repeat for ninety seconds. Then enter.
+**The Doorway Reset.** Twice a day — once before you walk into the house, once before you sit down to dinner — pause in the doorway for 90 seconds. Inhale four seconds through the nose. Hold two. Exhale six seconds through the nose. Repeat for ninety seconds. Then enter.
 
 That is the whole protocol.
 
@@ -46,7 +46,7 @@ Ninety seconds, twice a day, costs you nothing in calendar time and changes the 
 
 You do not need an hour. You need a doorway.
 
-You do not need to be a perfect parent. You need to be a coherent one — most of the time, often enough, well enough that the baseline drifts.
+There is no such thing as a perfect parent. You need to be a coherent one — most of the time, often enough, well enough that the baseline drifts.
 
 The breath is the only intervention small enough to fit inside a parent's life. That is precisely why it is the right one.
 
@@ -58,8 +58,8 @@ Return to that.
 
 Three quiet things you can do now.
 
-→ **Download Return** — built for the parent who has ninety seconds and no more. [App Store](#) · [Google Play](#)
+→ **Download Return** — built for the parent who has 90 seconds and no more. [App Store](#) · [Google Play](#)
 
-→ **Watch the 90-second explainer** — how the doorway protocol works, on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
+→ **Watch the 90-second explainer** — how the app works, on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
 
 → **Subscribe to the weekly protocol** — one quiet, parent-tested protocol per week. [Sign up](/#newsletter).

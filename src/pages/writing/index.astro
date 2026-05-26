@@ -3,10 +3,19 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 
+const PINNED_SLUGS = ['the-simplicity-problem'];
+
 const allPosts = await getCollection('blog', ({ data }) => data.lang === 'en' && !data.draft);
+
 const posts = allPosts.sort((a, b) => {
-  if (a.data.pinned && !b.data.pinned) return -1;
-  if (!a.data.pinned && b.data.pinned) return 1;
+  const aIdx = PINNED_SLUGS.indexOf(a.id);
+  const bIdx = PINNED_SLUGS.indexOf(b.id);
+  const aIsPinned = aIdx !== -1;
+  const bIsPinned = bIdx !== -1;
+
+  if (aIsPinned && bIsPinned) return aIdx - bIdx;
+  if (aIsPinned) return -1;
+  if (bIsPinned) return 1;
   return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
 });
 ---
@@ -36,7 +45,7 @@ const posts = allPosts.sort((a, b) => {
           pubDate={post.data.pubDate}
           tags={post.data.tags}
           lang="en"
-          pinned={post.data.pinned}
+          pinned={PINNED_SLUGS.includes(post.id)}
         />
       ))}
     </div>
