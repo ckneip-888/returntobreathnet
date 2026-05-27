@@ -119,6 +119,9 @@ Constraints:
 - `pubDate` controls sort order — newest first on archive and homepage
 
 ---
+To pin a different post later: open src/pages/index.astro (and src/pages/writing/index.astro), find the line const PINNED_SLUGS = ['the-simplicity-problem']; and change the slug. Multiple pins work too: ['post-a-slug', 'post-b-slug'] — they pin in that order.
+
+---
 
 ## Buttondown setup
 
