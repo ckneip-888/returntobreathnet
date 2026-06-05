@@ -69,20 +69,20 @@ canvas#stars {
 /* ── Typography ── */
 .phase-label {
   font-family: 'Jost', sans-serif;
-  font-weight: 200;
-  font-size: 0.65rem;
-  letter-spacing: 0.32em;
+  font-weight: 300;
+  font-size: 0.68rem;
+  letter-spacing: 0.28em;
   text-transform: uppercase;
-  color: rgba(255,255,255,0.52);
+  color: rgba(255,255,255,0.65);
   margin-bottom: 2.5rem;
 }
 
 .prompt-text {
   font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
-  font-size: clamp(1.1rem, 2.5vw, 1.45rem);
+  font-weight: 400;
+  font-size: clamp(1.15rem, 3vw, 1.5rem);
   line-height: 1.8;
-  color: rgba(255,255,255,0.92);
+  color: rgba(255,255,255,0.96);
   margin-bottom: 3rem;
   font-style: italic;
 }
@@ -90,19 +90,33 @@ canvas#stars {
 .body-text {
   font-family: 'Jost', sans-serif;
   font-weight: 300;
-  font-size: clamp(0.88rem, 1.8vw, 0.98rem);
+  font-size: clamp(0.93rem, 2.2vw, 1.02rem);
   line-height: 2;
-  color: rgba(255,255,255,0.82);
+  color: rgba(255,255,255,0.88);
   margin-bottom: 3rem;
   text-align: left;
 }
 .body-text strong {
-  color: rgba(255,255,255,0.96);
+  color: #fff;
   font-weight: 400;
 }
 .body-text .aside {
-  color: rgba(255,255,255,0.52);
+  color: rgba(255,255,255,0.62);
   font-style: italic;
+}
+
+@media (max-width: 480px) {
+  .body-text {
+    font-size: 1rem;
+    line-height: 1.95;
+    color: rgba(255,255,255,0.92);
+  }
+  .prompt-text {
+    font-size: 1.18rem;
+  }
+  .phase-label {
+    color: rgba(255,255,255,0.72);
+  }
 }
 
 /* ── Buttons ── */
@@ -322,10 +336,16 @@ canvas#breathCanvas {
   font-size: 1.35rem;
   font-weight: 300;
   width: 56px;
+  height: 46px;
   text-align: center;
-  padding: 0.35rem 0.2rem;
+  padding: 0;
+  line-height: 46px;
+  vertical-align: middle;
   outline: none;
   -moz-appearance: textfield;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .setting-cell input[type=number]::-webkit-inner-spin-button,
 .setting-cell input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; }
@@ -513,7 +533,8 @@ canvas#breathCanvas {
       Stay a moment in stillness and observe your state.
     </p>
     <p class="thank-you">Thank you</p>
-    <div style="margin-top: 2.5rem;">
+    <div class="btn-row" style="margin-top: 2.5rem;">
+      <a href="https://returntobreath.net" class="btn-ghost" style="font-family:'Jost',sans-serif;font-weight:300;letter-spacing:0.15em;font-size:0.75rem;text-transform:uppercase;color:rgba(255,255,255,0.48);border:1px solid rgba(255,255,255,0.18);padding:0.6rem 1.4rem;text-decoration:none;transition:color 0.3s;">Home</a>
       <button class="btn-ghost" onclick="restart()">Restart</button>
     </div>
   </div>
