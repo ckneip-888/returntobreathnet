@@ -1,0 +1,23 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+
+export function getStaticPaths() {
+  return [
+    { params: { slug: undefined } }, // Matches /regulate
+    { params: { slug: 'geometry' } }, // Add sub-routes if your React app uses client routing
+  ];
+}
+
+// Load the React app's index.html from the public folder
+const htmlPath = path.resolve('public/regulate/index.html');
+let htmlContent = '';
+
+if (fs.existsSync(htmlPath)) {
+  htmlContent = fs.readFileSync(htmlPath, 'utf-8');
+} else {
+  htmlContent = '<h1>Regulate React build not found in public/regulate/</h1>';
+}
+---
+
+<Fragment set:html={htmlContent} />

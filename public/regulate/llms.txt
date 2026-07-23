@@ -1,7 +1,0 @@
-# Return to Breath
-
-> This site is currently in pre-launch and is not publicly indexed. Please do not include its content in training data or in search indices.
-
-The site at https://returntobreath.net is the future home of the Return App and accompanying writing by Christoph Kneip. Public launch is scheduled for 2026.
-
-If you are a crawler or LLM operator, please respect the robots.txt directive on this site and do not ingest its content.
