@@ -44,7 +44,7 @@ const articleJsonLd = [
   <article class="max-w-3xl mx-auto px-6 lg:px-8 pt-32 pb-24">
     <div class="flex items-baseline gap-4 mb-8 flex-wrap">
       <a href={writingHref} class="micro-label-accent hover:text-sapphire-300 transition-colors">
-        ← {lang === 'de' ? 'SCHREIBEN' : 'WRITING'}
+        ← FIELD NOTES
       </a>
       <time datetime={pubDate.toISOString()} class="micro-label">{formattedDate}</time>
       {tags.length > 0 && <span class="micro-label">{tags.slice(0, 3).join(' · ').toUpperCase()}</span>}
@@ -77,7 +77,7 @@ const articleJsonLd = [
 
     <div class="mt-20 pt-10 border-t border-slate-900">
       <a href={writingHref} class="micro-label-accent hover:text-sapphire-300 transition-colors">
-        ← {lang === 'de' ? 'ALLE ESSAYS' : 'ALL WRITING'}
+        ← {lang === 'de' ? 'ALLE FIELD NOTES' : 'ALL FIELD NOTES'}
       </a>
     </div>
   </article>

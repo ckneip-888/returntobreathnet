@@ -46,7 +46,7 @@ const baseGraph = [
     name: 'Christoph Kneip',
     url: `${siteUrl}/about/`,
     jobTitle: 'Author, breath educator',
-    knowsAbout: ['breath practice', 'nervous system regulation', 'coherence', 'sacred geometry', 'harmonic frameworks'],
+    knowsAbout: ['breath practice', 'nervous system regulation', 'coherence', 'respiratory timing'],
   },
   {
     '@type': 'Person',
@@ -71,11 +71,11 @@ const fullGraph = [...baseGraph, ...jsonLd];
 ---
 
 <!doctype html>
-<html lang={lang} class="bg-slate-950">
+<html lang={lang} class="bg-navy">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#020617" />
+    <meta name="theme-color" content="#000814" />
 
     <title>{title}</title>
     <meta name="description" content={description} />
@@ -115,7 +115,7 @@ const fullGraph = [...baseGraph, ...jsonLd];
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js" is:inline></script>
   </head>
 
-  <body class="bg-slate-950 text-slate-100 antialiased">
+  <body class="bg-navy text-white antialiased">
     <Header lang={lang} currentPath={Astro.url.pathname} />
     <slot />
     <Footer lang={lang} />

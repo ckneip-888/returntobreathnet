@@ -1,0 +1,25 @@
+---
+import StoreButtons from '../StoreButtons.astro';
+import { copy, type Lang } from '../../i18n';
+
+export interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy(lang);
+---
+
+<section class="py-20 lg:py-28 border-t border-gray-800/80">
+  <div class="max-w-2xl mx-auto px-6 text-center">
+    <h2 class="text-3xl lg:text-4xl font-light tracking-tight text-white leading-tight mb-4">
+      {t.download.headline}
+    </h2>
+    <p class="text-[16px] text-gray-400 font-light mb-8">
+      {t.download.body}
+    </p>
+    <div class="flex justify-center">
+      <StoreButtons lang={lang} />
+    </div>
+  </div>
+</section>

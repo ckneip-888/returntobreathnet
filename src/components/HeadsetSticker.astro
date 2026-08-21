@@ -1,0 +1,52 @@
+---
+import { copy, type Lang } from '../i18n';
+
+export interface Props {
+  lang?: Lang;
+  size?: number;
+}
+
+const { lang = 'en', size = 148 } = Astro.props;
+const t = copy(lang);
+---
+
+<div
+  class="headset-sticker relative shrink-0"
+  style={`width: ${size}px; height: ${size}px`}
+  role="img"
+  aria-label={t.sticker.alt}
+>
+  <svg viewBox="0 0 148 148" class="absolute inset-0 w-full h-full" aria-hidden="true">
+    <circle
+      cx="74"
+      cy="74"
+      r="70"
+      fill="none"
+      stroke="#9CA3AF"
+      stroke-width="1"
+      stroke-dasharray="2.4 3.2"
+    />
+    <g fill="none" stroke="#9CA3AF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M52 62 v12 a10 10 0 0 0 10 10 h2" />
+      <path d="M96 62 v12 a10 10 0 0 1 -10 10 h-2" />
+      <rect x="46" y="56" width="12" height="18" rx="4" />
+      <rect x="90" y="56" width="12" height="18" rx="4" />
+      <path d="M58 54 a16 12 0 0 1 32 0" />
+    </g>
+    <g fill="#9CA3AF">
+      <rect x="68" y="60" width="1.6" height="8" rx="0.6" />
+      <rect x="72" y="57" width="1.6" height="14" rx="0.6" />
+      <rect x="76" y="59" width="1.6" height="10" rx="0.6" />
+      <rect x="64" y="62" width="1.6" height="6" rx="0.6" />
+      <rect x="80" y="62" width="1.6" height="6" rx="0.6" />
+    </g>
+  </svg>
+  <div class="absolute inset-0 flex flex-col items-center justify-end pb-[22%] text-center pointer-events-none">
+    <p class="text-[9px] leading-[1.35] font-medium tracking-[0.04em] text-gray-400">
+      {t.sticker.line1}<br />
+      {t.sticker.line2}<br />
+      {t.sticker.line3}<br />
+      {t.sticker.line4}
+    </p>
+  </div>
+</div>
