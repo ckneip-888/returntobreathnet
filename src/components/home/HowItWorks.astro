@@ -1,6 +1,6 @@
 ---
+import AppScreenshot from '../AppScreenshot.astro';
 import PhoneFrame from '../PhoneFrame.astro';
-import SessionScreen from '../SessionScreen.astro';
 import { copy, type Lang } from '../../i18n';
 
 export interface Props {
@@ -33,7 +33,7 @@ const t = copy(lang);
       </div>
       <div class="flex justify-center lg:justify-end">
         <PhoneFrame label="Return breathing session">
-          <SessionScreen lang={lang} />
+          <AppScreenshot src="/images/breathe-in.png" alt="Return session: Breathe In, Cycle 11" height={1684} />
         </PhoneFrame>
       </div>
     </div>

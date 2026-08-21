@@ -4,12 +4,12 @@ export interface Props {
   class?: string;
 }
 
-const { size = 200, class: className = '' } = Astro.props;
+const { size, class: className = '' } = Astro.props;
 ---
 
 <div
   class={`breathing-cube ${className}`.trim()}
-  style={`--cube-size: ${size}px`}
+  style={size ? `--cube-size: ${size}px` : undefined}
   aria-hidden="true"
 >
   <div class="breathing-cube__rig">

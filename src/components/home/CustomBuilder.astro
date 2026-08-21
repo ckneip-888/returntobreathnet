@@ -1,6 +1,6 @@
 ---
+import AppScreenshot from '../AppScreenshot.astro';
 import PhoneFrame from '../PhoneFrame.astro';
-import BuilderScreen from '../BuilderScreen.astro';
 import { copy, type Lang } from '../../i18n';
 
 export interface Props {
@@ -25,7 +25,7 @@ const t = copy(lang);
       </div>
       <div class="flex justify-center lg:justify-end">
         <PhoneFrame label="Return custom pattern builder">
-          <BuilderScreen lang={lang} />
+          <AppScreenshot src="/images/pattern.png" alt="Return custom pattern builder" height={1699} />
         </PhoneFrame>
       </div>
     </div>
