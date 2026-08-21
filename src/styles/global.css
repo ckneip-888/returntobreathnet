@@ -147,6 +147,7 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   height: var(--cube-size);
   perspective: calc(var(--cube-size) * 3.2);
   perspective-origin: 50% 50%;
+  transform-style: preserve-3d;
 }
 
 .breathing-cube__rig {
@@ -214,7 +215,6 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   border-radius: 1.85rem;
   background: linear-gradient(180deg, #000814 0%, #000000 100%);
   overflow: hidden;
-  transform-style: preserve-3d;
 }
 
 /* ── WAVEFORM ───────────────────────────────────────────── */
