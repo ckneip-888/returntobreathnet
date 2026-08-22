@@ -1,6 +1,5 @@
 ---
-import AppScreenshot from '../AppScreenshot.astro';
-import PhoneFrame from '../PhoneFrame.astro';
+import GlowShot from '../GlowShot.astro';
 import { copy, type Lang } from '../../i18n';
 
 export interface Props {
@@ -13,7 +12,7 @@ const t = copy(lang);
 
 <section class="py-20 lg:py-28 border-t border-gray-800/80">
   <div class="max-w-6xl mx-auto px-6 lg:px-12">
-    <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_300px] gap-14 lg:gap-20 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)] gap-14 lg:gap-16 items-center">
       <div>
         <p class="micro-label-accent mb-4">{t.how.eyebrow}</p>
         <h2 class="text-3xl lg:text-4xl font-light tracking-tight text-white leading-tight mb-12">
@@ -32,9 +31,12 @@ const t = copy(lang);
         </ol>
       </div>
       <div class="flex justify-center lg:justify-end">
-        <PhoneFrame label="Return breathing session">
-          <AppScreenshot src="/images/breathe-in.png" alt="Return session: Breathe In, Cycle 11" height={1684} />
-        </PhoneFrame>
+        <GlowShot
+          src="/images/Live_session_glow.png"
+          alt="Return live session"
+          width={1242}
+          height={1819}
+        />
       </div>
     </div>
   </div>

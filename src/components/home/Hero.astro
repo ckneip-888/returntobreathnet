@@ -1,7 +1,6 @@
 ---
 import HeadsetSticker from '../HeadsetSticker.astro';
-import MenuScreen from '../MenuScreen.astro';
-import PhoneFrame from '../PhoneFrame.astro';
+import HeroDevice from '../HeroDevice.astro';
 import StoreButtons from '../StoreButtons.astro';
 import { copy, type Lang } from '../../i18n';
 
@@ -15,7 +14,7 @@ const t = copy(lang);
 
 <section class="relative pt-24 pb-16 lg:pt-32 lg:pb-24">
   <div class="max-w-6xl mx-auto px-6 lg:px-12">
-    <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_340px] gap-10 lg:gap-20 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-10 lg:gap-12 items-center">
       <div>
         <p class="micro-label-accent mb-5">{t.hero.eyebrow}</p>
         <h1 class="text-[2rem] sm:text-4xl lg:text-[2.75rem] font-light tracking-tight text-white leading-[1.15] mb-6 max-w-xl">
@@ -26,16 +25,14 @@ const t = copy(lang);
         </p>
         <div class="hidden lg:block">
           <StoreButtons lang={lang} />
-          <div class="mt-8">
-            <HeadsetSticker lang={lang} size={128} />
-          </div>
         </div>
       </div>
 
-      <div class="flex justify-center lg:justify-end">
-        <PhoneFrame label="Return start screen">
-          <MenuScreen />
-        </PhoneFrame>
+      <div class="flex items-center justify-center lg:justify-end gap-3 sm:gap-4 min-w-0">
+        <HeadsetSticker lang={lang} size={168} />
+        <div class="min-w-0 flex-1 max-w-[440px]">
+          <HeroDevice />
+        </div>
       </div>
     </div>
 
@@ -44,9 +41,6 @@ const t = copy(lang);
         {t.hero.subhead}
       </p>
       <StoreButtons lang={lang} />
-      <div class="mt-8">
-        <HeadsetSticker lang={lang} size={120} />
-      </div>
     </div>
   </div>
 </section>

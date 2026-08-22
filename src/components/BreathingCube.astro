@@ -8,16 +8,18 @@ const { size, class: className = '' } = Astro.props;
 ---
 
 <div
-  class={`breathing-cube ${className}`.trim()}
+  class={`cube-scene ${className}`.trim()}
   style={size ? `--cube-size: ${size}px` : undefined}
   aria-hidden="true"
 >
-  <div class="breathing-cube__rig">
-    <div class="breathing-cube__face breathing-cube__face--front"></div>
-    <div class="breathing-cube__face breathing-cube__face--back"></div>
-    <div class="breathing-cube__face breathing-cube__face--right"></div>
-    <div class="breathing-cube__face breathing-cube__face--left"></div>
-    <div class="breathing-cube__face breathing-cube__face--top"></div>
-    <div class="breathing-cube__face breathing-cube__face--bottom"></div>
+  <div class="cube-tilt">
+    <div class="cube-spin">
+      <div class="cube-face cube-face--front"></div>
+      <div class="cube-face cube-face--back"></div>
+      <div class="cube-face cube-face--right"></div>
+      <div class="cube-face cube-face--left"></div>
+      <div class="cube-face cube-face--top"></div>
+      <div class="cube-face cube-face--bottom"></div>
+    </div>
   </div>
 </div>

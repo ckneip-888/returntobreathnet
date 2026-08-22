@@ -4,20 +4,14 @@ export interface Props {
   class?: string;
 }
 
-const { size = 20, class: className = '' } = Astro.props;
+const { size = 28, class: className = '' } = Astro.props;
 ---
 
-<svg
-  width={size}
-  height={size}
-  viewBox="0 0 20 20"
-  fill="none"
-  aria-hidden="true"
+<img
+  src="/images/return-logo-cube.png"
+  alt=""
+  width="200"
+  height="200"
   class={className}
->
-  <g stroke="#DC2626" stroke-width="1.15" stroke-linejoin="round">
-    <path d="M4 7.2 L10 4 L16 7.2 L16 12.8 L10 16 L4 12.8 Z" />
-    <path d="M4 7.2 L10 10.2 L16 7.2" opacity="0.8" />
-    <path d="M10 10.2 L10 16" opacity="0.8" />
-  </g>
-</svg>
+  style={`width: ${size}px; height: ${size}px`}
+/>
