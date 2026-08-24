@@ -9,11 +9,13 @@ export interface Props {
 const { src, alt, width, height } = Astro.props;
 ---
 
-<img
-  src={src}
-  alt={alt}
-  width={width}
-  height={height}
-  class="glow-shot"
-  loading="lazy"
-/>
+<div class="glow-shot-wrap">
+  <img
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    class="glow-shot"
+    loading="lazy"
+  />
+</div>
