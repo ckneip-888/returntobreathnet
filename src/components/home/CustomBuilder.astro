@@ -1,0 +1,35 @@
+---
+import GlowShot from '../GlowShot.astro';
+import { copy, type Lang } from '../../i18n';
+
+export interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy(lang);
+---
+
+<section id="builder" class="py-20 lg:py-28 border-t border-gray-800/80">
+  <div class="max-w-6xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_minmax(0,440px)] gap-14 lg:gap-16 items-center">
+      <div>
+        <p class="micro-label-accent mb-4">{t.builder.eyebrow}</p>
+        <h2 class="text-3xl lg:text-4xl font-light tracking-tight text-white leading-tight mb-5">
+          {t.builder.headline}
+        </h2>
+        <p class="text-[16px] text-gray-400 leading-relaxed font-light max-w-xl">
+          {t.builder.body}
+        </p>
+      </div>
+      <div class="flex justify-center lg:justify-end">
+        <GlowShot
+          src="/images/Pattern_selector_glow.png"
+          alt="Return custom pattern builder"
+          width={1242}
+          height={1814}
+        />
+      </div>
+    </div>
+  </div>
+</section>

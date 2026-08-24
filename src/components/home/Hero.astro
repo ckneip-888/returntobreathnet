@@ -1,0 +1,46 @@
+---
+import HeadsetSticker from '../HeadsetSticker.astro';
+import HeroDevice from '../HeroDevice.astro';
+import StoreButtons from '../StoreButtons.astro';
+import { copy, type Lang } from '../../i18n';
+
+export interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy(lang);
+---
+
+<section class="relative pt-24 pb-16 lg:pt-32 lg:pb-24">
+  <div class="max-w-6xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] gap-10 lg:gap-12 items-center">
+      <div>
+        <p class="micro-label-accent mb-5">{t.hero.eyebrow}</p>
+        <h1 class="text-[2rem] sm:text-4xl lg:text-[2.75rem] font-light tracking-tight text-white leading-[1.15] mb-6 max-w-xl">
+          {t.hero.headline}
+        </h1>
+        <p class="hidden lg:block text-[16px] text-gray-400 leading-relaxed font-light max-w-xl mb-8">
+          {t.hero.subhead}
+        </p>
+        <div class="hidden lg:block">
+          <StoreButtons lang={lang} />
+        </div>
+      </div>
+
+      <div class="flex items-center justify-center lg:justify-end gap-3 sm:gap-4 min-w-0">
+        <HeadsetSticker lang={lang} size={168} />
+        <div class="min-w-0 flex-1 max-w-[440px]">
+          <HeroDevice />
+        </div>
+      </div>
+    </div>
+
+    <div class="lg:hidden mt-10">
+      <p class="text-[16px] text-gray-400 leading-relaxed font-light mb-8">
+        {t.hero.subhead}
+      </p>
+      <StoreButtons lang={lang} />
+    </div>
+  </div>
+</section>

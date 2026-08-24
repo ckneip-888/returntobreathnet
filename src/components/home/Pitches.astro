@@ -1,0 +1,24 @@
+---
+import { copy, type Lang } from '../../i18n';
+
+export interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy(lang);
+---
+
+<section class="py-20 lg:py-28 border-t border-gray-800/80">
+  <div class="max-w-3xl mx-auto px-6 lg:px-12">
+    <p class="micro-label-accent mb-12">{t.pitches.eyebrow}</p>
+    <div class="space-y-12">
+      {t.pitches.items.map((item) => (
+        <article>
+          <h3 class="text-xl font-light tracking-tight text-white mb-3">{item.title}</h3>
+          <p class="text-[16px] text-gray-400 leading-relaxed font-light">{item.body}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

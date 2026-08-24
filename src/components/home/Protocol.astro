@@ -1,0 +1,39 @@
+---
+import ProtocolWaveform from '../ProtocolWaveform.astro';
+import { copy, type Lang } from '../../i18n';
+
+export interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy(lang);
+---
+
+<section id="protocol" class="py-20 lg:py-28">
+  <div class="max-w-6xl mx-auto px-6 lg:px-12">
+    <div class="max-w-2xl mb-12">
+      <p class="micro-label-accent mb-4">{t.protocol.eyebrow}</p>
+      <h2 class="text-3xl lg:text-4xl font-light tracking-tight text-white leading-tight mb-5">
+        {t.protocol.headline}
+      </h2>
+      <p class="text-[16px] text-gray-400 leading-relaxed font-light">
+        {t.protocol.body}
+      </p>
+    </div>
+
+    <div class="mb-14 max-w-4xl">
+      <ProtocolWaveform lang={lang} />
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+      {t.protocol.cards.map((card) => (
+        <article class="rounded-md bg-panel border border-gray-700/80 p-5">
+          <h3 class="text-[15px] font-medium text-white mb-1">{card.name}</h3>
+          <p class="font-mono text-[11px] text-signal tracking-wide mb-3">{card.ratio}</p>
+          <p class="text-[13px] text-gray-400 font-light leading-relaxed">{card.use}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

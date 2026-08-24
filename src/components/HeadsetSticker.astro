@@ -1,0 +1,20 @@
+---
+import { copy, type Lang } from '../i18n';
+
+export interface Props {
+  lang?: Lang;
+  size?: number;
+}
+
+const { lang = 'en', size = 128 } = Astro.props;
+const t = copy(lang);
+---
+
+<img
+  src="/images/headset-sticker.png"
+  alt={t.sticker.alt}
+  width="1181"
+  height="1181"
+  class="headset-sticker"
+  style={`width: ${size}px; height: ${size}px`}
+/>

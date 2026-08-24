@@ -1,0 +1,21 @@
+---
+import { copy, type Lang } from '../../i18n';
+
+export interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy(lang);
+---
+
+<section class="py-24 lg:py-32 border-t border-gray-800/80">
+  <div class="max-w-3xl mx-auto px-6 text-center">
+    <h2 class="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-white leading-[1.05] mb-6">
+      {t.baseline.headline}
+    </h2>
+    <p class="text-[17px] text-gray-400 font-light">
+      {t.baseline.body}
+    </p>
+  </div>
+</section>

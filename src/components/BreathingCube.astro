@@ -1,0 +1,25 @@
+---
+export interface Props {
+  size?: number;
+  class?: string;
+}
+
+const { size, class: className = '' } = Astro.props;
+---
+
+<div
+  class={`cube-scene ${className}`.trim()}
+  style={size ? `--cube-size: ${size}px` : undefined}
+  aria-hidden="true"
+>
+  <div class="cube-tilt">
+    <div class="cube-spin">
+      <div class="cube-face cube-face--front"></div>
+      <div class="cube-face cube-face--back"></div>
+      <div class="cube-face cube-face--right"></div>
+      <div class="cube-face cube-face--left"></div>
+      <div class="cube-face cube-face--top"></div>
+      <div class="cube-face cube-face--bottom"></div>
+    </div>
+  </div>
+</div>
