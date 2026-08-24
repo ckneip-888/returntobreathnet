@@ -28,9 +28,9 @@ function chevron(tipX: number, tipY: number, fromX: number, fromY: number, size 
 }
 
 const shieldArrows = [
-  { from: [186, 22], hit: [122, 46], tip: [152, 16] },
-  { from: [192, 64], hit: [126, 66], tip: [164, 90] },
-  { from: [180, 112], hit: [122, 86], tip: [156, 116] },
+  { from: [146, 22], hit: [82, 46], tip: [112, 16] },
+  { from: [152, 64], hit: [86, 66], tip: [124, 90] },
+  { from: [140, 112], hit: [82, 86], tip: [116, 116] },
 ].map((a) => ({
   ...a,
   head: chevron(a.tip[0], a.tip[1], a.hit[0], a.hit[1]),
@@ -111,34 +111,44 @@ const shieldArrows = [
               </svg>
             )}
             {visuals[i] === 'vagus' && (
-              <svg viewBox="0 0 160 160" class="h-[70%] w-auto" aria-hidden="true">
-                <!-- Schematic bust, crown left open -->
+              <svg viewBox="0 0 160 140" class="h-[88%] w-auto" aria-hidden="true">
+                <!-- Head, crown open -->
                 <path
-                  d="M70 28 C64 28, 56 34, 56 44 C56 58, 104 58, 104 44 C104 34, 96 28, 90 28"
+                  d="M68 8 C52 8, 42 22, 42 36 C42 52, 58 62, 80 62 C102 62, 118 52, 118 36 C118 22, 108 8, 92 8"
                   fill="none"
                   stroke="#9CA3AF"
-                  stroke-width="1.4"
+                  stroke-width="1.25"
                   stroke-linecap="round"
                 />
+                <!-- Neck -->
                 <path
-                  d="M74 58 L74 70 M86 58 L86 70"
+                  d="M72 62 C71 68, 70 74, 70 78 M88 62 C89 68, 90 74, 90 78"
                   fill="none"
                   stroke="#9CA3AF"
-                  stroke-width="1.4"
+                  stroke-width="1.25"
                   stroke-linecap="round"
                 />
+                <!-- Shoulders and arms -->
                 <path
-                  d="M40 74 C40 68, 66 70, 74 70 L86 70 C94 70, 120 68, 120 74"
+                  d="M70 78 C50 80, 30 90, 22 116 M90 78 C110 80, 130 90, 138 116"
                   fill="none"
                   stroke="#9CA3AF"
-                  stroke-width="1.4"
+                  stroke-width="1.25"
                   stroke-linecap="round"
                 />
-                <path d="M80 56 C80 56, 80 100, 80 132" fill="none" stroke="#DC2626" stroke-width="2" stroke-linecap="round" />
-                <path d="M75 60 C74 86, 70 110, 68 134" fill="none" stroke="#f87171" stroke-width="1.2" opacity="0.75" />
-                <path d="M85 60 C86 86, 90 110, 92 134" fill="none" stroke="#f87171" stroke-width="1.2" opacity="0.75" />
-                <path d="M78 58 C77 90, 76 112, 76 132" fill="none" stroke="#DC2626" stroke-width="1" opacity="0.45" />
-                <path d="M82 58 C83 90, 84 112, 84 132" fill="none" stroke="#DC2626" stroke-width="1" opacity="0.45" />
+                <!-- Upper body -->
+                <path
+                  d="M70 78 C66 98, 60 116, 56 134 M90 78 C94 98, 100 116, 104 134"
+                  fill="none"
+                  stroke="#9CA3AF"
+                  stroke-width="1.25"
+                  stroke-linecap="round"
+                />
+                <path d="M80 58 C80 58, 80 100, 80 126" fill="none" stroke="#DC2626" stroke-width="1.8" stroke-linecap="round" />
+                <path d="M75 62 C74 88, 70 110, 68 128" fill="none" stroke="#f87171" stroke-width="1.15" opacity="0.75" />
+                <path d="M85 62 C86 88, 90 110, 92 128" fill="none" stroke="#f87171" stroke-width="1.15" opacity="0.75" />
+                <path d="M78 60 C77 92, 76 112, 76 126" fill="none" stroke="#DC2626" stroke-width="0.9" opacity="0.45" />
+                <path d="M82 60 C83 92, 84 112, 84 126" fill="none" stroke="#DC2626" stroke-width="0.9" opacity="0.45" />
               </svg>
             )}
           </div>
