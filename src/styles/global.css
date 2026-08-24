@@ -210,8 +210,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   z-index: 5;
   pointer-events: none;
   background:
-    linear-gradient(to right, var(--navy) 0%, transparent 10%, transparent 90%, var(--navy) 100%),
-    linear-gradient(to bottom, var(--navy) 0%, transparent 10%, transparent 90%, var(--navy) 100%);
+    linear-gradient(to right, var(--navy) 0%, transparent 6%, transparent 94%, var(--navy) 100%),
+    linear-gradient(to bottom, var(--navy) 0%, transparent 6%, transparent 94%, var(--navy) 100%);
 }
 
 .hero-device__img {
@@ -276,8 +276,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   z-index: 1;
   pointer-events: none;
   background:
-    linear-gradient(to right, var(--navy) 0%, transparent 10%, transparent 90%, var(--navy) 100%),
-    linear-gradient(to bottom, var(--navy) 0%, transparent 10%, transparent 90%, var(--navy) 100%);
+    linear-gradient(to right, var(--navy) 0%, transparent 6%, transparent 94%, var(--navy) 100%),
+    linear-gradient(to bottom, var(--navy) 0%, transparent 6%, transparent 94%, var(--navy) 100%);
 }
 
 .glow-shot {
