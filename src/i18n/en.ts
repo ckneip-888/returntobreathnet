@@ -161,6 +161,14 @@ export const en = {
     blurb: 'Essays on breath, coherence, and the practice of return.',
     link: 'Read the archive',
   },
+  breathline: {
+    teaserTitle: 'Breathline exercise',
+    teaserLead: 'A guided exploration to breathe any unresolved motion into stillness.',
+    teaserCta: 'Start the exercise',
+    pageTitle: 'Breathline — Return',
+    pageDescription:
+      'A guided exploration to breathe any unresolved motion into stillness.',
+  },
   writing: {
     title: 'Field Notes.',
     pageTitle: 'Field Notes — Return to Breath',
@@ -176,6 +184,7 @@ export const en = {
     contact: 'Contact',
     about: 'About',
     fieldNotes: 'Field Notes',
+    breathline: 'Breathline',
     impressum: 'Impressum',
     terms: 'Terms of Service',
     privacy: 'Privacy Policy',

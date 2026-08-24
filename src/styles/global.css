@@ -199,6 +199,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 .hero-device {
   position: relative;
   width: 100%;
+  -webkit-mask-image: radial-gradient(ellipse 86% 82% at 50% 46%, #000 44%, transparent 78%);
+  mask-image: radial-gradient(ellipse 86% 82% at 50% 46%, #000 44%, transparent 78%);
 }
 
 .hero-device__img {
@@ -210,9 +212,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .hero-cube-mask {
   position: absolute;
-  left: 32%;
-  top: 27%;
-  width: 36%;
+  left: 34%;
+  top: 28.6%;
+  width: 31.5%;
   aspect-ratio: 1;
   background: radial-gradient(circle, #1c202b 56%, rgba(28, 32, 43, 0.92) 70%, transparent 76%);
   pointer-events: none;
@@ -221,9 +223,9 @@ a:focus-visible, button:focus-visible, input:focus-visible {
 
 .hero-cube-slot {
   position: absolute;
-  left: 33.94%;
-  top: 28.5%;
-  width: 31.56%;
+  left: 39%;
+  top: 32%;
+  width: 21.5%;
   aspect-ratio: 1;
   z-index: 2;
   pointer-events: none;
@@ -245,6 +247,8 @@ a:focus-visible, button:focus-visible, input:focus-visible {
   height: auto;
   margin-inline: auto;
   user-select: none;
+  -webkit-mask-image: radial-gradient(ellipse 84% 80% at 50% 48%, #000 40%, transparent 76%);
+  mask-image: radial-gradient(ellipse 84% 80% at 50% 48%, #000 40%, transparent 76%);
 }
 
 .headset-sticker {

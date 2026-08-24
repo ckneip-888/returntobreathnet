@@ -16,8 +16,8 @@ const basePath = lang === 'de' ? '/de' : '';
     <div class="grid grid-cols-1 md:grid-cols-12 gap-10 mb-12">
       <div class="md:col-span-5">
         <div class="flex items-center gap-2.5 mb-4">
-          <BrandMark size={24} />
-          <span class="text-[15px] font-medium tracking-tight text-white">{t.brand.name}</span>
+          <BrandMark size={28} />
+          <span class="text-[18px] font-medium tracking-tight leading-none text-white">{t.brand.name}</span>
         </div>
         <p class="text-[14px] text-gray-500 leading-relaxed font-light max-w-md">
           {t.footer.blurb}
@@ -29,6 +29,7 @@ const basePath = lang === 'de' ? '/de' : '';
         <ul class="space-y-2.5 text-[13px] text-gray-400 font-light">
           <li><a href={`${basePath}/about/`} class="hover:text-white transition-colors">{t.footer.about}</a></li>
           <li><a href={`${basePath}/writing/`} class="hover:text-white transition-colors">{t.footer.fieldNotes}</a></li>
+          <li><a href="/breathline/" class="hover:text-white transition-colors">{t.footer.breathline}</a></li>
           <li><a href={`${basePath}/terms/`} class="hover:text-white transition-colors">{t.footer.terms}</a></li>
           <li><a href={`${basePath}/privacy/`} class="hover:text-white transition-colors">{t.footer.privacy}</a></li>
           <li><a href={`${basePath}/impressum/`} class="hover:text-white transition-colors">{t.footer.impressum}</a></li>

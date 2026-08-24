@@ -36,6 +36,7 @@ export const de = {
     contact: 'Kontakt',
     about: 'Über',
     fieldNotes: 'Field Notes',
+    breathline: 'Breathline',
     impressum: 'Impressum',
     terms: 'Nutzungsbedingungen',
     privacy: 'Datenschutzerklärung',
