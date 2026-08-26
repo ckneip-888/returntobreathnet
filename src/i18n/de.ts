@@ -37,6 +37,8 @@ export const de = {
     about: 'Über',
     fieldNotes: 'Field Notes',
     breathline: 'Breathline',
+    startingPoint: 'Starting Point',
+    standingWave: 'Standing Wave',
     impressum: 'Impressum',
     terms: 'Nutzungsbedingungen',
     privacy: 'Datenschutzerklärung',

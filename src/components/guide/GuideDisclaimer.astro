@@ -1,0 +1,11 @@
+---
+export interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+---
+
+<p class={`text-[13px] text-gray-600 font-light leading-relaxed ${className}`.trim()}>
+  Educational purposes only. Not medical advice. Consult a qualified professional before starting any breathing practice.
+</p>

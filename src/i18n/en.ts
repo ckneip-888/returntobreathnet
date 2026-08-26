@@ -32,7 +32,7 @@ export const en = {
   protocol: {
     eyebrow: 'Timed respiratory patterns',
     headline: 'What is the Return to Breath protocol?',
-    body: 'It is a precision toolkit for nervous system modulation. Instead of guessing how to breathe, you select a measured pattern—a specific ratio of Inhale, Hold, Exhale, Hold—to elicit a targeted physiological response.',
+    body: 'It is a precision toolkit for nervous system modulation. Instead of guessing how to breathe, you select a measured pattern—a specific ratio of Inhale, Hold, Exhale, Hold—to elicit a targeted physiological response. For more guidance about the protocol please click on the links below the graphic.',
     inhale: 'Inhale',
     hold: 'Hold',
     exhale: 'Exhale',
@@ -64,6 +64,20 @@ export const en = {
         ratio: '4 · 4 · 4 · 4',
         detail: '4 : 4 : 4 : 4',
         use: 'Resilience, acute pressure.',
+      },
+    ],
+    guides: [
+      {
+        title: 'Find Your Starting Point',
+        body: 'Not everyone can sit still. Learn which entry point fits your nervous system—and why that’s not a limitation.',
+        cta: 'Explore the Breathline',
+        href: '/starting-point/',
+      },
+      {
+        title: 'The Morning Standing Wave',
+        body: 'Why 5.5 seconds in the morning sets your nervous system’s rhythm for the entire day—and how to feel it in your chest.',
+        cta: 'Set Your Standing Wave',
+        href: '/morning-standing-wave/',
       },
     ],
   },
@@ -185,6 +199,8 @@ export const en = {
     about: 'About',
     fieldNotes: 'Field Notes',
     breathline: 'Breathline',
+    startingPoint: 'Starting Point',
+    standingWave: 'Standing Wave',
     impressum: 'Impressum',
     terms: 'Terms of Service',
     privacy: 'Privacy Policy',

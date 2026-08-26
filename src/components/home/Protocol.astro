@@ -22,8 +22,20 @@ const t = copy(lang);
       </p>
     </div>
 
-    <div class="mb-14 max-w-4xl">
+    <div class="mb-10 max-w-4xl">
       <ProtocolWaveform lang={lang} />
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-14">
+      {t.protocol.guides.map((guide) => (
+        <article class="rounded-md border border-gray-800 bg-black/30 p-6 flex flex-col">
+          <h3 class="text-[17px] font-medium tracking-tight text-white mb-2">{guide.title}</h3>
+          <p class="text-[14px] text-gray-400 font-light leading-relaxed mb-5 flex-1">{guide.body}</p>
+          <a href={guide.href} class="text-[13px] text-signal hover:text-sapphire-400 transition-colors">
+            {guide.cta} →
+          </a>
+        </article>
+      ))}
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
