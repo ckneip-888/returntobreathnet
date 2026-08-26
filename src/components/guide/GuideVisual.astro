@@ -123,20 +123,47 @@ const teal = '#2A9D8F';
   {kind === 'pendulums' && (
     <svg viewBox="0 0 800 240" class="w-full h-auto">
       <line x1="80" y1="36" x2="720" y2="36" stroke="#374151" stroke-width="1.2" />
-      <circle cx="220" cy="36" r="2.4" fill={teal} />
-      <circle cx="400" cy="36" r="2.4" fill={teal} />
-      <circle cx="580" cy="36" r="2.4" fill={teal} />
-      <g class="guide-pendulum guide-pendulum--1">
-        <line x1="220" y1="36" x2="220" y2="168" stroke={teal} stroke-width="1.9" stroke-linecap="round" />
-        <circle cx="220" cy="178" r="12" fill="none" stroke={teal} stroke-width="1.7" />
+      <circle cx="220" cy="36" r="2.6" fill={teal} />
+      <circle cx="400" cy="36" r="2.6" fill={teal} />
+      <circle cx="580" cy="36" r="2.6" fill={teal} />
+      <g>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          dur="22.4s"
+          repeatCount="indefinite"
+          calcMode="linear"
+          keyTimes="0;0.0156;0.0313;0.0469;0.0625;0.0781;0.0938;0.1094;0.125;0.1406;0.1563;0.1719;0.1875;0.2031;0.2188;0.2344;0.25;0.2656;0.2813;0.2969;0.3125;0.3281;0.3438;0.3594;0.375;0.3906;0.4063;0.4219;0.4375;0.4531;0.4688;0.4844;0.5;0.5156;0.5313;0.5469;0.5625;0.5781;0.5938;0.6094;0.625;0.6406;0.6563;0.6719;0.6875;0.7031;0.7188;0.7344;0.75;0.7656;0.7813;0.7969;0.8125;0.8281;0.8438;0.8594;0.875;0.8906;0.9063;0.9219;0.9375;0.9531;0.9688;0.9844;1"
+          values="-11.00 220 36;-7.78 220 36;0 220 36;7.78 220 36;11.00 220 36;7.78 220 36;0 220 36;-7.78 220 36;-11.00 220 36;-7.78 220 36;0 220 36;7.78 220 36;11.00 220 36;7.78 220 36;0 220 36;-7.78 220 36;-11.00 220 36;-7.78 220 36;0 220 36;7.78 220 36;11.00 220 36;7.78 220 36;0 220 36;-7.78 220 36;-11.00 220 36;-7.78 220 36;0 220 36;7.78 220 36;11.00 220 36;7.78 220 36;0 220 36;-7.78 220 36;-11.00 220 36;-7.78 220 36;0 220 36;7.78 220 36;11.00 220 36;7.78 220 36;0 220 36;-7.78 220 36;-11.00 220 36;-7.78 220 36;0 220 36;7.78 220 36;11.00 220 36;7.78 220 36;0 220 36;-7.78 220 36;-11.00 220 36;-7.78 220 36;0 220 36;7.78 220 36;11.00 220 36;7.78 220 36;0 220 36;-7.78 220 36;-11.00 220 36;-7.78 220 36;0 220 36;7.78 220 36;11.00 220 36;7.78 220 36;0 220 36;-7.78 220 36;-11.00 220 36"
+        />
+        <line x1="220" y1="36" x2="220" y2="164" stroke={teal} stroke-width="2.8" stroke-linecap="round" />
+        <circle cx="220" cy="176" r="13.5" fill="none" stroke={teal} stroke-width="2.2" />
       </g>
-      <g class="guide-pendulum guide-pendulum--2">
-        <line x1="400" y1="36" x2="400" y2="168" stroke={teal} stroke-width="1.35" stroke-linecap="round" />
-        <circle cx="400" cy="178" r="9.4" fill="none" stroke={teal} stroke-width="1.35" />
+      <g>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          dur="22.4s"
+          repeatCount="indefinite"
+          calcMode="linear"
+          keyTimes="0;0.0156;0.0313;0.0469;0.0625;0.0781;0.0938;0.1094;0.125;0.1406;0.1563;0.1719;0.1875;0.2031;0.2188;0.2344;0.25;0.2656;0.2813;0.2969;0.3125;0.3281;0.3438;0.3594;0.375;0.3906;0.4063;0.4219;0.4375;0.4531;0.4688;0.4844;0.5;0.5156;0.5313;0.5469;0.5625;0.5781;0.5938;0.6094;0.625;0.6406;0.6563;0.6719;0.6875;0.7031;0.7188;0.7344;0.75;0.7656;0.7813;0.7969;0.8125;0.8281;0.8438;0.8594;0.875;0.8906;0.9063;0.9219;0.9375;0.9531;0.9688;0.9844;1"
+          values="-4.49 400 36;5.85 400 36;11.00 400 36;6.37 400 36;-3.92 400 36;-10.72 400 36;-7.99 400 36;1.84 400 36;10.04 400 36;9.31 400 36;0.31 400 36;-8.97 400 36;-10.14 400 36;-1.87 400 36;6.44 400 36;5.85 400 36;-1.81 400 36;-6.92 400 36;-3.36 400 36;5.25 400 36;10.44 400 36;7.82 400 36;0 400 36;-7.78 400 36;-11.00 400 36;-7.78 400 36;0 400 36;7.78 400 36;11.00 400 36;7.78 400 36;0 400 36;-7.78 400 36;-11.00 400 36;-7.78 400 36;0 400 36;7.78 400 36;11.00 400 36;7.78 400 36;0 400 36;-7.78 400 36;-11.00 400 36;-7.78 400 36;0 400 36;7.78 400 36;11.00 400 36;7.77 400 36;0.08 400 36;-7.10 400 36;-9.85 400 36;-7.54 400 36;-1.98 400 36;4.31 400 36;8.76 400 36;8.93 400 36;3.75 400 36;-4.53 400 36;-10.40 400 36;-8.85 400 36;-0.24 400 36;8.77 400 36;10.36 400 36;2.80 400 36;-7.33 400 36;-10.82 400 36;-4.49 400 36"
+        />
+        <line x1="400" y1="36" x2="400" y2="166" stroke={teal} stroke-width="1.55" stroke-linecap="round" />
+        <circle cx="400" cy="176" r="9.2" fill="none" stroke={teal} stroke-width="1.4" />
       </g>
-      <g class="guide-pendulum guide-pendulum--3">
-        <line x1="580" y1="36" x2="580" y2="168" stroke={teal} stroke-width="0.85" stroke-linecap="round" />
-        <circle cx="580" cy="178" r="7" fill="none" stroke={teal} stroke-width="1.05" />
+      <g>
+        <animateTransform
+          attributeName="transform"
+          type="rotate"
+          dur="22.4s"
+          repeatCount="indefinite"
+          calcMode="linear"
+          keyTimes="0;0.0156;0.0313;0.0469;0.0625;0.0781;0.0938;0.1094;0.125;0.1406;0.1563;0.1719;0.1875;0.2031;0.2188;0.2344;0.25;0.2656;0.2813;0.2969;0.3125;0.3281;0.3438;0.3594;0.375;0.3906;0.4063;0.4219;0.4375;0.4531;0.4688;0.4844;0.5;0.5156;0.5313;0.5469;0.5625;0.5781;0.5938;0.6094;0.625;0.6406;0.6563;0.6719;0.6875;0.7031;0.7188;0.7344;0.75;0.7656;0.7813;0.7969;0.8125;0.8281;0.8438;0.8594;0.875;0.8906;0.9063;0.9219;0.9375;0.9531;0.9688;0.9844;1"
+          values="-7.26 580 36;-10.85 580 36;-9.52 580 36;-3.87 580 36;3.54 580 36;9.35 580 36;10.90 580 36;7.51 580 36;0.71 580 36;-6.41 580 36;-10.63 580 36;-10.02 580 36;-4.76 580 36;2.81 580 36;7.44 580 36;5.96 580 36;0.43 580 36;-3.50 580 36;-1.68 580 36;4.55 580 36;9.32 580 36;7.56 580 36;0 580 36;-7.78 580 36;-11.00 580 36;-7.78 580 36;0 580 36;7.78 580 36;11.00 580 36;7.78 580 36;0 580 36;-7.78 580 36;-11.00 580 36;-7.78 580 36;0 580 36;7.78 580 36;11.00 580 36;7.78 580 36;0 580 36;-7.78 580 36;-11.00 580 36;-7.78 580 36;0 580 36;7.78 580 36;11.00 580 36;7.77 580 36;-0.10 580 36;-7.90 580 36;-10.80 580 36;-7.04 580 36;0.99 580 36;8.40 580 36;10.81 580 36;7.00 580 36;-0.68 580 36;-7.92 580 36;-10.99 580 36;-8.59 580 36;-2.18 580 36;5.09 580 36;10.00 580 36;10.52 580 36;6.49 580 36;-0.43 580 36;-7.26 580 36"
+        />
+        <line x1="580" y1="36" x2="580" y2="168" stroke={teal} stroke-width="0.7" stroke-linecap="round" />
+        <circle cx="580" cy="176" r="5.8" fill="none" stroke={teal} stroke-width="1" />
       </g>
       <text x="400" y="226" text-anchor="middle" fill="#9CA3AF" font-size="11" font-family="IBM Plex Mono, monospace" letter-spacing="2">ENTRAINMENT = PHYSICS</text>
     </svg>
@@ -226,17 +253,6 @@ const teal = '#2A9D8F';
     animation: guide-pulse 3.6s ease-in-out infinite;
   }
 
-  .guide-pendulum {
-    transform-box: fill-box;
-    transform-origin: 50% 0;
-    animation-duration: 22.4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-  .guide-pendulum--1 { animation-name: guide-pendulum-lead; }
-  .guide-pendulum--2 { animation-name: guide-pendulum-mid; }
-  .guide-pendulum--3 { animation-name: guide-pendulum-right; }
-
   @keyframes guide-ripple-expand {
     0% { transform: scale(0.07); opacity: 0.95; }
     18% { opacity: 0.55; }
@@ -255,213 +271,12 @@ const teal = '#2A9D8F';
     0%, 100% { opacity: 0.7; }
     50% { opacity: 1; }
   }
-  @keyframes guide-pendulum-lead {
-    0% { transform: rotate(-11.00deg); }
-    1.56% { transform: rotate(-7.78deg); }
-    3.13% { transform: rotate(0deg); }
-    4.69% { transform: rotate(7.78deg); }
-    6.25% { transform: rotate(11.00deg); }
-    7.81% { transform: rotate(7.78deg); }
-    9.38% { transform: rotate(0deg); }
-    10.94% { transform: rotate(-7.78deg); }
-    12.5% { transform: rotate(-11.00deg); }
-    14.06% { transform: rotate(-7.78deg); }
-    15.63% { transform: rotate(0deg); }
-    17.19% { transform: rotate(7.78deg); }
-    18.75% { transform: rotate(11.00deg); }
-    20.31% { transform: rotate(7.78deg); }
-    21.88% { transform: rotate(0deg); }
-    23.44% { transform: rotate(-7.78deg); }
-    25% { transform: rotate(-11.00deg); }
-    26.56% { transform: rotate(-7.78deg); }
-    28.13% { transform: rotate(0deg); }
-    29.69% { transform: rotate(7.78deg); }
-    31.25% { transform: rotate(11.00deg); }
-    32.81% { transform: rotate(7.78deg); }
-    34.38% { transform: rotate(0deg); }
-    35.94% { transform: rotate(-7.78deg); }
-    37.5% { transform: rotate(-11.00deg); }
-    39.06% { transform: rotate(-7.78deg); }
-    40.63% { transform: rotate(0deg); }
-    42.19% { transform: rotate(7.78deg); }
-    43.75% { transform: rotate(11.00deg); }
-    45.31% { transform: rotate(7.78deg); }
-    46.88% { transform: rotate(0deg); }
-    48.44% { transform: rotate(-7.78deg); }
-    50% { transform: rotate(-11.00deg); }
-    51.56% { transform: rotate(-7.78deg); }
-    53.13% { transform: rotate(0deg); }
-    54.69% { transform: rotate(7.78deg); }
-    56.25% { transform: rotate(11.00deg); }
-    57.81% { transform: rotate(7.78deg); }
-    59.38% { transform: rotate(0deg); }
-    60.94% { transform: rotate(-7.78deg); }
-    62.5% { transform: rotate(-11.00deg); }
-    64.06% { transform: rotate(-7.78deg); }
-    65.63% { transform: rotate(0deg); }
-    67.19% { transform: rotate(7.78deg); }
-    68.75% { transform: rotate(11.00deg); }
-    70.31% { transform: rotate(7.78deg); }
-    71.88% { transform: rotate(0deg); }
-    73.44% { transform: rotate(-7.78deg); }
-    75% { transform: rotate(-11.00deg); }
-    76.56% { transform: rotate(-7.78deg); }
-    78.13% { transform: rotate(0deg); }
-    79.69% { transform: rotate(7.78deg); }
-    81.25% { transform: rotate(11.00deg); }
-    82.81% { transform: rotate(7.78deg); }
-    84.38% { transform: rotate(0deg); }
-    85.94% { transform: rotate(-7.78deg); }
-    87.5% { transform: rotate(-11.00deg); }
-    89.06% { transform: rotate(-7.78deg); }
-    90.63% { transform: rotate(0deg); }
-    92.19% { transform: rotate(7.78deg); }
-    93.75% { transform: rotate(11.00deg); }
-    95.31% { transform: rotate(7.78deg); }
-    96.88% { transform: rotate(0deg); }
-    98.44% { transform: rotate(-7.78deg); }
-    100% { transform: rotate(-11.00deg); }
-  }
-  @keyframes guide-pendulum-mid {
-    0% { transform: rotate(-4.49deg); }
-    1.56% { transform: rotate(5.85deg); }
-    3.13% { transform: rotate(11.00deg); }
-    4.69% { transform: rotate(6.37deg); }
-    6.25% { transform: rotate(-3.92deg); }
-    7.81% { transform: rotate(-10.72deg); }
-    9.38% { transform: rotate(-7.99deg); }
-    10.94% { transform: rotate(1.84deg); }
-    12.5% { transform: rotate(10.04deg); }
-    14.06% { transform: rotate(9.31deg); }
-    15.63% { transform: rotate(0.31deg); }
-    17.19% { transform: rotate(-8.97deg); }
-    18.75% { transform: rotate(-10.14deg); }
-    20.31% { transform: rotate(-1.87deg); }
-    21.88% { transform: rotate(6.44deg); }
-    23.44% { transform: rotate(5.85deg); }
-    25% { transform: rotate(-1.81deg); }
-    26.56% { transform: rotate(-6.92deg); }
-    28.13% { transform: rotate(-3.36deg); }
-    29.69% { transform: rotate(5.25deg); }
-    31.25% { transform: rotate(10.44deg); }
-    32.81% { transform: rotate(7.82deg); }
-    34.38% { transform: rotate(0deg); }
-    35.94% { transform: rotate(-7.78deg); }
-    37.5% { transform: rotate(-11.00deg); }
-    39.06% { transform: rotate(-7.78deg); }
-    40.63% { transform: rotate(0deg); }
-    42.19% { transform: rotate(7.78deg); }
-    43.75% { transform: rotate(11.00deg); }
-    45.31% { transform: rotate(7.78deg); }
-    46.88% { transform: rotate(0deg); }
-    48.44% { transform: rotate(-7.78deg); }
-    50% { transform: rotate(-11.00deg); }
-    51.56% { transform: rotate(-7.78deg); }
-    53.13% { transform: rotate(0deg); }
-    54.69% { transform: rotate(7.78deg); }
-    56.25% { transform: rotate(11.00deg); }
-    57.81% { transform: rotate(7.78deg); }
-    59.38% { transform: rotate(0deg); }
-    60.94% { transform: rotate(-7.78deg); }
-    62.5% { transform: rotate(-11.00deg); }
-    64.06% { transform: rotate(-7.78deg); }
-    65.63% { transform: rotate(0deg); }
-    67.19% { transform: rotate(7.78deg); }
-    68.75% { transform: rotate(11.00deg); }
-    70.31% { transform: rotate(7.77deg); }
-    71.88% { transform: rotate(0.08deg); }
-    73.44% { transform: rotate(-7.10deg); }
-    75% { transform: rotate(-9.85deg); }
-    76.56% { transform: rotate(-7.54deg); }
-    78.13% { transform: rotate(-1.98deg); }
-    79.69% { transform: rotate(4.31deg); }
-    81.25% { transform: rotate(8.76deg); }
-    82.81% { transform: rotate(8.93deg); }
-    84.38% { transform: rotate(3.75deg); }
-    85.94% { transform: rotate(-4.53deg); }
-    87.5% { transform: rotate(-10.40deg); }
-    89.06% { transform: rotate(-8.85deg); }
-    90.63% { transform: rotate(-0.24deg); }
-    92.19% { transform: rotate(8.77deg); }
-    93.75% { transform: rotate(10.36deg); }
-    95.31% { transform: rotate(2.80deg); }
-    96.88% { transform: rotate(-7.33deg); }
-    98.44% { transform: rotate(-10.82deg); }
-    100% { transform: rotate(-4.49deg); }
-  }
-  @keyframes guide-pendulum-right {
-    0% { transform: rotate(-7.26deg); }
-    1.56% { transform: rotate(-10.85deg); }
-    3.13% { transform: rotate(-9.52deg); }
-    4.69% { transform: rotate(-3.87deg); }
-    6.25% { transform: rotate(3.54deg); }
-    7.81% { transform: rotate(9.35deg); }
-    9.38% { transform: rotate(10.90deg); }
-    10.94% { transform: rotate(7.51deg); }
-    12.5% { transform: rotate(0.71deg); }
-    14.06% { transform: rotate(-6.41deg); }
-    15.63% { transform: rotate(-10.63deg); }
-    17.19% { transform: rotate(-10.02deg); }
-    18.75% { transform: rotate(-4.76deg); }
-    20.31% { transform: rotate(2.81deg); }
-    21.88% { transform: rotate(7.44deg); }
-    23.44% { transform: rotate(5.96deg); }
-    25% { transform: rotate(0.43deg); }
-    26.56% { transform: rotate(-3.50deg); }
-    28.13% { transform: rotate(-1.68deg); }
-    29.69% { transform: rotate(4.55deg); }
-    31.25% { transform: rotate(9.32deg); }
-    32.81% { transform: rotate(7.56deg); }
-    34.38% { transform: rotate(0deg); }
-    35.94% { transform: rotate(-7.78deg); }
-    37.5% { transform: rotate(-11.00deg); }
-    39.06% { transform: rotate(-7.78deg); }
-    40.63% { transform: rotate(0deg); }
-    42.19% { transform: rotate(7.78deg); }
-    43.75% { transform: rotate(11.00deg); }
-    45.31% { transform: rotate(7.78deg); }
-    46.88% { transform: rotate(0deg); }
-    48.44% { transform: rotate(-7.78deg); }
-    50% { transform: rotate(-11.00deg); }
-    51.56% { transform: rotate(-7.78deg); }
-    53.13% { transform: rotate(0deg); }
-    54.69% { transform: rotate(7.78deg); }
-    56.25% { transform: rotate(11.00deg); }
-    57.81% { transform: rotate(7.78deg); }
-    59.38% { transform: rotate(0deg); }
-    60.94% { transform: rotate(-7.78deg); }
-    62.5% { transform: rotate(-11.00deg); }
-    64.06% { transform: rotate(-7.78deg); }
-    65.63% { transform: rotate(0deg); }
-    67.19% { transform: rotate(7.78deg); }
-    68.75% { transform: rotate(11.00deg); }
-    70.31% { transform: rotate(7.77deg); }
-    71.88% { transform: rotate(-0.10deg); }
-    73.44% { transform: rotate(-7.90deg); }
-    75% { transform: rotate(-10.80deg); }
-    76.56% { transform: rotate(-7.04deg); }
-    78.13% { transform: rotate(0.99deg); }
-    79.69% { transform: rotate(8.40deg); }
-    81.25% { transform: rotate(10.81deg); }
-    82.81% { transform: rotate(7.00deg); }
-    84.38% { transform: rotate(-0.68deg); }
-    85.94% { transform: rotate(-7.92deg); }
-    87.5% { transform: rotate(-10.99deg); }
-    89.06% { transform: rotate(-8.59deg); }
-    90.63% { transform: rotate(-2.18deg); }
-    92.19% { transform: rotate(5.09deg); }
-    93.75% { transform: rotate(10.00deg); }
-    95.31% { transform: rotate(10.52deg); }
-    96.88% { transform: rotate(6.49deg); }
-    98.44% { transform: rotate(-0.43deg); }
-    100% { transform: rotate(-7.26deg); }
-  }
 
   @media (prefers-reduced-motion: reduce) {
     .guide-ripple-ring,
     .guide-ripple-core,
     .guide-flow,
-    .guide-pulse,
-    .guide-pendulum { animation: none; }
+    .guide-pulse { animation: none; }
+    .guide-visual animateTransform { display: none; }
   }
 </style>
