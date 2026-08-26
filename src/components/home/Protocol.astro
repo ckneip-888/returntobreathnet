@@ -22,11 +22,21 @@ const t = copy(lang);
       </p>
     </div>
 
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-12">
+      {t.protocol.cards.map((card) => (
+        <article class="rounded-md bg-panel border border-gray-700/80 p-5">
+          <h3 class="text-[15px] font-medium text-white mb-1">{card.name}</h3>
+          <p class="font-mono text-[11px] text-signal tracking-wide mb-3">{card.ratio}</p>
+          <p class="text-[13px] text-gray-400 font-light leading-relaxed">{card.use}</p>
+        </article>
+      ))}
+    </div>
+
     <div class="mb-10 max-w-4xl">
       <ProtocolWaveform lang={lang} />
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-14">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       {t.protocol.guides.map((guide) => (
         <article class="rounded-md border border-gray-800 bg-black/30 p-6 flex flex-col">
           <h3 class="text-[17px] font-medium tracking-tight text-white mb-2">{guide.title}</h3>
@@ -34,16 +44,6 @@ const t = copy(lang);
           <a href={guide.href} class="text-[13px] text-signal hover:text-sapphire-400 transition-colors">
             {guide.cta} →
           </a>
-        </article>
-      ))}
-    </div>
-
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-      {t.protocol.cards.map((card) => (
-        <article class="rounded-md bg-panel border border-gray-700/80 p-5">
-          <h3 class="text-[15px] font-medium text-white mb-1">{card.name}</h3>
-          <p class="font-mono text-[11px] text-signal tracking-wide mb-3">{card.ratio}</p>
-          <p class="text-[13px] text-gray-400 font-light leading-relaxed">{card.use}</p>
         </article>
       ))}
     </div>

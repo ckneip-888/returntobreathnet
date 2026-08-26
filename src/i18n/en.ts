@@ -97,8 +97,8 @@ export const en = {
         body: 'When your fight-or-flight is stuck ‘on,’ logic doesn’t work—hydraulics do. The 5.5-5.5 Coherence pattern is designed around your body’s resonant frequency, where respiration and cardiovascular oscillations can interact strongly.',
       },
       {
-        title: 'Total Customization for Your Body',
-        body: 'You are not a preset. Generic apps force one rhythm on everyone. Our Custom Builder lets you dial in your exact Inhale, Hold, Exhale, and Hold (1 to 10 seconds). You design the signal that fits your unique physiology.',
+        title: 'The 3D Cube for Extra Grounding',
+        body: 'The main visual 3D cube provides the most mathematically stable, low-entropy configuration possible. Its rigid 90° angles stimulate the brain’s grid cell network with perfect orthogonality, creating an immediate psychological sense of a structural “floor”—a grounded reference point for the nervous system.',
       },
       {
         title: 'The Digital Antidote',
