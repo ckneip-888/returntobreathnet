@@ -12,7 +12,16 @@ const t = copy(lang);
 ---
 
 <section id="protocol" class="relative py-20 lg:py-28 overflow-hidden">
-  <div class="max-w-6xl mx-auto px-6 lg:px-12">
+  <div
+    class="pointer-events-none absolute inset-0 z-0 flex items-center justify-center select-none"
+    aria-hidden="true"
+  >
+    <div class="aspect-square h-[160%] w-auto max-w-none opacity-[0.22]">
+      <SpiralMark variant="field" />
+    </div>
+  </div>
+
+  <div class="relative z-[1] max-w-6xl mx-auto px-6 lg:px-12">
     <div class="max-w-2xl mb-12">
       <p class="micro-label-gold mb-4">{t.protocol.eyebrow}</p>
       <h2 class="text-3xl lg:text-4xl font-light tracking-tight text-white leading-tight mb-5">
@@ -33,19 +42,11 @@ const t = copy(lang);
       ))}
     </div>
 
-    <div class="relative mb-10 overflow-hidden py-6 sm:py-10">
-      <div
-        class="pointer-events-none absolute right-0 top-1/2 z-0 w-[min(28rem,92vw)] -translate-y-1/2 translate-x-[10%] opacity-[0.17] select-none lg:translate-x-[6%]"
-        aria-hidden="true"
-      >
-        <SpiralMark variant="field" />
-      </div>
-      <div class="relative z-[1] max-w-4xl">
-        <ProtocolWaveform lang={lang} />
-      </div>
+    <div class="mb-10 max-w-4xl">
+      <ProtocolWaveform lang={lang} />
     </div>
 
-    <div class="relative grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
       {t.protocol.guides.map((guide) => (
         <article class="rounded-md border border-gray-800 bg-black/30 p-6 flex flex-col">
           <h3 class="text-[17px] font-medium tracking-tight text-white mb-2">{guide.title}</h3>
