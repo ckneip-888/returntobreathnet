@@ -6,7 +6,7 @@ export interface Props {
 
 const { variant = 'field', class: className = '' } = Astro.props;
 const stroke = variant === 'stamp' ? 14 : 1.2;
-const sizeClass = variant === 'stamp' ? 'w-8 h-8' : 'block h-full w-full';
+const sizeClass = variant === 'stamp' ? 'w-8 h-8' : 'block w-full h-auto';
 
 /** Logarithmic golden spiral (φ growth per quarter-turn). Pole at 200,200. */
 const spiralPath =
