@@ -27,12 +27,12 @@ export const en = {
     eyebrow: 'The Return Protocol',
     headline: 'The breath is your built-in tool for instant calm. Most people never use it consciously.',
     subhead:
-      'Return is a quiet utility for nervous system regulation. Built for those under acute cognitive load, navigating difficult life phases, or experiencing future anxiety. No streaks. No endless optimization. Open the app. Breathe for five minutes. Ground your day.',
+      'Return is a quiet utility for nervous system regulation. Built for those under acute cognitive load, navigating difficult life phases, or experiencing future anxiety—and for anyone who wants a way back. No streaks. No endless optimization. Open the app. Breathe for five minutes. Ground your day.',
   },
   protocol: {
     eyebrow: 'Timed respiratory patterns',
     headline: 'What is the Return to Breath protocol?',
-    body: 'It is a precision toolkit for nervous system modulation. Instead of guessing how to breathe, you select a measured pattern—a specific ratio of Inhale, Hold, Exhale, Hold—to elicit a targeted physiological response. For more guidance about the protocol please click on the links below the graphic.',
+    body: 'It is a precision toolkit for nervous system modulation. You do not have to guess how to breathe. You select a measured pattern—Inhale, Hold, Exhale, Hold—and the physiology follows. If you want a place to begin, the two short guides below the graphic are there for you.',
     inhale: 'Inhale',
     hold: 'Hold',
     exhale: 'Exhale',
@@ -82,7 +82,7 @@ export const en = {
     ],
   },
   pitches: {
-    eyebrow: 'What is in it for me?',
+    eyebrow: 'What this offers you',
     items: [
       {
         title: 'The Sleep Switch',
@@ -168,7 +168,7 @@ export const en = {
   },
   download: {
     headline: 'Return to breath.',
-    body: 'A quiet tool for changing the breathing signal.',
+    body: 'A quiet tool for changing the breathing signal. When you need it, it is there.',
   },
   fieldNotes: {
     label: 'Field Notes',
