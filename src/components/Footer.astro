@@ -28,8 +28,8 @@ const basePath = lang === 'de' ? '/de' : '';
       <div class="md:col-span-2">
         <div class="micro-label-accent mb-4">{t.footer.site}</div>
         <ul class="space-y-2.5 text-[13px] text-gray-400 font-light">
-          <li><a href={`${basePath}/about/`} class="hover:text-white transition-colors">{t.footer.about}</a></li>
-          <li><a href={`${basePath}/writing/`} class="hover:text-white transition-colors">{t.footer.fieldNotes}</a></li>
+          <li><a href={`${basePath}/about/`} data-track="about_click" class="hover:text-white transition-colors">{t.footer.about}</a></li>
+          <li><a href={`${basePath}/writing/`} data-track="field_notes_click" class="hover:text-white transition-colors">{t.footer.fieldNotes}</a></li>
           <li><a href="/breathline/" class="hover:text-white transition-colors">{t.footer.breathline}</a></li>
           <li><a href="/starting-point/" class="hover:text-white transition-colors">{t.footer.startingPoint}</a></li>
           <li><a href="/morning-standing-wave/" class="hover:text-white transition-colors">{t.footer.standingWave}</a></li>
@@ -51,12 +51,12 @@ const basePath = lang === 'de' ? '/de' : '';
             </a>
           </li>
           <li>
-            <a href="#" aria-disabled="true" class="hover:text-white inline-flex items-center gap-1.5 transition-colors">
+            <a href="#" aria-disabled="true" data-track="app_store_click" class="hover:text-white inline-flex items-center gap-1.5 transition-colors">
               {t.footer.appStore}
             </a>
           </li>
           <li>
-            <a href="#" aria-disabled="true" class="hover:text-white inline-flex items-center gap-1.5 transition-colors">
+            <a href="#" aria-disabled="true" data-track="google_play_click" class="hover:text-white inline-flex items-center gap-1.5 transition-colors">
               {t.footer.googlePlay}
             </a>
           </li>

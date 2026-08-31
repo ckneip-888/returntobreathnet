@@ -17,7 +17,7 @@ const href = lang === 'de' ? '/de/writing/' : '/writing/';
         <p class="micro-label-accent mb-2">{t.fieldNotes.label}</p>
         <p class="text-[14px] text-gray-500 font-light">{t.fieldNotes.blurb}</p>
       </div>
-      <a href={href} class="text-[13px] text-signal hover:text-sapphire-400 transition-colors shrink-0">
+      <a href={href} data-track="field_notes_click" class="text-[13px] text-signal hover:text-sapphire-400 transition-colors shrink-0">
         {t.fieldNotes.link} →
       </a>
     </div>
@@ -29,7 +29,7 @@ const href = lang === 'de' ? '/de/writing/' : '/writing/';
         <p class="micro-label-accent mb-2">{t.breathline.teaserTitle}</p>
         <p class="text-[14px] text-gray-500 font-light max-w-xl">{t.breathline.teaserLead}</p>
       </div>
-      <a href="/breathline/" class="text-[13px] text-signal hover:text-sapphire-400 transition-colors shrink-0">
+      <a href="/breathline/" data-track="Start_the_exercise_click" class="text-[13px] text-signal hover:text-sapphire-400 transition-colors shrink-0">
         {t.breathline.teaserCta} →
       </a>
     </div>

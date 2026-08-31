@@ -32,6 +32,7 @@ const isAbout = currentPath.includes('/about');
       <a href={protocolHref} class="text-[13px] text-gray-400 hover:text-white transition-colors">{t.nav.protocol}</a>
       <a
         href={writingHref}
+        data-track="field_notes_click"
         class={`text-[13px] transition-colors ${isWriting ? 'text-white' : 'text-gray-400 hover:text-white'}`}
         aria-current={isWriting ? 'page' : undefined}
       >
@@ -39,6 +40,7 @@ const isAbout = currentPath.includes('/about');
       </a>
       <a
         href={aboutHref}
+        data-track="about_click"
         class={`text-[13px] transition-colors ${isAbout ? 'text-white' : 'text-gray-400 hover:text-white'}`}
         aria-current={isAbout ? 'page' : undefined}
       >
@@ -72,8 +74,8 @@ const isAbout = currentPath.includes('/about');
       </summary>
       <div class="absolute right-0 top-12 w-56 rounded-md border border-gray-800 bg-navy p-4 shadow-2xl space-y-3">
         <a href={protocolHref} class="block text-[14px] text-gray-300 hover:text-white">{t.nav.protocol}</a>
-        <a href={writingHref} class="block text-[14px] text-gray-300 hover:text-white">{t.nav.fieldNotes}</a>
-        <a href={aboutHref} class="block text-[14px] text-gray-300 hover:text-white">{t.nav.about}</a>
+        <a href={writingHref} data-track="field_notes_click" class="block text-[14px] text-gray-300 hover:text-white">{t.nav.fieldNotes}</a>
+        <a href={aboutHref} data-track="about_click" class="block text-[14px] text-gray-300 hover:text-white">{t.nav.about}</a>
         <div class="pt-2 border-t border-gray-800 flex items-center gap-1 text-[11px] font-mono tracking-wider">
           <a href="/" class={lang === 'en' ? 'text-white px-1.5 py-1' : 'text-gray-500 px-1.5 py-1'}>EN</a>
           <span class="text-gray-700">/</span>

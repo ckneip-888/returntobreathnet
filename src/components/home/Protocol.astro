@@ -9,6 +9,12 @@ export interface Props {
 
 const { lang = 'en' } = Astro.props;
 const t = copy(lang);
+
+function guideTrack(href: string) {
+  if (href.includes('starting-point')) return 'Explore_the_Breathline_click';
+  if (href.includes('morning-standing-wave')) return 'Set_Your_Standing_Wave_click';
+  return undefined;
+}
 ---
 
 <section id="protocol" class="relative py-20 lg:py-28 overflow-hidden">
@@ -50,7 +56,7 @@ const t = copy(lang);
         <article class="rounded-md border border-gray-800 bg-black/30 p-6 flex flex-col">
           <h3 class="text-[17px] font-medium tracking-tight text-white mb-2">{guide.title}</h3>
           <p class="text-[14px] text-gray-400 font-light leading-relaxed mb-5 flex-1">{guide.body}</p>
-          <a href={guide.href} class="text-[13px] text-signal hover:text-sapphire-400 transition-colors">
+          <a href={guide.href} data-track={guideTrack(guide.href)} class="text-[13px] text-signal hover:text-sapphire-400 transition-colors">
             {guide.cta} →
           </a>
         </article>
