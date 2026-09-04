@@ -8,6 +8,7 @@ export interface Props {
 const { lang = 'en' } = Astro.props;
 const t = copy(lang);
 const href = lang === 'de' ? '/de/writing/' : '/writing/';
+const breathlineHref = lang === 'de' ? '/de/breathline/' : '/breathline/';
 ---
 
 <section class="py-12 border-t border-gray-800/80">
@@ -29,7 +30,7 @@ const href = lang === 'de' ? '/de/writing/' : '/writing/';
         <p class="micro-label-accent mb-2">{t.breathline.teaserTitle}</p>
         <p class="text-[14px] text-gray-500 font-light max-w-xl">{t.breathline.teaserLead}</p>
       </div>
-      <a href="/breathline/" data-track="Start_the_exercise_click" class="text-[13px] text-signal hover:text-sapphire-400 transition-colors shrink-0">
+      <a href={breathlineHref} data-track="Start_the_exercise_click" class="text-[13px] text-signal hover:text-sapphire-400 transition-colors shrink-0">
         {t.breathline.teaserCta} →
       </a>
     </div>

@@ -183,6 +183,41 @@ export const en = {
     pageTitle: 'Breathline — Return',
     pageDescription:
       'A guided exploration to breathe any unresolved motion into stillness.',
+    start: 'Start',
+    back: 'Back',
+    nextPhase: 'Next Phase',
+    done: 'Done',
+    home: 'Home',
+    restart: 'Restart',
+    sound: 'Sound',
+    labels: 'Labels',
+    settings: 'Settings',
+    inhale: 'Inhale',
+    exhale: 'Exhale',
+    hold: 'Hold',
+    topHold: 'Top Hold',
+    bottomHold: 'Bottom Hold',
+    cycleOf: 'Cycle {n} of {max}',
+    thankYou: 'Thank you',
+    promptHtml:
+      'Where in your system — your life, your identity, your choices, your relationships — is there still unresolved motion?<br /><br />What pattern is still cycling without settling?<br /><br />What has not yet crossed into coherence?',
+    phase1Label: 'Phase 1 — Scan the field',
+    phase1Body:
+      'Close your eyes and take 3 full breath cycles (inhale, hold on top, exhale, hold at the bottom), emphasising the pauses.<br /><br />Then ask yourself at the breathline (hold on top and hold at the bottom):<br /><br /><strong>"What in my life is still reaching?"</strong><br /><br />Don\'t answer with your mind. Let the body or a sensation or an image respond.<br /><br />Ready?',
+    phase2Label: 'Phase 2 — Name it without story',
+    phase2Body:
+      'Once something surfaces, resist the urge to explain or justify it.<br /><br />Just name it cleanly.',
+    phase3Label: 'Phase 3 — Locate it in the breath',
+    phase3Body:
+      'Now breathe with this unresolved pattern in your awareness.<br /><br />Notice: Where in the breath cycle does it create tension?<br /><br />Does it spike during the inhale? <span class="bl-aside">(grasping, taking in, accumulating)</span><br />Does it grip during the top pause? <span class="bl-aside">(holding, controlling, not releasing)</span><br />Does it resist during the exhale? <span class="bl-aside">(fear of letting go, scarcity)</span><br />Does it collapse during the bottom pause? <span class="bl-aside">(emptiness feels threatening)</span><br /><br />The unbreathed parts will distort the natural rhythm when you bring them into awareness.<br /><br />Where does yours live in the cycle?<br /><br />Ready?',
+    phase4Label: 'Phase 4 — Breathe it into stillness',
+    phase4Body:
+      "Once you've located where it grips:<br /><br />Deliberately bring your attention to that phase of the breath.<br /><br />E.g. if it grips on the exhale:<br />Slow your exhale — let the release be complete — breathe through the resistance.<br /><br />If it grips at the pause:<br />Extend the pause slightly — stay with the discomfort — let the breathline hold it until it settles.<br /><br />Do 9 cycles with this specific attention and intention.<br /><br />You're not forcing resolution. You're breathing the pattern into the breathline — into the place where coherence can operate on it.",
+    phase4Note:
+      'Extend the gripping breath phase to a suitable length for you (between 5–9 sec) and click Start to breathe your 9 cycles.',
+    phase5Label: 'Phase 5 — Notice what releases or clarifies',
+    phase5Body:
+      'After the 9 cycles, return to natural breathing.<br /><br />Ask at the breathline (hold for a few seconds again on top or at the bottom):<br /><br /><strong>"What has shifted?"</strong><br /><br />Not "is it solved?" but "what\'s different now?"<br /><br />Stay a moment in stillness and observe your state.',
   },
   writing: {
     title: 'Field Notes.',

@@ -31,9 +31,9 @@ const basePath = lang === 'de' ? '/de' : '';
         <ul class="space-y-2.5 text-[13px] text-gray-400 font-light">
           <li><a href={`${basePath}/about/`} data-track="about_click" class="hover:text-white transition-colors">{t.footer.about}</a></li>
           <li><a href={`${basePath}/writing/`} data-track="field_notes_click" class="hover:text-white transition-colors">{t.footer.fieldNotes}</a></li>
-          <li><a href="/breathline/" class="hover:text-white transition-colors">{t.footer.breathline}</a></li>
-          <li><a href="/starting-point/" class="hover:text-white transition-colors">{t.footer.startingPoint}</a></li>
-          <li><a href="/morning-standing-wave/" class="hover:text-white transition-colors">{t.footer.standingWave}</a></li>
+          <li><a href={`${basePath}/breathline/`} class="hover:text-white transition-colors">{t.footer.breathline}</a></li>
+          <li><a href={`${basePath}/starting-point/`} class="hover:text-white transition-colors">{t.footer.startingPoint}</a></li>
+          <li><a href={`${basePath}/morning-standing-wave/`} class="hover:text-white transition-colors">{t.footer.standingWave}</a></li>
           <li><a href={`${basePath}/terms/`} class="hover:text-white transition-colors">{t.footer.terms}</a></li>
           <li><a href={`${basePath}/privacy/`} class="hover:text-white transition-colors">{t.footer.privacy}</a></li>
           <li><a href={`${basePath}/impressum/`} class="hover:text-white transition-colors">{t.footer.impressum}</a></li>
@@ -68,7 +68,7 @@ const basePath = lang === 'de' ? '/de' : '';
         <div class="micro-label-accent mb-4">{t.footer.contact}</div>
         <ul class="space-y-2.5 text-[13px] text-gray-400 font-light">
           <li><a href="mailto:info@returnapp.org" class="hover:text-white transition-colors">info@returnapp.org</a></li>
-          <li class="text-gray-600">Zürich, Switzerland</li>
+          <li class="text-gray-600">{lang === 'de' ? 'Zürich, Schweiz' : 'Zürich, Switzerland'}</li>
         </ul>
       </div>
     </div>

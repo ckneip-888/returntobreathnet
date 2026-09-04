@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Datenschutz — Return App" description="Datenschutzerklärung für die Return-App." lang="de">
+  <article class="max-w-3xl mx-auto px-6 lg:px-8 pt-32 pb-24">
+    <h1 class="text-4xl font-light tracking-tight text-slate-50 leading-tight mb-2">Datenschutz.</h1>
+    <p class="text-sm text-slate-500 font-light mb-10">Zuletzt aktualisiert: 31. August 2026</p>
+
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-4">
+      Deine Privatsphäre hat Vorrang. <strong class="text-slate-100 font-medium">Return</strong> ("die App") ist nach dem Prinzip <strong class="text-slate-100 font-medium">Privacy by Design</strong> gebaut. Diese Datenschutzerklärung erklärt, wie wir mit Daten umgehen, wenn du die App und die Website unter <strong class="text-slate-100 font-medium">returntobreath.net</strong> (der "Service") nutzt.
+    </p>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-10">
+      Wir halten uns an das <strong class="text-slate-100 font-medium">Schweizer Bundesgesetz über den Datenschutz (FADP/DSG)</strong> und, soweit anwendbar, die <strong class="text-slate-100 font-medium">Datenschutz-Grundverordnung (GDPR)</strong>.
+    </p>
+
+    <hr class="border-slate-800 my-10" />
+
+    <h2 class="text-xl font-light tracking-tight text-slate-50 mb-4">1. Verantwortliche Stelle</h2>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-10">
+      Da Return von einer Privatperson mit Sitz in Zürich, Schweiz, betrieben wird, kannst du die verantwortliche Stelle bei Datenschutzfragen direkt erreichen unter:
+      <a href="mailto:info@returnapp.org" class="text-sapphire-400 hover:text-sapphire-300 transition-colors">info@returnapp.org</a>
+    </p>
+
+    <hr class="border-slate-800 my-10" />
+
+    <h2 class="text-xl font-light tracking-tight text-slate-50 mb-4">2. Kerndaten der App: Nur lokale Speicherung</h2>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-4">
+      Wenn du Return nutzt, um Atemsitzungen zu protokollieren oder deine Tagesstimmung zu erfassen, <strong class="text-slate-100 font-medium">werden diese Daten ausschliesslich im lokalen Speicher deines Geräts gespeichert.</strong>
+    </p>
+    <ul class="list-disc list-inside space-y-2 text-[15px] text-slate-300 font-light leading-relaxed mb-10 pl-2">
+      <li><strong class="text-slate-100 font-medium">Keine Server-Uploads:</strong> Wir sammeln, sehen, speichern oder übertragen deine Atemprotokolle oder Stimmungsdaten nicht auf externe Server.</li>
+      <li><strong class="text-slate-100 font-medium">Deine Kontrolle:</strong> In der App kannst du alle Daten sofort löschen oder deine vollständige Historie als .csv-Datei herunterladen.</li>
+    </ul>
+
+    <hr class="border-slate-800 my-10" />
+
+    <h2 class="text-xl font-light tracking-tight text-slate-50 mb-4">3. Daten, die Dritte erheben</h2>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-6">
+      Die App nutzt Apple und Google für die Distribution der Software und die Zahlungsabwicklung. Die Website wird auf GitHub Pages gehostet und über Cloudflare ausgeliefert. Der wöchentliche Newsletter wird mit Buttondown versendet, wenn du dich anmeldest. Diese Parteien verarbeiten Daten nach ihren eigenen Datenschutzrichtlinien:
+    </p>
+
+    <div class="overflow-x-auto mb-10 border border-slate-800 rounded-lg">
+      <table class="w-full text-left border-collapse text-[14px]">
+        <thead>
+          <tr class="border-b border-slate-800 bg-slate-900/50">
+            <th class="p-4 font-medium text-slate-100 w-1/4">Anbieter</th>
+            <th class="p-4 font-medium text-slate-100 w-1/4">Zweck</th>
+            <th class="p-4 font-medium text-slate-100 w-2/4">Erhobene Datenarten</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-800 text-slate-300 font-light">
+          <tr>
+            <td class="p-4 font-medium text-slate-200">Apple App Store</td>
+            <td class="p-4">In-App-Käufe und Distribution</td>
+            <td class="p-4">Transaktionsdaten, Gerätekennungen, grundlegende Kontokennzahlen.</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-medium text-slate-200">Google Play Store / Google Analytics</td>
+            <td class="p-4">Distribution der mobilen App, Käufe und Store-Telemetrie (nicht auf der Website verwendet)</td>
+            <td class="p-4">Transaktionsdaten, Absturzprotokolle, Gerätemodell und aggregierte Nutzungsstatistiken (z. B. Sitzungsdauer).</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-medium text-slate-200">GitHub Pages</td>
+            <td class="p-4">Hosting der Website-Dateien</td>
+            <td class="p-4">Standard-Serverlogs, die IP-Adressen enthalten können, erhoben für Sicherheit und Netzbetrieb.</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-medium text-slate-200">Cloudflare</td>
+            <td class="p-4">Auslieferung der Website, Sicherheit und die in Abschnitt 4 beschriebenen Analytics</td>
+            <td class="p-4">Verbindungsdaten, die nötig sind, um die Seite auszuliefern (etwa IP-Adresse, User-Agent und angeforderte URL). Siehe Abschnitt 4 zur Website-Messung.</td>
+          </tr>
+          <tr>
+            <td class="p-4 font-medium text-slate-200">Buttondown</td>
+            <td class="p-4">Newsletter-Versand</td>
+            <td class="p-4">Die E-Mail-Adresse, die du bei der Anmeldung angibst, plus übliche Betriebsdaten einer Mailingliste. Abmeldung mit einem Klick.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr class="border-slate-800 my-10" />
+
+    <h2 class="text-xl font-light tracking-tight text-slate-50 mb-4">4. Website-Analytics</h2>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-4">
+      Die Website nutzt Cloudflares eigene Messwerkzeuge. Wir verwenden auf dieser Website kein Google Analytics, kein Google Tag Manager, kein Meta Pixel, kein Hotjar, kein Umami, kein Plausible, keine Werbe-Pixel, kein Session Replay und keine Heatmaps.
+    </p>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-4">
+      <strong class="text-slate-100 font-medium">Cloudflare Web Analytics</strong> erfasst aggregierte Seitenaufrufe, ungefähre Besucherzahlen, Referrer, Land, Geräte- und Browsertyp sowie Performance-Informationen. Cloudflare beschreibt dieses Produkt als cookieless. Wir senden keine Namen, E-Mail-Adressen, Konto-IDs oder andere eigenen Personenkennungen dorthin.
+    </p>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-4">
+      <strong class="text-slate-100 font-medium">Cloudflare Zaraz</strong> erfasst nur diese benannten Ereignisse: App Store click, Google Play click, protocol section view, Field Notes click, About click, Explore the Breathline click, Set Your Standing Wave click und Start the exercise click. Ereignisse werden nur als Event-Namen gesendet. Wir hängen keine E-Mail-Adressen, Namen, IP-Adressen, User-IDs, Atem- oder Gesundheitsdaten, Protokoll-Timings oder URL-Query-Parameter an diese Ereignisse.
+    </p>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-4">
+      Wir tracken auf der Website keine einzelnen Atemsitzungen. Wir tracken kein Scrollen. Korrespondenz bleibt unter <a href="mailto:info@returnapp.org" class="text-sapphire-400 hover:text-sapphire-300 transition-colors">info@returnapp.org</a>.
+    </p>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-10">
+      Diese Website-Messwerkzeuge werden nicht verwendet, um Werbung zu zeigen. Die Seite setzt dafür keine Analytics-Cookies, und wir zeigen für diese Messung kein Cookie-Consent-Banner. Wenn wir Werkzeuge hinzufügen, die Informationen auf deinem Gerät speichern, aktualisieren wir diese Seite.
+    </p>
+
+    <hr class="border-slate-800 my-10" />
+
+    <h2 class="text-xl font-light tracking-tight text-slate-50 mb-4">5. Datenschutz von Kindern</h2>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-10">
+      Die App ist auf Personen <strong class="text-slate-100 font-medium">ab 13 Jahren</strong> beschränkt. Wir erheben wissentlich keine personenbezogenen Daten von Kindern unter 13. Wenn wir feststellen, dass ein Kind unter 13 uns personenbezogene Daten übermittelt hat (etwa über Support-E-Mails), löschen wir sie unverzüglich.
+    </p>
+
+    <hr class="border-slate-800 my-10" />
+
+    <h2 class="text-xl font-light tracking-tight text-slate-50 mb-4">6. Deine Rechte (FADP & GDPR)</h2>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-4">
+      Je nach Wohnsitz (etwa Schweiz oder Europäischer Wirtschaftsraum) hast du die folgenden Rechte in Bezug auf die Datenverarbeitung:
+    </p>
+    <ul class="list-disc list-inside space-y-2 text-[15px] text-slate-300 font-light leading-relaxed mb-10 pl-2">
+      <li><strong class="text-slate-100 font-medium">Auskunftsrecht:</strong> Du kannst alle App-Daten jederzeit über den lokalen .csv-Download exportieren.</li>
+      <li><strong class="text-slate-100 font-medium">Recht auf Löschung:</strong> Du kannst alle App-Daten sofort über die Einstellungen in der App löschen.</li>
+      <li><strong class="text-slate-100 font-medium">Recht auf Information:</strong> Du kannst uns unter info@returnapp.org fragen, welche Daten (falls vorhanden, etwa Support-E-Mails) wir zu dir haben.</li>
+    </ul>
+
+    <hr class="border-slate-800 my-10" />
+
+    <h2 class="text-xl font-light tracking-tight text-slate-50 mb-4">7. Änderungen dieser Datenschutzerklärung</h2>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed mb-10">
+      Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Änderungen erscheinen auf dieser Seite mit einem aktualisierten Datum „Zuletzt aktualisiert“. Du solltest diese Seite regelmässig auf Änderungen prüfen.
+    </p>
+
+    <hr class="border-slate-800 my-10" />
+
+    <h2 class="text-xl font-light tracking-tight text-slate-50 mb-4">8. Kontakt</h2>
+    <p class="text-[15px] text-slate-300 font-light leading-relaxed">
+      Bei Fragen zu dieser Datenschutzerklärung, deinen Rechten oder unserem Umgang mit Daten erreichst du uns unter:
+      <a href="mailto:info@returnapp.org" class="text-sapphire-400 hover:text-sapphire-300 transition-colors">info@returnapp.org</a>
+    </p>
+  </article>
+</BaseLayout>

@@ -1,0 +1,819 @@
+---
+import { copy, type Lang } from '../i18n';
+
+export interface Props {
+  lang?: Lang;
+}
+
+const { lang = 'en' } = Astro.props;
+const t = copy(lang);
+const homeHref = lang === 'de' ? '/de/' : '/';
+const blCopy = {
+  inhale: t.breathline.inhale,
+  exhale: t.breathline.exhale,
+  hold: t.breathline.hold,
+  cycleOf: t.breathline.cycleOf,
+};
+---
+
+  <div class="bl-root">
+    <canvas id="stars" aria-hidden="true"></canvas>
+
+    <div id="app" class="bl-app">
+      <div id="screen-0" class="bl-screen active">
+        <p class="bl-prompt" set:html={t.breathline.promptHtml}></p>
+        <button class="bl-btn-start" type="button" onclick="goTo(1)">{t.breathline.start}</button>
+      </div>
+
+      <div id="screen-1" class="bl-screen">
+        <div class="bl-scroll">
+          <div class="bl-phase-label">{t.breathline.phase1Label}</div>
+          <p class="bl-body" set:html={t.breathline.phase1Body}></p>
+        </div>
+        <div class="bl-btn-row">
+          <button class="bl-btn-ghost" type="button" onclick="goTo(0)">{t.breathline.back}</button>
+          <button class="bl-btn" type="button" onclick="goTo(2)">{t.breathline.nextPhase}</button>
+        </div>
+      </div>
+
+      <div id="screen-2" class="bl-screen">
+        <div class="bl-scroll">
+          <div class="bl-phase-label">{t.breathline.phase2Label}</div>
+          <p class="bl-body" set:html={t.breathline.phase2Body}></p>
+        </div>
+        <div class="bl-btn-row">
+          <button class="bl-btn-ghost" type="button" onclick="goTo(1)">{t.breathline.back}</button>
+          <button class="bl-btn" type="button" onclick="goTo(3)">{t.breathline.nextPhase}</button>
+        </div>
+      </div>
+
+      <div id="screen-3" class="bl-screen">
+        <div class="bl-scroll">
+          <div class="bl-phase-label">{t.breathline.phase3Label}</div>
+          <p class="bl-body" set:html={t.breathline.phase3Body}></p>
+        </div>
+        <div class="bl-btn-row">
+          <button class="bl-btn-ghost" type="button" onclick="goTo(2)">{t.breathline.back}</button>
+          <button class="bl-btn" type="button" onclick="startBreathing(false)">{t.breathline.start}</button>
+        </div>
+      </div>
+
+      <div id="phase4-screen" class="bl-screen" style="max-width:680px;">
+        <div class="bl-scroll">
+          <div class="bl-phase-label">{t.breathline.phase4Label}</div>
+          <p class="bl-body" set:html={t.breathline.phase4Body}></p>
+
+          <div class="bl-settings-outer">
+            <div class="bl-settings-cross">
+              <div></div>
+              <div class="bl-setting-cell">
+                <label for="s-top">{t.breathline.topHold}</label>
+                <input type="number" id="s-top" value="5" min="5" max="9" />
+              </div>
+              <div></div>
+
+              <div class="bl-setting-cell bl-setting-left">
+                <label for="s-inhale">{t.breathline.inhale}</label>
+                <input type="number" id="s-inhale" value="5" min="5" max="9" />
+              </div>
+              <div class="bl-setting-center"></div>
+              <div class="bl-setting-cell bl-setting-right">
+                <input type="number" id="s-exhale" value="5" min="5" max="9" />
+                <label for="s-exhale">{t.breathline.exhale}</label>
+              </div>
+
+              <div></div>
+              <div class="bl-setting-cell">
+                <input type="number" id="s-bottom" value="5" min="5" max="9" />
+                <label for="s-bottom">{t.breathline.bottomHold}</label>
+              </div>
+              <div></div>
+            </div>
+          </div>
+
+          <p class="bl-note">
+            {t.breathline.phase4Note}
+          </p>
+        </div>
+        <button class="bl-btn-start" type="button" onclick="startBreathing(true)">{t.breathline.start}</button>
+      </div>
+
+      <div id="phase5-screen" class="bl-screen">
+        <div class="bl-phase-label">{t.breathline.phase5Label}</div>
+        <p class="bl-body" set:html={t.breathline.phase5Body}></p>
+        <p class="bl-thank-you">{t.breathline.thankYou}</p>
+        <div class="bl-btn-row" style="margin-top: 2.5rem;">
+          <a href={homeHref} class="bl-btn-ghost bl-btn-link">{t.breathline.home}</a>
+          <button class="bl-btn-ghost" type="button" onclick="restart()">{t.breathline.restart}</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="breath-layer">
+      <div id="breath-canvas-wrap">
+        <canvas id="breathCanvas" width="300" height="300"></canvas>
+        <div id="timer-display"></div>
+      </div>
+      <div id="phase-label-display"></div>
+    </div>
+
+    <div id="cycle-count"></div>
+    <button id="done-btn" type="button" onclick="onDone()">{t.breathline.done}</button>
+
+    <button id="menu-btn" type="button" onclick="toggleMenu()" aria-label={t.breathline.settings}>
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+        <circle cx="9" cy="3.5" r="1.3" fill="rgba(255,255,255,0.5)"></circle>
+        <circle cx="9" cy="9" r="1.3" fill="rgba(255,255,255,0.5)"></circle>
+        <circle cx="9" cy="14.5" r="1.3" fill="rgba(255,255,255,0.5)"></circle>
+      </svg>
+    </button>
+    <div id="menu-panel">
+      <div class="bl-menu-item" onclick="toggleSetting('sound')">
+        <div class="bl-toggle on" id="toggle-sound"></div>
+        {t.breathline.sound}
+      </div>
+      <div class="bl-menu-item" onclick="toggleSetting('labels')">
+        <div class="bl-toggle on" id="toggle-labels"></div>
+        {t.breathline.labels}
+      </div>
+    </div>
+  </div>
+
+<style is:global>
+  .bl-root {
+    position: relative;
+    isolation: isolate;
+    min-height: calc(100dvh - 4rem);
+    padding: 6.5rem 1.5rem 5rem;
+  }
+
+  canvas#stars {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .bl-app {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100dvh - 12rem);
+  }
+
+  .bl-screen {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 640px;
+    text-align: center;
+    animation: bl-fade-in 1.2s ease;
+  }
+  .bl-screen.active { display: flex; }
+
+  @keyframes bl-fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .bl-phase-label {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-weight: 500;
+    font-size: 10px;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: #9CA3AF;
+    margin-bottom: 2.5rem;
+  }
+
+  .bl-prompt {
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 300;
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
+    line-height: 1.75;
+    color: rgba(255,255,255,0.92);
+    margin-bottom: 3rem;
+  }
+
+  .bl-body {
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 300;
+    font-size: clamp(0.95rem, 2.2vw, 1.05rem);
+    line-height: 1.85;
+    color: rgba(255,255,255,0.82);
+    margin-bottom: 2.5rem;
+    text-align: left;
+  }
+  .bl-body strong {
+    color: #fff;
+    font-weight: 500;
+  }
+  .bl-aside {
+    color: #9CA3AF;
+    font-style: italic;
+  }
+
+  .bl-btn-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .bl-btn,
+  .bl-btn-ghost,
+  .bl-btn-start,
+  .bl-btn-link {
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    background: none;
+    cursor: pointer;
+    transition: opacity 0.3s, color 0.3s, border-color 0.3s;
+    padding: 0.65rem 1.45rem;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bl-btn {
+    color: rgba(255,255,255,0.92);
+    border: 1px solid rgba(220, 38, 38, 0.7);
+  }
+  .bl-btn:hover { opacity: 0.75; }
+
+  .bl-btn-ghost {
+    color: rgba(255,255,255,0.55);
+    border: 1px solid rgba(255,255,255,0.18);
+  }
+  .bl-btn-ghost:hover { color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.4); }
+
+  .bl-btn-start {
+    color: rgba(255,255,255,0.92);
+    border: 1px solid rgba(220, 38, 38, 0.75);
+    font-size: 0.78rem;
+    padding: 0.75rem 2.5rem;
+  }
+  .bl-btn-start:hover { opacity: 0.75; }
+
+  #breath-layer {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+  }
+  #breath-layer.active { display: flex; }
+
+  #breath-canvas-wrap {
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  canvas#breathCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+  }
+  #timer-display {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter, system-ui, sans-serif;
+    font-size: clamp(4rem, 14vw, 6.5rem);
+    font-weight: 200;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.55);
+    pointer-events: none;
+    z-index: 3;
+  }
+  #phase-label-display {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-weight: 400;
+    font-size: 0.68rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.62);
+    margin-top: 2rem;
+    min-height: 1.2em;
+    transition: opacity 0.4s;
+    z-index: 40;
+  }
+
+  #done-btn {
+    position: fixed;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.18em;
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    background: none;
+    border: 1px solid rgba(255,255,255,0.22);
+    color: rgba(255,255,255,0.48);
+    padding: 0.6rem 2rem;
+    cursor: pointer;
+    transition: color 0.3s, border-color 0.3s;
+    z-index: 45;
+  }
+  #done-btn:hover { color: rgba(255,255,255,0.82); border-color: rgba(255,255,255,0.45); }
+
+  #cycle-count {
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.4);
+    position: fixed;
+    top: 5.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 0.12em;
+    display: none;
+    z-index: 45;
+  }
+  #cycle-count.visible { display: block; }
+
+  #menu-btn {
+    position: fixed;
+    top: 5.5rem;
+    right: 1.4rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 45;
+    padding: 0.4rem;
+    display: none;
+  }
+  #menu-btn.visible { display: block; }
+
+  #menu-panel {
+    position: fixed;
+    top: 7.6rem;
+    right: 1.4rem;
+    background: rgba(0, 8, 20, 0.94);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 1rem 1.2rem;
+    z-index: 45;
+    display: none;
+    flex-direction: column;
+    gap: 0.85rem;
+    min-width: 155px;
+  }
+  #menu-panel.open { display: flex; }
+
+  .bl-menu-item {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.62);
+    cursor: pointer;
+    letter-spacing: 0.06em;
+    user-select: none;
+  }
+  .bl-menu-item:hover { color: rgba(255,255,255,0.9); }
+
+  .bl-toggle {
+    width: 28px;
+    height: 14px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 7px;
+    position: relative;
+    flex-shrink: 0;
+    transition: border-color 0.2s;
+  }
+  .bl-toggle::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    background: rgba(255,255,255,0.35);
+    border-radius: 50%;
+    transition: transform 0.2s, background 0.2s;
+  }
+  .bl-toggle.on { border-color: rgba(220, 38, 38, 0.75); }
+  .bl-toggle.on::after { transform: translateX(14px); background: #DC2626; }
+
+  .bl-settings-outer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 0 0.5rem;
+  }
+  .bl-settings-cross {
+    display: grid;
+    grid-template-columns: 110px 90px 110px;
+    grid-template-rows: 80px 80px 80px;
+    align-items: center;
+    justify-items: center;
+  }
+  .bl-setting-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+  }
+  .bl-setting-cell label {
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 10px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #9CA3AF;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  .bl-setting-cell input[type=number] {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.18);
+    color: rgba(255,255,255,0.88);
+    font-family: 'IBM Plex Mono', ui-monospace, monospace;
+    font-size: 1.2rem;
+    font-weight: 400;
+    width: 56px;
+    height: 46px;
+    text-align: center;
+    padding: 0;
+    outline: none;
+    -moz-appearance: textfield;
+  }
+  .bl-setting-cell input[type=number]::-webkit-inner-spin-button,
+  .bl-setting-cell input[type=number]::-webkit-outer-spin-button { -webkit-appearance: none; }
+  .bl-setting-cell input[type=number]:focus { border-color: rgba(220, 38, 38, 0.55); }
+
+  .bl-setting-left,
+  .bl-setting-right {
+    flex-direction: row;
+    gap: 0.6rem;
+  }
+  .bl-setting-center {
+    grid-column: 2;
+    grid-row: 2;
+    width: 54px;
+    height: 54px;
+    border: 1px solid rgba(220, 38, 38, 0.28);
+    border-radius: 50%;
+  }
+
+  .bl-note {
+    font-size: 0.88rem;
+    color: #9CA3AF;
+    line-height: 1.75;
+    margin: 1.4rem 0 1.6rem;
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 300;
+    max-width: 480px;
+    text-align: center;
+  }
+
+  .bl-scroll {
+    max-height: 68vh;
+    overflow-y: auto;
+    width: 100%;
+    padding-right: 0.4rem;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255,255,255,0.1) transparent;
+  }
+
+  .bl-thank-you {
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 0.88rem;
+    font-weight: 300;
+    color: rgba(255,255,255,0.38);
+    margin-top: 2.2rem;
+    letter-spacing: 0.18em;
+  }
+
+  body.bl-breathing {
+    overflow: hidden;
+  }
+  body.bl-breathing footer {
+    visibility: hidden;
+  }
+  body.bl-breathing .bl-app {
+    visibility: hidden;
+  }
+
+  @media (max-width: 480px) {
+    .bl-body {
+      font-size: 1rem;
+      line-height: 1.9;
+    }
+    .bl-prompt {
+      font-size: 1.18rem;
+    }
+    .bl-settings-cross {
+      grid-template-columns: 96px 72px 96px;
+    }
+  }
+</style>
+
+<script is:inline define:vars={{ blCopy }}>
+  const cfg = { sound: true, labels: true };
+  let audioCtx = null;
+
+  function formatCycle(n, max) {
+    return String(blCopy.cycleOf).replace('{n}', String(n)).replace('{max}', String(max));
+  }
+
+  function getAudio() {
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    return audioCtx;
+  }
+
+  function playBell(freq, dur) {
+    if (!cfg.sound) return;
+    dur = dur || 2.5;
+    try {
+      const ac = getAudio();
+      [[freq, 0.18, dur], [freq * 2.01, 0.06, dur * 0.65]].forEach(([f, g, d]) => {
+        const o = ac.createOscillator(), gn = ac.createGain();
+        o.connect(gn); gn.connect(ac.destination);
+        o.type = 'sine'; o.frequency.setValueAtTime(f, ac.currentTime);
+        gn.gain.setValueAtTime(0, ac.currentTime);
+        gn.gain.linearRampToValueAtTime(g, ac.currentTime + 0.015);
+        gn.gain.exponentialRampToValueAtTime(0.001, ac.currentTime + d);
+        o.start(ac.currentTime); o.stop(ac.currentTime + d);
+      });
+    } catch (_) {}
+  }
+
+  function setBreathing(on) {
+    document.body.classList.toggle('bl-breathing', on);
+  }
+
+  function toggleMenu() {
+    document.getElementById('menu-panel').classList.toggle('open');
+  }
+
+  function toggleSetting(key) {
+    cfg[key] = !cfg[key];
+    document.getElementById('toggle-' + key).classList.toggle('on', cfg[key]);
+    if (key === 'labels') {
+      document.getElementById('phase-label-display').style.opacity = cfg.labels ? '1' : '0';
+    }
+  }
+
+  document.addEventListener('click', e => {
+    const p = document.getElementById('menu-panel'), b = document.getElementById('menu-btn');
+    if (p && b && p.classList.contains('open') && !p.contains(e.target) && !b.contains(e.target))
+      p.classList.remove('open');
+  });
+
+  function goTo(n) {
+    setBreathing(false);
+    document.querySelectorAll('.bl-screen').forEach(s => s.classList.remove('active'));
+    const el = document.getElementById('screen-' + n);
+    if (el) el.classList.add('active');
+    document.getElementById('breath-layer').classList.remove('active');
+    document.getElementById('menu-btn').classList.remove('visible');
+    document.getElementById('menu-panel').classList.remove('open');
+  }
+
+  let phase4Mode = false;
+  let maxCycles  = null;
+  let stopped    = false;
+  let raf        = null;
+  let holdTimer  = null;
+
+  function startBreathing(isPhase4) {
+    phase4Mode = isPhase4;
+    maxCycles  = isPhase4 ? 9 : null;
+    stopped    = false;
+    setBreathing(true);
+
+    document.querySelectorAll('.bl-screen').forEach(s => s.classList.remove('active'));
+    document.getElementById('breath-layer').classList.add('active');
+    document.getElementById('menu-btn').classList.add('visible');
+    document.getElementById('menu-panel').classList.remove('open');
+
+    const i = isPhase4 ? clamp(+document.getElementById('s-inhale').value, 5, 9) : 5;
+    const t = isPhase4 ? clamp(+document.getElementById('s-top').value,    5, 9) : 5;
+    const e = isPhase4 ? clamp(+document.getElementById('s-exhale').value, 5, 9) : 5;
+    const b = isPhase4 ? clamp(+document.getElementById('s-bottom').value, 5, 9) : 5;
+
+    countdown(i, t, e, b);
+  }
+
+  function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, isNaN(v) ? lo : v)); }
+
+  const CX = 150, CY = 150, DOT = 4, OUTER = 110;
+
+  function getCtx() {
+    return document.getElementById('breathCanvas').getContext('2d');
+  }
+
+  function drawScene(progress) {
+    const ctx = getCtx();
+    ctx.clearRect(0, 0, 300, 300);
+
+    ctx.beginPath();
+    ctx.arc(CX, CY, OUTER, 0, Math.PI * 2);
+    ctx.strokeStyle = 'rgba(255,255,255,0.13)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    const r = DOT + (OUTER - DOT) * progress;
+
+    if (progress > 0.005) {
+      const g = ctx.createRadialGradient(CX, CY, 0, CX, CY, r);
+      g.addColorStop(0,   'rgba(220,38,38,0.06)');
+      g.addColorStop(0.6, 'rgba(220,38,38,0.02)');
+      g.addColorStop(1,   'rgba(255,255,255,0)');
+      ctx.beginPath();
+      ctx.arc(CX, CY, r, 0, Math.PI * 2);
+      ctx.fillStyle = g;
+      ctx.fill();
+    }
+
+    ctx.beginPath();
+    ctx.arc(CX, CY, r, 0, Math.PI * 2);
+    ctx.strokeStyle = `rgba(255,255,255,${0.45 + progress * 0.45})`;
+    ctx.lineWidth = 1.3;
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(CX, CY, DOT, 0, Math.PI * 2);
+    ctx.fillStyle = 'rgba(255,255,255,0.92)';
+    ctx.fill();
+  }
+
+  function countdown(i, t, e, b) {
+    const timerEl = document.getElementById('timer-display');
+    const doneBtn = document.getElementById('done-btn');
+    const cycleEl = document.getElementById('cycle-count');
+
+    document.getElementById('phase-label-display').textContent = '';
+    doneBtn.style.display = 'none';
+    cycleEl.classList.remove('visible');
+
+    drawScene(0);
+
+    let n = 5;
+    timerEl.textContent = n;
+
+    const tick = setInterval(() => {
+      if (stopped) { clearInterval(tick); return; }
+      n--;
+      if (n > 0) {
+        timerEl.textContent = n;
+      } else {
+        clearInterval(tick);
+        timerEl.textContent = '';
+        doneBtn.style.display = 'block';
+        if (maxCycles) {
+          cycleEl.classList.add('visible');
+          cycleEl.textContent = formatCycle(1, maxCycles);
+        }
+        cycle(i, t, e, b, 1);
+      }
+    }, 1000);
+  }
+
+  function ease(t) { return t < 0.5 ? 2*t*t : -1 + (4 - 2*t)*t; }
+
+  function animateTo(durSec, fromP, toP, onComplete) {
+    const start = performance.now();
+    const dms   = durSec * 1000;
+    function frame(now) {
+      if (stopped) return;
+      const raw = Math.min((now - start) / dms, 1);
+      const p   = fromP + (toP - fromP) * ease(raw);
+      drawScene(p);
+      if (raw < 1) {
+        raf = requestAnimationFrame(frame);
+      } else {
+        onComplete();
+      }
+    }
+    raf = requestAnimationFrame(frame);
+  }
+
+  function holdFor(durSec, progress, onComplete) {
+    drawScene(progress);
+    holdTimer = setTimeout(() => { if (!stopped) onComplete(); }, durSec * 1000);
+  }
+
+  function cycle(i, t, e, b, num) {
+    if (stopped) return;
+
+    const cycleEl = document.getElementById('cycle-count');
+    const lblEl   = document.getElementById('phase-label-display');
+
+    if (maxCycles !== null && num > maxCycles) { onDone(); return; }
+    if (maxCycles !== null) cycleEl.textContent = formatCycle(num, maxCycles);
+
+    setLabel(lblEl, blCopy.inhale);
+    playBell(432);
+
+    animateTo(i, 0, 1, () => {
+      setLabel(lblEl, blCopy.hold);
+      playBell(528);
+      holdFor(t, 1, () => {
+        setLabel(lblEl, blCopy.exhale);
+        playBell(396);
+        animateTo(e, 1, 0, () => {
+          setLabel(lblEl, blCopy.hold);
+          playBell(264);
+          holdFor(b, 0, () => {
+            cycle(i, t, e, b, num + 1);
+          });
+        });
+      });
+    });
+  }
+
+  function setLabel(el, txt) {
+    el.textContent = txt;
+    el.style.opacity = cfg.labels ? '1' : '0';
+  }
+
+  function onDone() {
+    stopped = true;
+    if (raf) cancelAnimationFrame(raf);
+    if (holdTimer) clearTimeout(holdTimer);
+    setBreathing(false);
+
+    document.getElementById('done-btn').style.display = 'none';
+    document.getElementById('cycle-count').classList.remove('visible');
+    document.getElementById('breath-layer').classList.remove('active');
+    document.getElementById('menu-btn').classList.remove('visible');
+    document.getElementById('menu-panel').classList.remove('open');
+    document.getElementById('timer-display').textContent = '';
+    document.getElementById('phase-label-display').textContent = '';
+    getCtx().clearRect(0, 0, 300, 300);
+
+    stopped = false;
+
+    document.querySelectorAll('.bl-screen').forEach(s => s.classList.remove('active'));
+    document.getElementById(phase4Mode ? 'phase5-screen' : 'phase4-screen').classList.add('active');
+  }
+
+  function restart() {
+    stopped = false;
+    goTo(0);
+  }
+
+  (function() {
+    const canvas = document.getElementById('stars');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+    let W, H, stars = [];
+
+    function resize() {
+      W = canvas.width  = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+      stars = Array.from({length: 160}, () => ({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        r: Math.random() * 0.75 + 0.12,
+        o: Math.random() * 0.28 + 0.04,
+        sp: Math.random() * 0.0025 + 0.0008,
+        ph: Math.random() * Math.PI * 2
+      }));
+    }
+
+    function draw(t) {
+      ctx.clearRect(0, 0, W, H);
+      for (const s of stars) {
+        const op = s.o * (0.55 + 0.45 * Math.sin(t * s.sp + s.ph));
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255,255,255,${op})`;
+        ctx.fill();
+      }
+      requestAnimationFrame(draw);
+    }
+
+    resize();
+    window.addEventListener('resize', resize);
+    requestAnimationFrame(draw);
+  })();
+
+  ['s-inhale','s-top','s-exhale','s-bottom'].forEach(id => {
+    const el = document.getElementById(id);
+    el.addEventListener('change', () => {
+      el.value = clamp(parseInt(el.value), 5, 9);
+    });
+  });
+</script>

@@ -1,43 +1,33 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import BreathingCube from '../../components/BreathingCube.astro';
+import Baseline from '../../components/home/Baseline.astro';
+import CustomBuilder from '../../components/home/CustomBuilder.astro';
+import Download from '../../components/home/Download.astro';
+import FieldNotesTeaser from '../../components/home/FieldNotesTeaser.astro';
+import Hero from '../../components/home/Hero.astro';
+import HowItWorks from '../../components/home/HowItWorks.astro';
+import Physiology from '../../components/home/Physiology.astro';
+import Pitches from '../../components/home/Pitches.astro';
+import Pricing from '../../components/home/Pricing.astro';
+import Protocol from '../../components/home/Protocol.astro';
+import { copy } from '../../i18n';
+
+const t = copy('de');
 ---
 
 <BaseLayout
-  title="Return to Breath — Die Return-App"
-  description="Return ist ein stilles Atem-Werkzeug zur Regulation des Nervensystems unter akuter kognitiver Belastung, Identitätswandel und Zukunftsangst."
+  title={t.homeMeta.title}
+  description={t.homeMeta.description}
   lang="de"
 >
-  <section class="relative pt-32 pb-24 lg:pt-44 lg:pb-32 overflow-hidden">
-    <div class="relative max-w-3xl mx-auto px-6 text-center z-10">
-      <div class="flex justify-center mb-12">
-        <BreathingCube size={160} class="mx-auto" />
-      </div>
-
-      <div class="micro-label-accent mb-6">DIE DEUTSCHE AUSGABE · IN VORBEREITUNG</div>
-
-      <h1 class="text-5xl sm:text-6xl lg:text-7xl font-light tracking-tight text-white leading-[1.05] mb-7">
-        Zurück zum Atem.
-      </h1>
-
-      <p class="text-xl sm:text-2xl font-light text-gray-300 max-w-2xl mx-auto leading-relaxed mb-4">
-        Wenn die Welt nicht langsamer wird, kann dein Atem es.
-      </p>
-
-      <p class="text-[15px] text-gray-500 max-w-2xl mx-auto leading-relaxed mb-12 font-light">
-        Die deutschsprachige Ausgabe von returntobreath.net erscheint in Kürze. Bis dahin verweisen wir auf die englische Ausgabe.
-      </p>
-
-      <div class="flex flex-col sm:flex-row gap-3 justify-center mb-16">
-        <a
-          href="/"
-          class="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-full text-[14px] font-medium text-white tracking-wide border border-gray-700 bg-panel hover:border-gray-600 transition-all"
-        >
-          <span>Zur englischen Ausgabe →</span>
-        </a>
-      </div>
-
-      <div class="micro-label">DEUTSCHE AUSGABE · GEPLANT 2026</div>
-    </div>
-  </section>
+  <Hero lang="de" />
+  <Protocol lang="de" />
+  <Pitches lang="de" />
+  <HowItWorks lang="de" />
+  <CustomBuilder lang="de" />
+  <Pricing lang="de" />
+  <Physiology lang="de" />
+  <Baseline lang="de" />
+  <Download lang="de" />
+  <FieldNotesTeaser lang="de" />
 </BaseLayout>
