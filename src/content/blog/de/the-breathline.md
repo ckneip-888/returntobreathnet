@@ -26,7 +26,7 @@ Einatmen ist Wind. Ausatmen ist Wind. Die Pause ist, wo du hören kannst, was de
 
 Hier ist etwas, bei dem ich vorsichtig sein will.
 
-Ich behaupte nicht, die Breathline sei mystisch. Sie ist mechanisch. Sie ist der Moment der Nullbewegung in einem zyklischen System, und in jedem oszillierenden System sind die Stillpunkte der Ort, an dem Messung möglich wird. Ingenieur:innen wissen das. Physiker:innen wissen das. Du weisst das — du hast den Moment der Nullbewegung oben im Bogen einer Schaukel gespürt, die Pause am Scheitel eines geworfenen Balls. Dieselbe Physik gilt in dir. Die Pause ist, wenn das System nicht in Schwankung ist und deshalb nicht im Rauschen.
+Ich behaupte nicht, die Breathline sei mystisch. Sie ist mechanisch. Sie ist der Moment der Nullbewegung in einem zyklischen System, und in jedem oszillierenden System sind die Stillpunkte der Ort, an dem Messung möglich wird. Ingenieure wissen das. Physiker wissen das. Du weisst das — du hast den Moment der Nullbewegung oben im Bogen einer Schaukel gespürt, die Pause am Scheitel eines geworfenen Balls. Dieselbe Physik gilt in dir. Die Pause ist, wenn das System nicht in Schwankung ist und deshalb nicht im Rauschen.
 
 Ungewöhnlich ist nicht der Mechanismus. Ungewöhnlich ist, was verfügbar wird, wenn du aufhörst, Rauschen zu erzeugen.
 

@@ -75,7 +75,7 @@ export const de = {
     guides: [
       {
         title: 'Finde deinen Einstieg',
-        body: 'Nicht jede:r kann still sitzen. Finde, welcher Einstieg zu deinem Nervensystem passt — und warum das keine Schwäche ist.',
+        body: 'Nicht jede Person kann still sitzen. Finde, welcher Einstieg zu deinem Nervensystem passt — und warum das keine Schwäche ist.',
         cta: 'Die Breathline erkunden',
         href: '/de/starting-point/',
       },
