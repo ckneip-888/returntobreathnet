@@ -44,7 +44,6 @@ const posts = allPosts.sort((a, b) => {
           href={`/writing/${post.id}/`}
           title={post.data.title}
           description={post.data.description}
-          pubDate={post.data.pubDate}
           tags={post.data.tags}
           lang="en"
           pinned={PINNED_SLUGS.includes(post.id)}

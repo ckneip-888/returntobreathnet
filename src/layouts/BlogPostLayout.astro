@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import { copy } from '../i18n';
 
 export interface Props {
   title: string;
@@ -14,19 +15,15 @@ export interface Props {
 
 const { title, description, pubDate, updatedDate, author, tags, slug, lang } = Astro.props;
 
-const formattedDate = pubDate.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', {
-  day: '2-digit',
-  month: '2-digit',
-  year: '2-digit',
-});
-
+const t = copy(lang);
 const siteUrl = 'https://returntobreath.net';
 const writingHref = lang === 'de' ? '/de/writing/' : '/writing/';
+const articlePath = `${writingHref}${slug}/`;
 
 const articleJsonLd = [
   {
     '@type': 'Article',
-    '@id': `${siteUrl}/writing/${slug}/`,
+    '@id': `${siteUrl}${articlePath}`,
     headline: title,
     description,
     author: { '@id': `${siteUrl}/#person-christoph` },
@@ -35,7 +32,7 @@ const articleJsonLd = [
     keywords: tags.join(', '),
     inLanguage: lang,
     publisher: { '@id': `${siteUrl}/#person-christoph` },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}/writing/${slug}/` },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}${articlePath}` },
   },
 ];
 ---
@@ -44,9 +41,8 @@ const articleJsonLd = [
   <article class="max-w-3xl mx-auto px-6 lg:px-8 pt-32 pb-24">
     <div class="flex items-baseline gap-4 mb-8 flex-wrap">
       <a href={writingHref} class="micro-label-accent hover:text-sapphire-300 transition-colors">
-        ← FIELD NOTES
+        ← {t.writing.back.toUpperCase()}
       </a>
-      <time datetime={pubDate.toISOString()} class="micro-label">{formattedDate}</time>
       {tags.length > 0 && <span class="micro-label">{tags.slice(0, 3).join(' · ').toUpperCase()}</span>}
     </div>
 

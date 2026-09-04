@@ -79,7 +79,7 @@ const shieldArrows = [
                   stroke-linecap="round"
                 />
                 <path
-                  d="M150 72 C164 48, 178 48, 192 72 S 220 96, 234 72 S 248 48, 262 72"
+                  d="M178 72 C183.33 60.48, 188.67 50, 194 50 C199.33 50, 204.67 60.48, 210 72 C215.33 83.52, 220.67 94, 226 94 C231.33 94, 236.67 83.52, 242 72"
                   fill="none"
                   stroke="#DC2626"
                   stroke-width="1.6"
@@ -89,25 +89,27 @@ const shieldArrows = [
             )}
             {visuals[i] === 'shield' && (
               <svg viewBox="0 0 200 130" class="w-[78%] h-auto" aria-hidden="true">
-                <path
-                  d="M72 22 L118 40 V70 C118 92 96 108 72 114 C48 108 26 92 26 70 V40 Z"
-                  fill="rgba(220,38,38,0.12)"
-                  stroke="#DC2626"
-                  stroke-width="1.5"
-                />
-                {shieldArrows.map((arrow) => (
-                  <g>
-                    <polyline
-                      points={`${arrow.from[0]},${arrow.from[1]} ${arrow.hit[0]},${arrow.hit[1]} ${arrow.head.baseX},${arrow.head.baseY}`}
-                      fill="none"
-                      stroke="#9CA3AF"
-                      stroke-width="1.45"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <polygon points={arrow.head.points} fill="#9CA3AF" />
-                  </g>
-                ))}
+                <g transform="translate(22, 2)">
+                  <path
+                    d="M72 22 L118 40 V70 C118 92 96 108 72 114 C48 108 26 92 26 70 V40 Z"
+                    fill="rgba(220,38,38,0.12)"
+                    stroke="#DC2626"
+                    stroke-width="1.5"
+                  />
+                  {shieldArrows.map((arrow) => (
+                    <g>
+                      <polyline
+                        points={`${arrow.from[0]},${arrow.from[1]} ${arrow.hit[0]},${arrow.hit[1]} ${arrow.head.baseX},${arrow.head.baseY}`}
+                        fill="none"
+                        stroke="#9CA3AF"
+                        stroke-width="1.45"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <polygon points={arrow.head.points} fill="#9CA3AF" />
+                    </g>
+                  ))}
+                </g>
               </svg>
             )}
             {visuals[i] === 'vagus' && (

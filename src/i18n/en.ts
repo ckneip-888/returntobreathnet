@@ -15,6 +15,7 @@ export const en = {
     appStore: 'Download on the App Store',
     googlePlay: 'Get it on Google Play',
     comingSoon: 'Coming soon',
+    download: 'Download Return',
   },
   sticker: {
     alt: 'Best experienced at low volume with headset',
@@ -27,12 +28,12 @@ export const en = {
     eyebrow: 'The Return Protocol',
     headline: 'The breath is your built-in tool for instant calm. Most people never use it consciously.',
     subhead:
-      'Return is a quiet utility for nervous system regulation. Built for those under acute cognitive load, navigating difficult life phases, or experiencing future anxiety. No streaks. No endless optimization. Open the app. Breathe for five minutes. Ground your day.',
+      'Return is a quiet utility for nervous system regulation. Built for those under acute cognitive load, navigating difficult life phases, or experiencing future anxiety—and for anyone who wants a way back. No streaks. No endless optimization. Open the app. Breathe for five minutes. Ground your day.',
   },
   protocol: {
     eyebrow: 'Timed respiratory patterns',
     headline: 'What is the Return to Breath protocol?',
-    body: 'It is a precision toolkit for nervous system modulation. Instead of guessing how to breathe, you select a measured pattern—a specific ratio of Inhale, Hold, Exhale, Hold—to elicit a targeted physiological response.',
+    body: 'It is a precision toolkit for nervous system modulation. You do not have to guess how to breathe. You select a measured pattern—Inhale, Hold, Exhale, Hold—and the physiology follows. If you want a place to begin, the two short guides below the graphic are there for you.',
     inhale: 'Inhale',
     hold: 'Hold',
     exhale: 'Exhale',
@@ -66,9 +67,23 @@ export const en = {
         use: 'Resilience, acute pressure.',
       },
     ],
+    guides: [
+      {
+        title: 'Find Your Starting Point',
+        body: 'Not everyone can sit still. Learn which entry point fits your nervous system—and why that’s not a limitation.',
+        cta: 'Explore the Breathline',
+        href: '/starting-point/',
+      },
+      {
+        title: 'The Morning Standing Wave',
+        body: 'Why 5.5 seconds in the morning sets your nervous system’s rhythm for the entire day—and how to feel it in your chest.',
+        cta: 'Set Your Standing Wave',
+        href: '/morning-standing-wave/',
+      },
+    ],
   },
   pitches: {
-    eyebrow: 'What is in it for me?',
+    eyebrow: 'What this offers you',
     items: [
       {
         title: 'The Sleep Switch',
@@ -83,8 +98,8 @@ export const en = {
         body: 'When your fight-or-flight is stuck ‘on,’ logic doesn’t work—hydraulics do. The 5.5-5.5 Coherence pattern is designed around your body’s resonant frequency, where respiration and cardiovascular oscillations can interact strongly.',
       },
       {
-        title: 'Total Customization for Your Body',
-        body: 'You are not a preset. Generic apps force one rhythm on everyone. Our Custom Builder lets you dial in your exact Inhale, Hold, Exhale, and Hold (1 to 10 seconds). You design the signal that fits your unique physiology.',
+        title: 'The 3D Cube for Extra Grounding',
+        body: 'The main visual 3D cube provides the most mathematically stable, low-entropy configuration possible. Its rigid 90° angles stimulate the brain’s grid cell network with perfect orthogonality, creating an immediate psychological sense of a structural “floor”—a grounded reference point for the nervous system.',
       },
       {
         title: 'The Digital Antidote',
@@ -154,7 +169,7 @@ export const en = {
   },
   download: {
     headline: 'Return to breath.',
-    body: 'A quiet tool for changing the breathing signal.',
+    body: 'A quiet tool for changing the breathing signal. When you need it, it is there.',
   },
   fieldNotes: {
     label: 'Field Notes',
@@ -168,13 +183,48 @@ export const en = {
     pageTitle: 'Breathline — Return',
     pageDescription:
       'A guided exploration to breathe any unresolved motion into stillness.',
+    start: 'Start',
+    back: 'Back',
+    nextPhase: 'Next Phase',
+    done: 'Done',
+    home: 'Home',
+    restart: 'Restart',
+    sound: 'Sound',
+    labels: 'Labels',
+    settings: 'Settings',
+    inhale: 'Inhale',
+    exhale: 'Exhale',
+    hold: 'Hold',
+    topHold: 'Top Hold',
+    bottomHold: 'Bottom Hold',
+    cycleOf: 'Cycle {n} of {max}',
+    thankYou: 'Thank you',
+    promptHtml:
+      'Where in your system — your life, your identity, your choices, your relationships — is there still unresolved motion?<br /><br />What pattern is still cycling without settling?<br /><br />What has not yet crossed into coherence?',
+    phase1Label: 'Phase 1 — Scan the field',
+    phase1Body:
+      'Close your eyes and take 3 full breath cycles (inhale, hold on top, exhale, hold at the bottom), emphasising the pauses.<br /><br />Then ask yourself at the breathline (hold on top and hold at the bottom):<br /><br /><strong>"What in my life is still reaching?"</strong><br /><br />Don\'t answer with your mind. Let the body or a sensation or an image respond.<br /><br />Ready?',
+    phase2Label: 'Phase 2 — Name it without story',
+    phase2Body:
+      'Once something surfaces, resist the urge to explain or justify it.<br /><br />Just name it cleanly.',
+    phase3Label: 'Phase 3 — Locate it in the breath',
+    phase3Body:
+      'Now breathe with this unresolved pattern in your awareness.<br /><br />Notice: Where in the breath cycle does it create tension?<br /><br />Does it spike during the inhale? <span class="bl-aside">(grasping, taking in, accumulating)</span><br />Does it grip during the top pause? <span class="bl-aside">(holding, controlling, not releasing)</span><br />Does it resist during the exhale? <span class="bl-aside">(fear of letting go, scarcity)</span><br />Does it collapse during the bottom pause? <span class="bl-aside">(emptiness feels threatening)</span><br /><br />The unbreathed parts will distort the natural rhythm when you bring them into awareness.<br /><br />Where does yours live in the cycle?<br /><br />Ready?',
+    phase4Label: 'Phase 4 — Breathe it into stillness',
+    phase4Body:
+      "Once you've located where it grips:<br /><br />Deliberately bring your attention to that phase of the breath.<br /><br />E.g. if it grips on the exhale:<br />Slow your exhale — let the release be complete — breathe through the resistance.<br /><br />If it grips at the pause:<br />Extend the pause slightly — stay with the discomfort — let the breathline hold it until it settles.<br /><br />Do 9 cycles with this specific attention and intention.<br /><br />You're not forcing resolution. You're breathing the pattern into the breathline — into the place where coherence can operate on it.",
+    phase4Note:
+      'Extend the gripping breath phase to a suitable length for you (between 5–9 sec) and click Start to breathe your 9 cycles.',
+    phase5Label: 'Phase 5 — Notice what releases or clarifies',
+    phase5Body:
+      'After the 9 cycles, return to natural breathing.<br /><br />Ask at the breathline (hold for a few seconds again on top or at the bottom):<br /><br /><strong>"What has shifted?"</strong><br /><br />Not "is it solved?" but "what\'s different now?"<br /><br />Stay a moment in stillness and observe your state.',
   },
   writing: {
     title: 'Field Notes.',
     pageTitle: 'Field Notes — Return to Breath',
     description: 'Essays on breath, coherence, nervous system regulation, and the practice of return.',
     eyebrow: 'Archive',
-    intro: 'Foundational essays on breath, coherence, and the practice of return.',
+    intro: 'Essays on breath, nervous-system regulation, and the practice of return. Grounded in measurable biology. No metaphysics.',
     back: 'Field Notes',
     all: 'All Field Notes',
   },
@@ -185,6 +235,8 @@ export const en = {
     about: 'About',
     fieldNotes: 'Field Notes',
     breathline: 'Breathline',
+    startingPoint: 'Starting Point',
+    standingWave: 'Standing Wave',
     impressum: 'Impressum',
     terms: 'Terms of Service',
     privacy: 'Privacy Policy',
@@ -194,7 +246,7 @@ export const en = {
     blurb:
       'Return is a quiet breathing utility for nervous system regulation. Open it. Breathe. Close it.',
     copyright: '© 2026 Christoph Kneip. All writing on this site is original work.',
-    mark: 'Return · 2026',
+    mark: 'Return to Breath · 2026',
   },
   homeMeta: {
     title: 'Return — A quiet breathing utility',

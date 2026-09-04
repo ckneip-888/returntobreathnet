@@ -48,10 +48,4 @@ That is the whole instruction.
 
 ## Return.
 
-Three quiet things you can do now.
-
-→ **Download Return** — a finite breath utility. No streaks. No community. Open it, breathe, close it. [App Store](#) · [Google Play](#)
-
-→ **Watch the 90-second explainer** — how Return works, on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
-
-→ **Subscribe to the weekly protocol** — one quiet, practical breath protocol every week. Nothing else. [Sign up](/#newsletter).
+→ **Download Return** — a finite breath utility. No streaks. No community. Open it, breathe, close it. [App Store](https://apps.apple.com/ch/app/return-to-breath-coherence/id6760936004?l=en-GB) · [Google Play](https://play.google.com/store/apps/details?id=com.meditation.breathe)

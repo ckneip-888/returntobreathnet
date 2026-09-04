@@ -64,10 +64,4 @@ Return to that.
 
 ## Return.
 
-Three quiet things you can do now.
-
-→ **Download Return** — open it before you open the news. 30 seconds. That is the protocol. [App Store](#) · [Google Play](#)
-
-→ **Watch the 90-second explainer** — on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
-
-→ **Subscribe to the weekly protocol** — one practical breath protocol for the chemistry of modern life. [Sign up](/#newsletter).
+→ **Download Return** — a finite breath utility. No streaks. No community. Open it, breathe, close it. [App Store](https://apps.apple.com/ch/app/return-to-breath-coherence/id6760936004?l=en-GB) · [Google Play](https://play.google.com/store/apps/details?id=com.meditation.breathe)

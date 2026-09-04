@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BreathlineApp from '../../components/BreathlineApp.astro';
+import { copy } from '../../i18n';
+
+const t = copy('de');
+---
+
+<BaseLayout
+  title={t.breathline.pageTitle}
+  description={t.breathline.pageDescription}
+  lang="de"
+>
+  <BreathlineApp lang="de" />
+</BaseLayout>

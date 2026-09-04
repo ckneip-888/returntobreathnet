@@ -21,6 +21,7 @@
   --color-navy-deep: #000000;
   --color-signal: #DC2626;
   --color-signal-edge: #EF4444;
+  --color-gold: #C9A96E;
   --color-panel: #1F2937;
   --color-panel-hover: #374151;
   --color-ink: #FFFFFF;
@@ -38,6 +39,7 @@
   --sapphire-light: #EF4444;
   --signal: #DC2626;
   --signal-edge: #EF4444;
+  --gold: #C9A96E;
   --navy: #000814;
   --panel: #1F2937;
   --mute: #9CA3AF;
@@ -83,6 +85,15 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.28em;
   color: #f87171;
+}
+
+.micro-label-gold {
+  font-family: 'IBM Plex Mono', ui-monospace, monospace;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  color: #C9A96E;
 }
 
 .seal {

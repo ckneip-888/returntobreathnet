@@ -28,7 +28,7 @@ Here is something I want to be careful about.
 
 I am not claiming the Breathline is mystical. It is mechanical. It is the moment of zero motion in a cyclical system, and in any oscillating system, the still points are where measurement becomes possible. Engineers know this. Physicists know this. You know this — you have felt the moment of zero motion at the top of a swing's arc, the pause at the peak of a thrown ball up in the air. That same physics applies inside you. The pause is when the system is not in fluctuation, and therefore not in noise.
 
-What is mystical is not the mechanism. It is what becomes available when you stop generating noise.
+What is unusual is not the mechanism. It is what becomes available when you stop generating noise.
 
 People sometimes describe the experience of being in the Breathline as: *clarity arrived*. *The next step became obvious*. *The emotion settled without needing to act on it*. *I knew what to do*. None of these are interventions. They are perceptions that were always there but were being drowned by the noise of constant motion.
 
@@ -54,10 +54,4 @@ Return to that.
 
 ## Return.
 
-Three quiet things you can do now.
-
-→ **Download Return** — the Breathline is the central practice. Built into every protocol. [App Store](#) · [Google Play](#)
-
-→ **Watch the 90-second explainer** — on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
-
-→ **Subscribe to the weekly protocol** — one practice per week. Every one of them, at its core, is a way to access the Breathline. [Sign up](/#newsletter).
+→ **Download Return** — a finite breath utility. No streaks. No community. Open it, breathe, close it. [App Store](https://apps.apple.com/ch/app/return-to-breath-coherence/id6760936004?l=en-GB) · [Google Play](https://play.google.com/store/apps/details?id=com.meditation.breathe)

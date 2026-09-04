@@ -1,0 +1,16 @@
+---
+import type { Lang } from '../../i18n';
+
+export interface Props {
+  class?: string;
+  lang?: Lang;
+}
+
+const { class: className = '', lang = 'en' } = Astro.props;
+---
+
+<p class={`text-[13px] text-gray-600 font-light leading-relaxed ${className}`.trim()}>
+  {lang === 'de'
+    ? 'Nur zu Bildungszwecken. Keine medizinische Beratung. Sprich mit einer Fachperson, bevor du eine Atemübung beginnst.'
+    : 'Educational purposes only. Not medical advice. Consult a qualified professional before starting any breathing practice.'}
+</p>
