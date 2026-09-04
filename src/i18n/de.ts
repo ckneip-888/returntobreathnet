@@ -11,7 +11,7 @@ export const de = {
   nav: {
     protocol: 'Protokoll',
     fieldNotes: 'Field Notes',
-    about: 'Über',
+    about: 'About',
     language: 'Sprache',
     menu: 'Menü',
     close: 'Menü schliessen',
@@ -31,14 +31,14 @@ export const de = {
   },
   hero: {
     eyebrow: 'The Return Protocol',
-    headline: 'Der Atem ist dein eingebautes Werkzeug für sofortige Ruhe. Die meisten Menschen nutzen ihn nie bewusst.',
+    headline: 'Der Atem ist dein bewusst kontrollierbares Werkzeug für sofortige Ruhe. Die meisten Menschen nutzen ihn nie bewusst.',
     subhead:
-      'Return ist ein stilles Werkzeug zur Regulation des Nervensystems. Gebaut für Menschen unter akuter kognitiver Last, in schwierigen Lebensphasen oder mit Zukunftsangst — und für alle, die einen Weg zurück wollen. Keine Streaks. Keine endlose Optimierung. App öffnen. Fünf Minuten atmen. Den Tag erden.',
+      'Return ist ein stiller Helfer zur Regulation des Nervensystems. Gebaut für Menschen unter hoher geistiger Belastung, in schwierigen Lebensphasen oder mit Zukunftsangst — und für alle, die einen Weg zurück wollen. Kein "Serie halten"-Zwang. Keine endlose Optimierung. App öffnen. Fünf Minuten atmen. Den Tag erden.',
   },
   protocol: {
     eyebrow: 'Getaktete Atemmuster',
     headline: 'Was ist das Return-to-Breath-Protokoll?',
-    body: 'Es ist ein Präzisionswerkzeug zur Modulation des Nervensystems. Du musst nicht raten, wie du atmen sollst. Du wählst ein gemessenes Muster — Einatmen, Halten, Ausatmen, Halten — und die Physiologie folgt. Wenn du einen Anfang suchst, sind die zwei kurzen Guides unter der Grafik für dich da.',
+    body: 'Die Return App ist ein Werkzeug zur Regulierung des Nervensystems. Du musst nicht raten, wie du atmen sollst. Du wählst ein vordefiniertes Muster — Einatmen, Halten, Ausatmen, Halten — und die Physiologie folgt. Wenn du einen Anfang suchst, stehen dir die zwei kurzen Anleitungen unter der Grafik zur Verfügung.',
     inhale: 'Einatmen',
     hold: 'Halten',
     exhale: 'Ausatmen',
@@ -91,23 +91,23 @@ export const de = {
     eyebrow: 'Was dir das gibt',
     items: [
       {
-        title: 'The Sleep Switch',
+        title: 'Der Schlafschalter',
         body: 'Wieder die Decke angestarrt? Das 4-7-8-Release-Muster verbindet ein langsames Atemtempo mit einer langen Ausatmung. Langsames Atmen hängt mit Veränderungen von Herzfrequenz und autonomer Regulation zusammen — ein stilles Signal an das Nervensystem, herunterzufahren.',
       },
       {
-        title: 'The Deep Work Accelerator',
+        title: 'Der Deep-Work-Beschleuniger',
         body: 'Brain Fog kostet dich Stunden. Das 6-2-8-2-Clarity-Muster gibt dir vor anspruchsvoller Denkarbeit eine wiederholbare physiologische Routine — ein kurzer, kontrollierter Übergang in den Fokus.',
       },
       {
-        title: 'The 5-Minute Anxiety Reset',
+        title: 'Der 5-Minuten-Angst-Reset',
         body: 'Wenn Fight-or-Flight fest auf „an“ steht, greift nicht die Logik — sondern die Mechanik. Das 5.5-5.5-Coherence-Muster ist um die Resonanzfrequenz des Körpers gebaut, an der Atmung und Herz-Kreislauf-Schwingungen stark koppeln können.',
       },
       {
-        title: 'The 3D Cube for Extra Grounding',
+        title: 'Der 3D-Cube für extra Erdung',
         body: 'Der zentrale 3D-Cube ist die mathematisch stabilste, entropiearme Konfiguration, die möglich ist. Seine starren 90°-Winkel reizen das Grid-Cell-Netzwerk des Gehirns mit vollständiger Orthogonalität und erzeugen sofort das psychologische Gefühl eines strukturellen „Bodens“ — ein geerdeter Referenzpunkt für das Nervensystem.',
       },
       {
-        title: 'The Digital Antidote',
+        title: 'Das digitale Gegengift',
         body: 'Du nimmst das Handy 150 Mal am Tag in die Hand. Statt Doomscrolling diesen Impuls für einen 60-Sekunden-Reset nutzen. Ein kurzes Protokoll macht die Fläche frei, damit du mit klarem Kopf ins echte Leben zurückkannst.',
       },
     ],
@@ -125,7 +125,7 @@ export const de = {
   },
   builder: {
     eyebrow: 'Custom Builder',
-    headline: 'Kein Preset passt für alle.',
+    headline: 'Vordefinierte Muster passen nicht für alle.',
     body: 'Bau das Atemmuster selbst. Jede Phase lässt sich von 0–10 Sekunden in 0,5-Sekunden-Schritten einstellen (Ein- und Ausatmen müssen ≥ 1 Sekunde sein).',
     create: 'Eigenes Muster erstellen.',
     hint: 'Bereich 0–10 Sek. in 0,5-Schritten, Ein- und Ausatmen ≥ 1.',
@@ -238,7 +238,7 @@ export const de = {
     site: 'Seite',
     elsewhere: 'Anderswo',
     contact: 'Kontakt',
-    about: 'Über',
+    about: 'About',
     fieldNotes: 'Field Notes',
     breathline: 'Breathline',
     startingPoint: 'Einstieg',
