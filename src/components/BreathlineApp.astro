@@ -529,6 +529,10 @@ const blCopy = {
 </style>
 
 <script is:inline define:vars={{ blCopy }}>
+  window.__blCopy = blCopy;
+</script>
+<script is:inline>
+  const blCopy = window.__blCopy;
   const cfg = { sound: true, labels: true };
   let audioCtx = null;
 
