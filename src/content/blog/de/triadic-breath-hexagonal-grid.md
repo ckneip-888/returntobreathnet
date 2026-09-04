@@ -1,5 +1,5 @@
 ---
-title: "The Equal-Count Breath: Timing as a Physiological Intervention"
+title: "The Equal-Count Breath: Timing als physiologische Intervention"
 description: "Unregelmässiges Atmen hält das autonome Signal rauschig. Gleichmässiges Timing gibt Herz und Vagus einen regelmässigen Oszillator, dem sie folgen können. Drei gleiche Phasen. Neun Zyklen. Du kannst den Unterschied messen."
 pubDate: 2026-03-15
 author: "Christoph Kneip"

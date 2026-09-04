@@ -1,5 +1,5 @@
 ---
-title: "Why Wellness Culture Is Exhausting You (And the Case for Finite Tools)"
+title: "Warum Wellness-Kultur dich erschöpft (und der Fall für Finite Tools)"
 description: "Wenn deine Meditations-App einen Streak gamifiziert, hilft sie dir nicht. Sie rekrutiert deine Aufmerksamkeit. Das ehrliche Werkzeug hat einen Anfang und ein Ende. Du öffnest es. Du atmest. Du schliesst es. Das Gegenteil einer Attention Economy."
 pubDate: 2026-03-01
 author: "Christoph Kneip"

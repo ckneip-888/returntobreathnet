@@ -1,5 +1,5 @@
 ---
-title: "Nervous System Regulation for Professionals Under Acute Cognitive Load"
+title: "Nervensystem-Regulation für Professionals unter akuter kognitiver Last"
 description: "Du bist nicht schwach, weil du überfordert bist. Dein Nervensystem tut genau das, wofür es gebaut ist — nur im falschen Modus. Hier ist der Mechanismus, und hier ist die 5,5-Sekunden-Unterbrechung, die ihn zurücksetzt."
 pubDate: 2026-02-08
 author: "Christoph Kneip"

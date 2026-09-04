@@ -1,5 +1,5 @@
 ---
-title: "Overstimulated and Time-Poor: A Parent's Guide to the Coherence Baseline"
+title: "Überreizt und ohne Zeit: Ein Eltern-Guide zur Coherence-Baseline"
 description: "Du kannst das Nervensystem eines Kindes nicht aus einem dysregulierten co-regulieren. Deins ist die Baseline, auf die sie sich einstimmen. Die gute Nachricht: Du brauchst keine Stunde. Du brauchst neunzig Sekunden, zweimal am Tag, in einer Tür."
 pubDate: 2026-03-08
 author: "Christoph Kneip"

@@ -1,5 +1,5 @@
 ---
-title: "The Vagus Nerve Mechanism: Shifting out of Sympathetic Autopilot Instantly"
+title: "Der Vagusnerv-Mechanismus: Sofort aus dem sympathischen Autopilot"
 description: "Dein Atem ist die eine autonome Funktion, die du bewusst steuern kannst. Zieh diesen Hebel richtig, und der Vagusnerv sendet ein Signal nach oben: wir sind sicher. Das ganze System ordnet sich neu. Herzfrequenz. Muskeltonus. Kognition. In Sekunden."
 pubDate: 2026-03-22
 author: "Christoph Kneip"

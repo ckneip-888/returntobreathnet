@@ -1,5 +1,5 @@
 ---
-title: "The Physiology of Future Anxiety: How Geopolitical Uncertainty Alters Blood Chemistry"
+title: "Die Physiologie der Future Anxiety: Wie geopolitische Unsicherheit die Blutchemie verändert"
 description: "Dein Nervensystem unterscheidet nicht zwischen einem Tiger und einer Headline über KI, die deinen Job übernimmt. Es fährt dasselbe Protokoll. Hier ist, was in deinem Körper passiert, wenn du News scrollst — und das Atemmuster, das die Kaskade unterbricht."
 pubDate: 2026-02-22
 author: "Christoph Kneip"

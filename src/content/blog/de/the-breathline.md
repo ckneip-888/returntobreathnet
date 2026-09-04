@@ -1,5 +1,5 @@
 ---
-title: "The Breathline: The Threshold Where Fluctuation Crosses into Clarity"
+title: "The Breathline: Die Schwelle, an der Schwankung in Klarheit übergeht"
 description: "Die Breathline ist die genaue physiologische Schwelle, an der das Nervensystem von Rauschen in Kohärenz übergeht. Sie lebt in den zwei Pausen des Atemzyklus. Fast niemand erreicht sie. So geht es."
 pubDate: 2026-03-29
 author: "Christoph Kneip"

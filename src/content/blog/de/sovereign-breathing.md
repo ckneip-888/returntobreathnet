@@ -1,5 +1,5 @@
 ---
-title: "Sovereign Breathing: Remaining Stable When the Map Dissolves"
+title: "Sovereign Breathing: Stabil bleiben, wenn die Karte sich auflöst"
 description: "Souveränität ist keine Kontrolle. Es ist die Fähigkeit, du selbst zu bleiben, wenn die Strukturen um dich nicht mehr halten. KI schreibt Branchen um. Die Karte, für die du trainiert hast, passt nicht mehr zum Gelände. Es gibt eine Sache, die die Karte nicht enthält. Nutze sie."
 pubDate: 2026-04-05
 author: "Christoph Kneip"

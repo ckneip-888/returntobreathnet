@@ -1,5 +1,5 @@
 ---
-title: "Who Am I When I'm Not What I Do? Navigating Modern Identity Collapse"
+title: "Wer bin ich, wenn ich nicht das bin, was ich tue? Modernen Identity Collapse navigieren"
 description: "Die Führungskraft geht in Pension, und plötzlich ist da eine Leere. Die Ingenieurin verliert den Job an eine Automatisierung, die sie selbst trainiert hat. Der Founder verkauft. Jede:r trifft dieselbe Frage. Der Atem ist das Einzige, das keine Identität braucht, um zu funktionieren."
 pubDate: 2026-02-15
 author: "Christoph Kneip"
