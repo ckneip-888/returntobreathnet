@@ -56,10 +56,4 @@ Return to that.
 
 ## Return.
 
-Three quiet things you can do now.
-
-→ **Download Return** — built around the 5.5 protocol. Open it before your next hard meeting. Close it. That is the whole flow. [App Store](#) · [Google Play](#)
-
-→ **Watch the 90-second explainer** — how Return works in cognitively challenging environments, on the [#returnpulse channel](https://www.youtube.com/@returnpulse).
-
-→ **Subscribe to the weekly protocol** — one quiet, practical breath protocol every week. For people who do not have time for more than one. [Sign up](/#newsletter).
+→ **Download Return** — a finite breath utility. No streaks. No community. Open it, breathe, close it. [App Store](https://apps.apple.com/ch/app/return-to-breath-coherence/id6760936004?l=en-GB) · [Google Play](https://play.google.com/store/apps/details?id=com.meditation.breathe)

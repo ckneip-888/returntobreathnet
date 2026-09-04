@@ -2,6 +2,7 @@
 import BrandMark from './BrandMark.astro';
 import SpiralMark from './SpiralMark.astro';
 import { copy, type Lang } from '../i18n';
+import { APP_STORE_URL, PLAY_STORE_URL } from '../lib/stores';
 
 export interface Props {
   lang: Lang;
@@ -51,12 +52,12 @@ const basePath = lang === 'de' ? '/de' : '';
             </a>
           </li>
           <li>
-            <a href="#" aria-disabled="true" data-track="app_store_click" class="hover:text-white inline-flex items-center gap-1.5 transition-colors">
+            <a href={APP_STORE_URL} target="_blank" rel="noopener noreferrer" data-track="app_store_click" class="hover:text-white inline-flex items-center gap-1.5 transition-colors">
               {t.footer.appStore}
             </a>
           </li>
           <li>
-            <a href="#" aria-disabled="true" data-track="google_play_click" class="hover:text-white inline-flex items-center gap-1.5 transition-colors">
+            <a href={PLAY_STORE_URL} target="_blank" rel="noopener noreferrer" data-track="google_play_click" class="hover:text-white inline-flex items-center gap-1.5 transition-colors">
               {t.footer.googlePlay}
             </a>
           </li>

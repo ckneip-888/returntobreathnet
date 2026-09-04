@@ -1,5 +1,6 @@
 ---
 import { copy, type Lang } from '../i18n';
+import { APP_STORE_URL, PLAY_STORE_URL } from '../lib/stores';
 
 export interface Props {
   lang?: Lang;
@@ -11,13 +12,13 @@ const t = copy(lang);
 const wrap = layout === 'stack' ? 'flex flex-col' : 'flex flex-col sm:flex-row';
 ---
 
-<div class={`${wrap} gap-3`} role="group" aria-label={t.cta.comingSoon}>
+<div class={`${wrap} gap-3`} role="group" aria-label={t.cta.download}>
   <a
-    href="#"
-    aria-disabled="true"
-    title={t.cta.comingSoon}
+    href={APP_STORE_URL}
+    target="_blank"
+    rel="noopener noreferrer"
     data-track="app_store_click"
-    class="btn-primary btn-disabled inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full text-[14px] font-medium text-white tracking-wide transition-all"
+    class="btn-primary inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full text-[14px] font-medium text-white tracking-wide transition-all"
   >
     <svg width="14" height="16" viewBox="0 0 14 16" fill="currentColor" aria-hidden="true">
       <path d="M11.4 8.4c0-2.1 1.7-3.1 1.8-3.2-1-1.4-2.5-1.6-3-1.7-1.3-.1-2.5.8-3.1.8-.7 0-1.7-.7-2.8-.7C2.8 3.6 1 5 1 7.6c0 1.3.5 2.6 1.3 3.5.8.9 1.5 1.6 2.6 1.6 1 0 1.4-.7 2.7-.7s1.6.7 2.7.7c1.1 0 1.8-.8 2.5-1.6.8-1 1.1-1.9 1.1-2 .0-.1-4.5-1.7-4.5-6.7zM9.6 2.4c.5-.7.9-1.6.8-2.4-.8 0-1.7.5-2.3 1.2-.5.6-1 1.5-.9 2.4.9.1 1.8-.5 2.4-1.2z"/>
@@ -25,11 +26,11 @@ const wrap = layout === 'stack' ? 'flex flex-col' : 'flex flex-col sm:flex-row';
     <span>{t.cta.appStore}</span>
   </a>
   <a
-    href="#"
-    aria-disabled="true"
-    title={t.cta.comingSoon}
+    href={PLAY_STORE_URL}
+    target="_blank"
+    rel="noopener noreferrer"
     data-track="google_play_click"
-    class="btn-disabled inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full text-[14px] font-medium text-white tracking-wide border border-gray-700 bg-panel/80 hover:border-gray-600 transition-all"
+    class="inline-flex items-center justify-center gap-2.5 px-6 py-3 rounded-full text-[14px] font-medium text-white tracking-wide border border-gray-700 bg-panel/80 hover:border-gray-600 transition-all"
   >
     <svg width="14" height="16" viewBox="0 0 14 16" fill="currentColor" aria-hidden="true">
       <path d="M1 1.8 8.2 9 1 15.2V1.8zm.8-.8 8 4.6-2.3 2.3L1.8 1zm8.4 5.3 2.6 1.5c.8.5.8 1.7 0 2.2l-2.6 1.5-2.6-2.6 2.6-2.6zM1.8 15l5.1-5.1 2.3 2.3L1.8 15z"/>

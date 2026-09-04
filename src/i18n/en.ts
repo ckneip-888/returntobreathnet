@@ -15,6 +15,7 @@ export const en = {
     appStore: 'Download on the App Store',
     googlePlay: 'Get it on Google Play',
     comingSoon: 'Coming soon',
+    download: 'Download Return',
   },
   sticker: {
     alt: 'Best experienced at low volume with headset',
@@ -188,7 +189,7 @@ export const en = {
     pageTitle: 'Field Notes — Return to Breath',
     description: 'Essays on breath, coherence, nervous system regulation, and the practice of return.',
     eyebrow: 'Archive',
-    intro: 'Foundational essays on breath, coherence, and the practice of return.',
+    intro: 'Essays on breath, nervous-system regulation, and the practice of return. Grounded in measurable biology. No metaphysics.',
     back: 'Field Notes',
     all: 'All Field Notes',
   },
@@ -210,7 +211,7 @@ export const en = {
     blurb:
       'Return is a quiet breathing utility for nervous system regulation. Open it. Breathe. Close it.',
     copyright: '© 2026 Christoph Kneip. All writing on this site is original work.',
-    mark: 'Return · 2026',
+    mark: 'Return to Breath · 2026',
   },
   homeMeta: {
     title: 'Return — A quiet breathing utility',

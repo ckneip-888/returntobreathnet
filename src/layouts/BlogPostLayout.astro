@@ -14,12 +14,6 @@ export interface Props {
 
 const { title, description, pubDate, updatedDate, author, tags, slug, lang } = Astro.props;
 
-const formattedDate = pubDate.toLocaleDateString(lang === 'de' ? 'de-DE' : 'en-GB', {
-  day: '2-digit',
-  month: '2-digit',
-  year: '2-digit',
-});
-
 const siteUrl = 'https://returntobreath.net';
 const writingHref = lang === 'de' ? '/de/writing/' : '/writing/';
 
@@ -46,7 +40,6 @@ const articleJsonLd = [
       <a href={writingHref} class="micro-label-accent hover:text-sapphire-300 transition-colors">
         ← FIELD NOTES
       </a>
-      <time datetime={pubDate.toISOString()} class="micro-label">{formattedDate}</time>
       {tags.length > 0 && <span class="micro-label">{tags.slice(0, 3).join(' · ').toUpperCase()}</span>}
     </div>
 

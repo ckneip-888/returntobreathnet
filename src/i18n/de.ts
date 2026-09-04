@@ -22,6 +22,7 @@ export const de = {
     appStore: 'Im App Store laden',
     googlePlay: 'Bei Google Play laden',
     comingSoon: 'Demnächst',
+    download: 'Return laden',
   },
   writing: {
     ...en.writing,
@@ -48,6 +49,6 @@ export const de = {
     blurb:
       'Return ist ein stilles Atem-Werkzeug zur Regulation des Nervensystems. Öffnen. Atmen. Schließen.',
     copyright: '© 2026 Christoph Kneip. Alle Texte sind Originalwerk.',
-    mark: 'Return · 2026',
+    mark: 'Return to Breath · 2026',
   },
 } as const;
