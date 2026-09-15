@@ -1,5 +1,6 @@
 ---
 title: "Warum Wellness-Kultur dich erschöpft (und der Fall für Finite Tools)"
+seoTitle: "Warum Wellness-Kultur dich erschöpft und fesselt"
 description: "Wenn deine Meditations-App einen Streak gamifiziert, hilft sie dir nicht. Sie rekrutiert deine Aufmerksamkeit. Das ehrliche Werkzeug hat einen Anfang und ein Ende. Du öffnest es. Du atmest. Du schliesst es. Das Gegenteil einer Attention Economy."
 pubDate: 2026-03-01
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["finite-tools", "anti-optimization", "wellness", "attention-economy"]
 slug: "why-wellness-culture-is-exhausting-you"
 lang: "de"
 ---
+
+## Die Falle, die die meisten nicht sehen
 
 Hier ist die Falle, die die meisten nicht sehen.
 
@@ -20,6 +23,8 @@ Also muss das Wellness-Produkt, um weiter zu existieren, tun, was jedes andere P
 
 Das Problem: Du bist für das Gegenteil von Einfangen gekommen.
 
+## Ruhe und Einfangen können sich kein Produkt teilen
+
 Hier ist, was ich glaube.
 
 Ein Werkzeug, das dein Nervensystem beruhigen soll, kann nicht in gutem Glauben zugleich so gebaut sein, dass es dich auf dem Bildschirm hält.
@@ -28,11 +33,15 @@ Diese zwei Design-Imperative stehen im Krieg. Welcher gewinnt, formt dein Nerven
 
 Deshalb sind so viele Menschen, die *die ganze Arbeit gemacht haben*, immer noch erschöpft. Sie haben die Arbeit in einem Werkzeug getan, das sie metabolisiert hat, während sie es nutzten.
 
+## Ein Test für die Werkzeuge, die du nutzt
+
 Hier ist ein Test.
 
 Wenn du die App schliesst, die du für Atem oder Meditation nutzt — fühlst du dich fertig, oder fühlst du dich verpflichtet, morgen wiederzukommen?
 
 Wenn es das Zweite ist, ist diese App nicht dein Werkzeug. Du bist ihres.
+
+## Der Fall für finite tools
 
 Hier ist, was möglich ist.
 

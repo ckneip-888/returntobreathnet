@@ -1,6 +1,9 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from './BaseLayout.astro';
 import { copy } from '../i18n';
+import { RELATED_NOTES, bareNoteSlug } from '../lib/related-notes';
+import { SITE_URL, withReturnSuffix } from '../lib/seo';
 
 export interface Props {
   title: string;
@@ -11,33 +14,43 @@ export interface Props {
   tags: string[];
   slug: string;
   lang: 'en' | 'de';
+  seoTitle?: string;
 }
 
-const { title, description, pubDate, updatedDate, author, tags, slug, lang } = Astro.props;
+const { title, description, pubDate, updatedDate, author, tags, slug, lang, seoTitle } = Astro.props;
 
 const t = copy(lang);
-const siteUrl = 'https://returntobreath.net';
 const writingHref = lang === 'de' ? '/de/writing/' : '/writing/';
 const articlePath = `${writingHref}${slug}/`;
+const documentTitle = withReturnSuffix(seoTitle ?? title);
+
+const allNotes = await getCollection('blog', ({ data }) => data.lang === lang && !data.draft);
+const relatedIds = RELATED_NOTES[slug] ?? [];
+const related = relatedIds
+  .map((relatedSlug) => {
+    const id = lang === 'de' ? `de/${relatedSlug}` : relatedSlug;
+    return allNotes.find((post) => post.id === id || bareNoteSlug(post.id) === relatedSlug);
+  })
+  .filter((post): post is (typeof allNotes)[number] => Boolean(post));
 
 const articleJsonLd = [
   {
     '@type': 'Article',
-    '@id': `${siteUrl}${articlePath}`,
+    '@id': `${SITE_URL}${articlePath}`,
     headline: title,
     description,
-    author: { '@id': `${siteUrl}/#person-christoph` },
+    author: { '@id': `${SITE_URL}/#person-christoph` },
     datePublished: pubDate.toISOString(),
     ...(updatedDate ? { dateModified: updatedDate.toISOString() } : {}),
     keywords: tags.join(', '),
     inLanguage: lang,
-    publisher: { '@id': `${siteUrl}/#person-christoph` },
-    mainEntityOfPage: { '@type': 'WebPage', '@id': `${siteUrl}${articlePath}` },
+    publisher: { '@id': `${SITE_URL}/#person-christoph` },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}${articlePath}` },
   },
 ];
 ---
 
-<BaseLayout title={`${title} — Return to Breath`} description={description} lang={lang} jsonLd={articleJsonLd}>
+<BaseLayout title={documentTitle} description={description} lang={lang} jsonLd={articleJsonLd}>
   <article class="max-w-3xl mx-auto px-6 lg:px-8 pt-32 pb-24">
     <div class="flex items-baseline gap-4 mb-8 flex-wrap">
       <a href={writingHref} class="micro-label-accent hover:text-sapphire-300 transition-colors">
@@ -60,6 +73,7 @@ const articleJsonLd = [
       class="prose prose-slate prose-lg max-w-none
              prose-headings:font-light prose-headings:tracking-tight
              prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4
+             prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
              prose-p:font-light prose-p:leading-relaxed prose-p:text-slate-300
              prose-a:text-sapphire-400 prose-a:no-underline hover:prose-a:text-sapphire-300
              prose-strong:text-slate-100 prose-strong:font-medium
@@ -71,7 +85,35 @@ const articleJsonLd = [
       <slot />
     </div>
 
-    <div class="mt-20 pt-10 border-t border-slate-900">
+    {related.length > 0 && (
+      <aside class="mt-20 pt-10 border-t border-slate-900" aria-labelledby="related-notes-heading">
+        <h2 id="related-notes-heading" class="text-2xl font-light tracking-tight text-slate-50 mb-6">
+          {t.writing.related}
+        </h2>
+        <ul class="space-y-4">
+          {related.map((post) => {
+            const relatedSlug = bareNoteSlug(post.id);
+            return (
+              <li>
+                <a
+                  href={`${writingHref}${relatedSlug}/`}
+                  class="group block"
+                >
+                  <span class="text-[17px] text-slate-200 group-hover:text-white font-light tracking-tight transition-colors">
+                    {post.data.title}
+                  </span>
+                  <span class="block text-[14px] text-slate-500 font-light leading-relaxed mt-1">
+                    {post.data.description}
+                  </span>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </aside>
+    )}
+
+    <div class="mt-16 pt-10 border-t border-slate-900">
       <a href={writingHref} class="micro-label-accent hover:text-sapphire-300 transition-colors">
         ← {lang === 'de' ? 'ALLE FIELD NOTES' : 'ALL FIELD NOTES'}
       </a>

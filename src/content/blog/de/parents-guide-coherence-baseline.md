@@ -1,5 +1,6 @@
 ---
 title: "Überreizt und ohne Zeit: Ein Eltern-Guide zur Coherence-Baseline"
+seoTitle: "Überreizt und ohne Zeit: ein Eltern-Guide"
 description: "Du kannst das Nervensystem eines Kindes nicht aus einem dysregulierten co-regulieren. Deins ist die Baseline, auf die sie sich einstimmen. Die gute Nachricht: Du brauchst keine Stunde. Du brauchst neunzig Sekunden, zweimal am Tag, in einer Tür."
 pubDate: 2026-03-08
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["parents", "co-regulation", "coherence", "nervous-system"]
 slug: "parents-guide-coherence-baseline"
 lang: "de"
 ---
+
+## Dein Kind reguliert gegen dein Nervensystem
 
 Hier ist, was niemand Eltern sagt.
 
@@ -20,6 +23,8 @@ Wenn du also kognitiv hochgefahren von der Arbeit kommst, mit flachem Brustatem 
 
 Ich weiss, das ist hart zu lesen. Ich schreibe es, weil ich es als Erinnerung für mich selbst gebraucht habe.
 
+## Ein kohärentes Nervensystem im Raum
+
 Hier ist, was ich glaube.
 
 Das Wichtigste, das ein Elternteil für die langfristige Gesundheit des kindlichen Nervensystems tun kann, ist nicht, die richtigen Spielsachen zu kaufen, die richtigen Aktivitäten zu planen, auf die richtige Schule zu schicken oder die richtigen Werte vorzuleben. Es ist, ein kohärentes Nervensystem im Raum zu sein.
@@ -28,11 +33,15 @@ Das klingt einfach. Es ist es. Es ist auch die Arbeit, von der die meisten Elter
 
 Die gute Nachricht: Du musst nicht die ganze Zeit ruhig sein. Kinder werden nicht von Eltern reguliert, die *immer* ruhig sind. Sie werden von Eltern reguliert, die *zurückkehren* können. Der Zyklus ist: dysreguliert werden, merken, zur Kohärenz zurückkehren, wiederholen. Die Reparatur ist die Regulation. Kinder, die die Reparatur sehen, lernen die wichtigste Fähigkeit überhaupt — dass Nervensysteme wieder online kommen können, und dass Menschsein heisst, zu wissen, wie das geht.
 
+## Eltern haben keine Zeit
+
 Hier ist das praktische Problem.
 
 Eltern haben keine Zeit. Sie können nicht dreissig Minuten sitzen. Sie können nicht meditieren. Sie können keinen Atemkurs machen. Der Tag ist Essen, Schulweg, Calls, Wäsche, Bad, Geschichte, Schlaf, und das kleine Fenster danach verbringen sie zusammengefallen auf dem Sofa mit einem Screen, weil sie nichts mehr zu geben haben.
 
 Das ist kein persönliches Versagen. Es ist die tatsächliche Struktur des Lebens.
+
+## The Doorway Reset
 
 Hier ist, was möglich ist.
 

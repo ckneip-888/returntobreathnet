@@ -185,7 +185,8 @@ export const de = {
     teaserTitle: 'Breathline-Übung',
     teaserLead: 'Eine geführte Erkundung, um ungelöste Bewegung in Stille zu atmen.',
     teaserCta: 'Übung starten',
-    pageTitle: 'Breathline — Return',
+    h1: 'Breathline',
+    pageTitle: 'Breathline: ungelöste Bewegung in die Stille - Return',
     pageDescription:
       'Eine geführte Erkundung, um ungelöste Bewegung in Stille zu atmen.',
     start: 'Start',
@@ -226,13 +227,14 @@ export const de = {
   },
   writing: {
     title: 'Field Notes.',
-    pageTitle: 'Field Notes — Return to Breath',
+    pageTitle: 'Field Notes zu Atem, Kohärenz, Nervensystem - Return',
     description: 'Essays über Atem, Kohärenz, Regulation des Nervensystems und die Praxis der Rückkehr.',
     eyebrow: 'Archiv',
     intro:
       'Essays über Atem, die Regulation des Nervensystems und die Praxis der Rückkehr. In messbarer Biologie geerdet. Keine Metaphysik.',
     back: 'Field Notes',
     all: 'Alle Field Notes',
+    related: 'Weitere Field Notes',
   },
   footer: {
     site: 'Seite',
@@ -255,7 +257,7 @@ export const de = {
     mark: 'Return to Breath · 2026',
   },
   homeMeta: {
-    title: 'Return — Ein stilles Atem-Werkzeug',
+    title: 'Return - a quiet breathing companion',
     description:
       'Return ist ein stilles Werkzeug zur Regulation des Nervensystems. Getaktetes Einatmen, Halten, Ausatmen, Halten. Keine Streaks. Kein Feed. Fünf Minuten, dann die App schliessen.',
   },

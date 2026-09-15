@@ -1,5 +1,6 @@
 ---
 title: "The Simplicity Problem: Why We Reject the Fixes That Work"
+seoTitle: "The simplicity problem: why we reject fixes"
 description: "We are conditioned to believe solutions must be complex. So when someone says the answer is your breath, it sounds too simple to be real. This is why the most overwhelmed people often reject the one tool that would change everything."
 pubDate: 2026-02-01
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["simplicity", "nervous-system", "breath", "anti-optimization"]
 slug: "the-simplicity-problem"
 lang: "en"
 ---
+
+## The fixes that work are too simple to take seriously
 
 Here is what I have learned, the hard way.
 
@@ -16,11 +19,15 @@ You can read every book on stress, anxiety, and burnout. You can run the diagnos
 
 Most people reject this on contact.
 
+## Why we dismiss the breath
+
 Here is why.
 
 We have been trained to believe that solutions must match the complexity of the problem. The harder the problem, the more sophisticated the answer must be. So when you are running cognitively hot, sleeping poorly, drowning in obligations, and someone tells you the answer is your breath — you dismiss it. Not because it does not work. Because it sounds insufficient.
 
 That dismissal is the problem.
+
+## Simple is not the same as easy
 
 Here is what I believe.
 
@@ -31,6 +38,8 @@ But simple is not the same as easy.
 To breathe consciously, you have to remember to do it when your default is to forget. You have to stay present when your default is to be distracted. You have to trust the practice when your mind insists it is not enough.
 
 This is the actual work.
+
+## Five minutes, not more
 
 Here is what is possible.
 

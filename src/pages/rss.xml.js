@@ -11,7 +11,7 @@ export async function GET(context) {
   );
 
   return rss({
-    title: 'Return to Breath',
+    title: 'Return - a quiet breathing companion',
     description: 'Foundational essays on breath, coherence, and the practice of return. By Christoph Kneip.',
     site: context.site ?? 'https://returntobreath.net',
     items: posts.map((post) => ({

@@ -1,5 +1,6 @@
 ---
 title: "Die Physiologie der Future Anxiety: Wie geopolitische Unsicherheit die Blutchemie verändert"
+seoTitle: "Future Anxiety: Unsicherheit und Blutchemie"
 description: "Dein Nervensystem unterscheidet nicht zwischen einem Tiger und einer Headline über KI, die deinen Job übernimmt. Es fährt dasselbe Protokoll. Hier ist, was in deinem Körper passiert, wenn du News scrollst — und das Atemmuster, das die Kaskade unterbricht."
 pubDate: 2026-02-22
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["future-anxiety", "geopolitics", "physiology", "blood-chemistry", "vagus-
 slug: "physiology-of-future-anxiety"
 lang: "de"
 ---
+
+## Dein Körper kennt den Unterschied nicht
 
 Hier ist etwas, das ich ernst genommen haben will.
 
@@ -26,6 +29,8 @@ Die Chemie endet nicht. Sie sammelt sich. Tag für Tag, Jahr für Jahr wird dein
 
 Das meine ich mit Future Anxiety. Es ist kein Gedanke. Es ist ein *chemischer Zustand*.
 
+## Angst 2026 ist ein chemischer Zustand
+
 Hier ist, was ich glaube.
 
 Die Debatte über Angst im Jahr 2026 muss von der Psychologie zur Physiologie wechseln. Jemandem mit erhöhtem Cortisol zu sagen, er solle *Gedanken umrahmen*, heisst, kognitive Arbeit von einem Gehirn zu verlangen, das chemisch heruntergestuft wurde. Du bittest den präfrontalen Cortex, ein System zu übersteuern, das gebaut ist, den präfrontalen Cortex zu übersteuern.
@@ -34,6 +39,8 @@ Deshalb lesen so viele die richtigen Bücher, hören die richtigen Dinge, stimme
 
 Die Intervention muss auf der Ebene geschehen, auf der das Problem läuft. Dem Blut.
 
+## Was getaktetes Atmen mit der Blutchemie macht
+
 Hier ist der Mechanismus.
 
 Langsames, getaktetes Atmen — besonders mit verlängerter Ausatmung — tut in einem kurzen Fenster mehrere Dinge mit deiner Blutchemie.
@@ -41,6 +48,8 @@ Langsames, getaktetes Atmen — besonders mit verlängerter Ausatmung — tut in
 Es hebt den Vagustonus, was zirkulierendes Cortisol innerhalb von Minuten senkt. Es hebt CO₂ leicht, was die zerebrale Durchblutung und Sauerstoffversorgung verbessert. Es steigert die Stickstoffmonoxid-Produktion in den Nasengängen bei nasaler Ausatmung, ein Vasodilatator. Es verschiebt die autonome Balance von sympathisch zu parasympathisch, was Entzündungsmarker senkt.
 
 Nichts davon ist mystisch. Es ist gut dokumentierte Physiologie. Du kannst das alles messen.
+
+## The Geopolitical Reset
 
 Hier ist, was möglich ist.
 

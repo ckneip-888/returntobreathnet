@@ -1,5 +1,6 @@
 ---
 title: "Why Wellness Culture Is Exhausting You (And the Case for Finite Tools)"
+seoTitle: "Why wellness culture keeps exhausting you"
 description: "If your meditation app gamifies a streak, it is not helping you. It is recruiting your attention. The honest tool has a beginning and an end. You open it. You breathe. You close it. The opposite of an attention economy."
 pubDate: 2026-03-01
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["finite-tools", "anti-optimization", "wellness", "attention-economy"]
 slug: "why-wellness-culture-is-exhausting-you"
 lang: "en"
 ---
+
+## The trap most people do not see
 
 Here is the trap most people do not see.
 
@@ -20,6 +23,8 @@ So the wellness product, in order to keep existing, has to do what every other p
 
 The problem is that the thing you came for was the opposite of capture.
 
+## Calm and capture cannot share a product
+
 Here is what I believe.
 
 A tool designed to calm your nervous system cannot, in good faith, also be designed to keep you on the screen.
@@ -28,11 +33,15 @@ These two design imperatives are at war with each other. Whichever one is winnin
 
 This is why so many people who have *done all the work* are still exhausted. They did the work inside a tool that was metabolizing them while they used it.
 
+## A test for the tools you use
+
 Here is a test.
 
 When you close the app you use for breath or meditation — do you feel finished, or do you feel obligated to come back tomorrow?
 
 If it is the second one, that app is not your tool. You are its tool.
+
+## The case for finite tools
 
 Here is what is possible.
 

@@ -1,5 +1,6 @@
 ---
 title: "The Equal-Count Breath: Timing als physiologische Intervention"
+seoTitle: "Equal-Count Breath: Timing als Intervention"
 description: "Unregelmässiges Atmen hält das autonome Signal rauschig. Gleichmässiges Timing gibt Herz und Vagus einen regelmässigen Oszillator, dem sie folgen können. Drei gleiche Phasen. Neun Zyklen. Du kannst den Unterschied messen."
 pubDate: 2026-03-15
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["paced-breathing", "hrv", "autonomic", "equal-count"]
 slug: "triadic-breath-hexagonal-grid"
 lang: "de"
 ---
+
+## Timing ist der Grund, warum Muster wirken
 
 Hier ist etwas, das die meisten Atemlehrer weglassen.
 
@@ -16,17 +19,23 @@ Das autonome Nervensystem ist ein Oszillator. Die Herzfrequenz steigt ein wenig 
 
 Das ist keine Metapher. Es ist paced-breathing-Physiologie. Du kannst eine Person an ein Pulsoximeter und einen Herzfrequenzgurt hängen und zusehen, wie sich die Wellenform setzt.
 
+## Gleiche Counts stabilisieren den Oszillator
+
 Hier ist, was ich bemerkt habe.
 
 Wenn der Atem in drei Phasen geformt wird — einatmen, halten, ausatmen — und die Dauern *gleich* sind, stabilisiert sich etwas, das sich bei schnellem, unregelmässigem oder schiefem Atem nicht stabilisiert. Das Halten ist nicht mystisch. Es ist ein kurzes, stilles Intervall, in dem Kohlendioxid und Herzfrequenz mit dem letzten Einatmen aufholen können, bevor das Ausatmen beginnt. Gleiche Counts halten diesen Zyklus davon ab, zu driften.
 
 Die Ingenieurkunst weiss das schon. Eine Struktur mit gleichmässiger Last über ihre Glieder bricht nicht so leicht zusammen wie eine mit einer einzelnen überlasteten Seite. Das Nervensystem ist keine Brücke. Es ist jedoch eine Regelschleife. Gib ihr einen gleichmässigen Input, und der Output wird leiser.
 
+## Du nimmst Störung weg, fügst kein System hinzu
+
 Hier ist, was ich glaube.
 
 Du fügst kein neues System hinzu, wenn du so atmest. Du nimmst die Störung chaotischen Timings weg. Der Körper weiss bereits, wie man runterschaltet. Ungleiches, flaches, brustgeführtes Atmen unterbricht dieses Runterschalten immer wieder. Gleiche Counts stoppen die Unterbrechung.
 
 Das ist die Praxis.
+
+## The Equal-Count Breath
 
 Hier ist, was möglich ist.
 

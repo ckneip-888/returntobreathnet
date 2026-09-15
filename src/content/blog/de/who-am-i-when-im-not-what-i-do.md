@@ -1,5 +1,6 @@
 ---
 title: "Wer bin ich, wenn ich nicht das bin, was ich tue? Modernen Identity Collapse navigieren"
+seoTitle: "Wer bin ich, wenn ich nicht das bin, was ich tue?"
 description: "Die Führungskraft geht in Pension, und plötzlich ist da eine Leere. Die Ingenieurin verliert den Job an eine Automatisierung, die sie selbst trainiert hat. Der Founder verkauft. Jede Person trifft dieselbe Frage. Der Atem ist das Einzige, das keine Identität braucht, um zu funktionieren."
 pubDate: 2026-02-15
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["post-identity", "identity-collapse", "being", "transition"]
 slug: "who-am-i-when-im-not-what-i-do"
 lang: "de"
 ---
+
+## Die Frage, die ungeladen kommt
 
 Hier ist die Frage, die ungeladen kommt.
 
@@ -18,11 +21,15 @@ Ich schreibe das 2026. Immer mehr Menschen kommen zu dieser Frage viel früher a
 
 Ihnen fehlen nicht die Skills. Ihnen fehlt die Identitätsstruktur, in der die Skills gelebt haben.
 
+## Identity Collapse ist Verlust von Kohärenz
+
 Hier ist, was ich daran bemerkt habe.
 
 Der Schmerz ist nicht der Einkommensverlust. Der Schmerz ist der Verlust der *Kohärenz zwischen Selbst und Funktion*. Für die meisten Erwachsenen in leistungsgestalteten Kulturen war die Antwort auf *wer bist du?* ein Job, ein Titel, eine Rolle, ein Projekt. Wenn dieses Gerüst sich auflöst, bleibt die Frage zum ersten Mal seit Jahrzehnten unbeantwortet.
 
 Das meine ich mit Identity Collapse. Es ist keine Depression, auch wenn es so aussehen kann. Herauszufinden, wer du bist, wenn sonst nichts dich definiert.
+
+## Der Collapse ist eine Schwelle
 
 Hier ist, was ich glaube.
 
@@ -33,6 +40,8 @@ Die Struktur war immer äusserlich. Du warst nie der Titel. Du warst nie die Fun
 Die Schwierigkeit: Die meisten Erwachsenen wissen, wenn die Hülle weg ist, nicht, wo sie nach dem Inneren suchen sollen. Also greifen sie nach der nächsten Hülle. Ein neues Projekt. Ein Startup. Ein Buch. Ein Coach. Eine weitere Identität, in die man hineinklettert.
 
 Ich habe das getan. Es löst die Frage nicht. Es schiebt sie auf.
+
+## Der Atem braucht keine Identität
 
 Hier ist, was möglich ist.
 

@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { BRAND_LINE, OG_IMAGE_ABSOLUTE, SITE_URL } from '../lib/seo';
 
 export interface Props {
   title: string;
@@ -16,41 +17,40 @@ const {
   title,
   description,
   lang = 'en',
-  ogImage = '/og-default.png',
+  ogImage = OG_IMAGE_ABSOLUTE,
   canonical,
   jsonLd = [],
 } = Astro.props;
 
-const siteUrl = 'https://returntobreath.net';
-const canonicalUrl = canonical ?? new URL(Astro.url.pathname, siteUrl).toString();
-const ogImageAbsolute = ogImage.startsWith('http') ? ogImage : `${siteUrl}${ogImage}`;
+const canonicalUrl = canonical ?? new URL(Astro.url.pathname, SITE_URL).toString();
+const ogImageAbsolute = ogImage.startsWith('http') ? ogImage : `${SITE_URL}${ogImage}`;
 
 // Strip leading /de/ to get the language-agnostic path
 const stripped = Astro.url.pathname.replace(/^\/de(\/|$)/, '/');
-const enHref = `${siteUrl}${stripped}`;
-const deHref = `${siteUrl}/de${stripped}`;
+const enHref = `${SITE_URL}${stripped}`;
+const deHref = `${SITE_URL}/de${stripped === '/' ? '/' : stripped}`;
 
 const baseGraph = [
   {
     '@type': 'WebSite',
-    '@id': `${siteUrl}/#website`,
-    url: `${siteUrl}/`,
-    name: 'Return to Breath',
-    description: 'The Return App and writing on breath, coherence, and the practice of return.',
+    '@id': `${SITE_URL}/#website`,
+    url: `${SITE_URL}/`,
+    name: BRAND_LINE,
+    description: 'A quiet breathing companion for nervous system regulation, and writing on breath, coherence, and the practice of return.',
     inLanguage: ['en', 'de'],
-    publisher: { '@id': `${siteUrl}/#person-christoph` },
+    publisher: { '@id': `${SITE_URL}/#person-christoph` },
   },
   {
     '@type': 'Person',
-    '@id': `${siteUrl}/#person-christoph`,
+    '@id': `${SITE_URL}/#person-christoph`,
     name: 'Christoph Kneip',
-    url: `${siteUrl}/about/`,
+    url: `${SITE_URL}/about/`,
     jobTitle: 'Author, breath educator',
     knowsAbout: ['breath practice', 'nervous system regulation', 'coherence', 'respiratory timing'],
   },
   {
     '@type': 'Person',
-    '@id': `${siteUrl}/#person-rickard`,
+    '@id': `${SITE_URL}/#person-rickard`,
     name: 'Rickard Strongert',
     jobTitle: 'Post-identity coach',
     address: { '@type': 'PostalAddress', addressLocality: 'Marbella', addressCountry: 'ES' },
@@ -58,8 +58,8 @@ const baseGraph = [
   },
   {
     '@type': 'MobileApplication',
-    '@id': `${siteUrl}/#app`,
-    name: 'Return',
+    '@id': `${SITE_URL}/#app`,
+    name: BRAND_LINE,
     applicationCategory: 'HealthApplication',
     operatingSystem: 'iOS, Android',
     description: 'A quiet breathing utility for nervous system regulation.',
@@ -84,7 +84,7 @@ const fullGraph = [...baseGraph, ...jsonLd];
     <meta name="robots" content="index, follow, max-image-preview:large" />
 
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Return to Breath" />
+    <meta property="og:site_name" content={BRAND_LINE} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />

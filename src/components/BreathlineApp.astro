@@ -21,6 +21,7 @@ const blCopy = {
 
     <div id="app" class="bl-app">
       <div id="screen-0" class="bl-screen active">
+        <h1 class="bl-h1">{t.breathline.h1}</h1>
         <p class="bl-prompt" set:html={t.breathline.promptHtml}></p>
         <button class="bl-btn-start" type="button" onclick="goTo(1)">{t.breathline.start}</button>
       </div>
@@ -189,6 +190,16 @@ const blCopy = {
     text-transform: uppercase;
     color: #9CA3AF;
     margin-bottom: 2.5rem;
+  }
+
+  .bl-h1 {
+    font-family: Inter, system-ui, sans-serif;
+    font-weight: 300;
+    font-size: clamp(1.85rem, 4vw, 2.6rem);
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+    color: #fff;
+    margin: 0 0 1.75rem;
   }
 
   .bl-prompt {

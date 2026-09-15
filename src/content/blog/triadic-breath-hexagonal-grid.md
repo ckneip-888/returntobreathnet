@@ -1,5 +1,6 @@
 ---
 title: "The Equal-Count Breath: Timing as a Physiological Intervention"
+seoTitle: "Equal-count breath: timing as intervention"
 description: "Irregular breathing keeps the autonomic signal noisy. Even timing gives the heart and vagus a regular oscillator to follow. Three equal phases. Nine cycles. You can measure the difference."
 pubDate: 2026-03-15
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["paced-breathing", "hrv", "autonomic", "equal-count"]
 slug: "triadic-breath-hexagonal-grid"
 lang: "en"
 ---
+
+## Timing is why some patterns work
 
 Here is something most breath teachers leave out.
 
@@ -16,17 +19,23 @@ The autonomic nervous system is an oscillator. Heart rate rises a little on the 
 
 This is not a metaphor. It is paced-breathing physiology. You can put a person on a pulse oximeter and a heart-rate strap and watch the waveform settle.
 
+## Equal counts stabilize the oscillator
+
 Here is what I have noticed.
 
 When the breath is shaped into three phases — inhale, hold, exhale — and the durations are *equal*, something stabilizes that does not stabilize with rapid, irregular, or lopsided breath. The hold is not mystical. It is a brief, still interval that lets carbon dioxide and heart rate catch up with the last inhale before the exhale starts. Equal counts keep that cycle from drifting.
 
 Engineering already knows this. A structure with even load across its members does not collapse as easily as one with a single overloaded side. The nervous system is not a bridge. It is, however, a control loop. Give it an even input and the output gets quieter.
 
+## You are removing interference, not adding a system
+
 Here is what I believe.
 
 You are not adding a new system when you breathe this way. You are removing the interference of chaotic timing. The body already knows how to downshift. Uneven, shallow, chest-led breathing keeps interrupting that downshift. Equal counts stop the interruption.
 
 That is the practice.
+
+## The Equal-Count Breath
 
 Here is what is possible.
 

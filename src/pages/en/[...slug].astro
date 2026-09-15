@@ -1,0 +1,24 @@
+---
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => data.lang === 'en' && !data.draft);
+  const slugs: Array<string | undefined> = [
+    undefined,
+    'about',
+    'writing',
+    'breathline',
+    'starting-point',
+    'morning-standing-wave',
+    'terms',
+    'privacy',
+    'impressum',
+    ...posts.map((post) => `writing/${post.id}`),
+  ];
+  return slugs.map((slug) => ({ params: { slug } }));
+}
+
+const slug = Astro.params.slug;
+const dest = slug ? `/${slug}/` : '/';
+return Astro.redirect(dest, 301);
+---

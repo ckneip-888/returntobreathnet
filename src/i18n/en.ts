@@ -180,7 +180,8 @@ export const en = {
     teaserTitle: 'Breathline exercise',
     teaserLead: 'A guided exploration to breathe any unresolved motion into stillness.',
     teaserCta: 'Start the exercise',
-    pageTitle: 'Breathline — Return',
+    h1: 'Breathline',
+    pageTitle: 'Breathline: breathe motion into stillness - Return',
     pageDescription:
       'A guided exploration to breathe any unresolved motion into stillness.',
     start: 'Start',
@@ -221,12 +222,13 @@ export const en = {
   },
   writing: {
     title: 'Field Notes.',
-    pageTitle: 'Field Notes — Return to Breath',
+    pageTitle: 'Field Notes on breath and the nervous system - Return',
     description: 'Essays on breath, coherence, nervous system regulation, and the practice of return.',
     eyebrow: 'Archive',
     intro: 'Essays on breath, nervous-system regulation, and the practice of return. Grounded in measurable biology. No metaphysics.',
     back: 'Field Notes',
     all: 'All Field Notes',
+    related: 'Related Field Notes',
   },
   footer: {
     site: 'Site',
@@ -249,7 +251,7 @@ export const en = {
     mark: 'Return to Breath · 2026',
   },
   homeMeta: {
-    title: 'Return — A quiet breathing utility',
+    title: 'Return - a quiet breathing companion',
     description:
       'Return is a quiet breathing utility for nervous system regulation. Timed inhale, hold, exhale, hold. No streaks. No feed. Five minutes, then close the app.',
   },

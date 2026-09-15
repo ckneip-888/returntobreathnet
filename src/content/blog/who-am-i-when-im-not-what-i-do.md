@@ -1,5 +1,6 @@
 ---
 title: "Who Am I When I'm Not What I Do? Navigating Modern Identity Collapse"
+seoTitle: "Who am I when I am not what I do anymore?"
 description: "The manager retires and there is suddenly a void. The engineer loses her job to an automation she helped train. The founder sells. Each one meets the same question. The breath is the only thing that does not require an identity to function."
 pubDate: 2026-02-15
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["post-identity", "identity-collapse", "being", "transition"]
 slug: "who-am-i-when-im-not-what-i-do"
 lang: "en"
 ---
+
+## The question that arrives uninvited
 
 Here is the question that arrives uninvited.
 
@@ -18,11 +21,15 @@ I am writing this in 2026. A growing number of people are arriving at this quest
 
 They are not without skills. They are without the structure of identity that the skills used to live inside.
 
+## Identity collapse is loss of coherence
+
 Here is what I have noticed about this.
 
 The pain is not loss of income. The pain is loss of *coherence between self and function*. For most adults in achievement-shaped cultures, the answer to *who are you?* has been a job, a title, a role, a project. When that scaffolding dissolves, the question goes unanswered for the first time in decades.
 
 This is what I mean by identity collapse. It is not depression, although it can look like it. Finding out who you are when nothing else is defining you.
+
+## The collapse is a threshold
 
 Here is what I believe.
 
@@ -33,6 +40,8 @@ The structure was always external. You were never the title. You were never the 
 The trouble is that most adults, when the wrapper goes, do not know where to look for what is inside. So they reach for the next wrapper. A new project. A startup. A book to write. A coach to hire. Another identity to climb into.
 
 I have done this. It does not solve the question. It defers it.
+
+## The breath does not require an identity
 
 Here is what is possible.
 

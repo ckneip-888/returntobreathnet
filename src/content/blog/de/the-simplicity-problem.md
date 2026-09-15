@@ -1,5 +1,6 @@
 ---
 title: "Das Einfachheitsproblem: Warum wir die Lösungen ablehnen, die wirken"
+seoTitle: "Das Einfachheitsproblem: Lösungen, die wirken"
 description: "Wir sind darauf konditioniert, dass Lösungen komplex sein müssen. Wenn jemand sagt, die Antwort sei der Atem, klingt das zu einfach, um wahr zu sein. Deshalb lehnen oft gerade die Überlasteten das eine Werkzeug ab, das alles ändern würde."
 pubDate: 2026-02-01
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["simplicity", "nervous-system", "breath", "anti-optimization"]
 slug: "the-simplicity-problem"
 lang: "de"
 ---
+
+## Die Lösungen, die wirken, klingen zu einfach
 
 Hier ist, was ich auf die harte Tour gelernt habe.
 
@@ -16,11 +19,15 @@ Du kannst jedes Buch über Stress, Angst und Burnout lesen. Du kannst die Diagno
 
 Die meisten lehnen das beim ersten Kontakt ab.
 
+## Warum wir den Atem abwinken
+
 Hier ist warum.
 
 Wir sind darauf trainiert zu glauben, dass Lösungen der Komplexität des Problems entsprechen müssen. Je härter das Problem, desto ausgefeilter muss die Antwort sein. Wenn du also kognitiv heiss läufst, schlecht schläfst, in Verpflichtungen ertrinkst, und jemand sagt dir, die Antwort sei dein Atem — winkst du ab. Nicht weil es nicht wirkt. Weil es unzureichend klingt.
 
 Dieses Abwinken ist das Problem.
+
+## Einfach ist nicht dasselbe wie leicht
 
 Hier ist, was ich glaube.
 
@@ -31,6 +38,8 @@ Aber einfach ist nicht dasselbe wie leicht.
 Um bewusst zu atmen, musst du dich daran erinnern, wenn dein Default Vergessen ist. Du musst präsent bleiben, wenn dein Default Ablenkung ist. Du musst der Praxis vertrauen, wenn der Kopf darauf besteht, sie sei nicht genug.
 
 Das ist die eigentliche Arbeit.
+
+## Fünf Minuten, nicht mehr
 
 Hier ist, was möglich ist.
 

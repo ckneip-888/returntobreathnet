@@ -1,23 +1,11 @@
 ---
-import fs from 'node:fs';
-import path from 'node:path';
-
 export function getStaticPaths() {
-  return [
-    { params: { slug: undefined } }, // Matches /regulate
-    { params: { slug: 'geometry' } }, // Add sub-routes if your React app uses client routing
-  ];
+  return [{ params: { slug: undefined } }, { params: { slug: 'geometry' } }];
 }
 
-// Load the React app's index.html from the public folder
-const htmlPath = path.resolve('public/regulate/index.html');
-let htmlContent = '';
-
-if (fs.existsSync(htmlPath)) {
-  htmlContent = fs.readFileSync(htmlPath, 'utf-8');
-} else {
-  htmlContent = '<h1>Regulate React build not found in public/regulate/</h1>';
-}
+const slug = Astro.params.slug;
+const dest = slug
+  ? `https://returnapp.org/regulate/${slug}`
+  : 'https://returnapp.org/regulate';
+return Astro.redirect(dest, 301);
 ---
-
-<Fragment set:html={htmlContent} />

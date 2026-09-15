@@ -1,5 +1,6 @@
 ---
 title: "Nervensystem-Regulation für Professionals unter akuter kognitiver Last"
+seoTitle: "Nervensystem-Regulation für Professionals"
 description: "Du bist nicht schwach, weil du überfordert bist. Dein Nervensystem tut genau das, wofür es gebaut ist — nur im falschen Modus. Hier ist der Mechanismus, und hier ist die 5,5-Sekunden-Unterbrechung, die ihn zurücksetzt."
 pubDate: 2026-02-08
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["cognitive-load", "knowledge-workers", "vagus-nerve", "nervous-system"]
 slug: "nervous-system-regulation-professionals"
 lang: "de"
 ---
+
+## Notfallmodus, der nie endet
 
 Hier ist, was ich im Posteingang fast jeder Founder, Engineer und Managerin sehe, mit der ich arbeite.
 
@@ -18,6 +21,8 @@ Der technische Name dafür ist die *akute Stressreaktion*. Sie ist für kurze St
 
 Das Problem ist, was passiert, wenn aus fünfundvierzig Sekunden sieben Jahre werden.
 
+## Ein physiologisches Problem, kein psychologisches
+
 Hier ist, was ich glaube.
 
 Eine Fachkraft unter akuter kognitiver Last hat kein *psychologisches* Problem. Sie hat ein *physiologisches*. Der Grund, warum die Meeting-Vorbereitung sich wie eine Panikattacke anfühlt, ist nicht, weil das Meeting zählt. Es ist, weil dein Körper den Unterschied zwischen einer Slack-Notification und einem Tiger nicht kennt. Dieselbe Chemie. Dieselbe Kaskade. Derselbe Preis.
@@ -25,6 +30,8 @@ Eine Fachkraft unter akuter kognitiver Last hat kein *psychologisches* Problem. 
 Du kannst dich da nicht herausdenken. Du musst auf der Ebene unterbrechen, auf der es läuft.
 
 Diese Ebene ist der Atem.
+
+## Der Vagus als Aus-Schalter
 
 Hier ist der Mechanismus, vereinfacht.
 
@@ -35,6 +42,8 @@ Du kannst den Vagus nicht bewusst durch Denken stimulieren. Du kannst ihn durch 
 Das ist es. Das ist der ganze Mechanismus.
 
 Wenn die Ausatmung über die Einatmung hinausgeht, feuert der Vagus. Das Feuer breitet sich aus. Die Herzfrequenz fällt. Der Muskeltonus weicht. Die Kognition weitet sich. Der Bedrohungsdetektor dreht runter. Innerhalb von Sekunden bist du nicht dieselbe Person.
+
+## The 5.5 Reset
 
 Hier ist, was möglich ist.
 

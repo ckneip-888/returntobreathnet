@@ -1,5 +1,6 @@
 ---
 title: "The Physiology of Future Anxiety: How Geopolitical Uncertainty Alters Blood Chemistry"
+seoTitle: "Future anxiety: how uncertainty alters the body"
 description: "Your nervous system does not distinguish a tiger from a headline about AI taking your job. It runs the same protocol. Here is what happens in your body when you scroll the news — and the breath pattern that interrupts the cascade."
 pubDate: 2026-02-22
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["future-anxiety", "geopolitics", "physiology", "blood-chemistry", "vagus-
 slug: "physiology-of-future-anxiety"
 lang: "en"
 ---
+
+## Your body cannot tell a tiger from a headline
 
 Here is something I want you to take seriously.
 
@@ -26,6 +29,8 @@ The chemistry does not end. It accumulates. Day after day, year after year, your
 
 This is what I mean by future anxiety. It is not a thought. It is a *chemical state*.
 
+## Anxiety in 2026 is a chemical state
+
 Here is what I believe.
 
 The conversation about anxiety in 2026 has to move from psychology to physiology. Telling someone with elevated cortisol to *reframe their thoughts* is asking them to do cognitive work with a brain that has been chemically downgraded. You are asking the prefrontal cortex to override a system designed to override the prefrontal cortex.
@@ -34,6 +39,8 @@ That is why so many people read the right books, hear the right things, agree wi
 
 The intervention has to happen at the level the problem is operating. The blood.
 
+## What paced breathing does to blood chemistry
+
 Here is the mechanism.
 
 Slow, paced breathing — particularly with an extended exhale — does several things to your blood chemistry in a short window.
@@ -41,6 +48,8 @@ Slow, paced breathing — particularly with an extended exhale — does several 
 It increases vagal tone, which lowers circulating cortisol within minutes. It increases CO₂ slightly, which improves cerebral blood flow and oxygen delivery. It increases nitric oxide production in the nasal passages on nasal exhale, which is a vasodilator. It shifts the autonomic balance from sympathetic to parasympathetic, which reduces inflammatory markers.
 
 None of this is mystical. It is well-documented physiology. You can measure all of it.
+
+## The Geopolitical Reset
 
 Here is what is possible.
 

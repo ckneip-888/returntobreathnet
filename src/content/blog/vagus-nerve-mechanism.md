@@ -1,5 +1,6 @@
 ---
 title: "The Vagus Nerve Mechanism: Shifting out of Sympathetic Autopilot Instantly"
+seoTitle: "Vagus nerve: out of sympathetic autopilot"
 description: "Your breath is the one autonomic function you can consciously control. Pull this lever the right way and the vagus nerve sends a signal upstream: we are safe. The whole system reorganizes. Heart rate. Muscle tone. Cognition. In seconds."
 pubDate: 2026-03-22
 author: "Christoph Kneip"
@@ -7,6 +8,8 @@ tags: ["vagus-nerve", "parasympathetic", "sympathetic", "autonomic"]
 slug: "vagus-nerve-mechanism"
 lang: "en"
 ---
+
+## The one autonomic function you can take over
 
 Here is the leverage point most people will never use.
 
@@ -20,6 +23,8 @@ The breath is the only autonomic function you can directly take over. This is no
 
 When you breathe consciously, you are not just moving air. You are operating the master control panel.
 
+## A slow exhale fires the vagus
+
 Here is what I believe.
 
 The single most underutilized fact in modern adult life is this: a slow exhale through the nose, sustained for six seconds or longer, fires the vagus nerve, and the vagus nerve is the off-switch for the emergency state most of us are stuck inside.
@@ -30,6 +35,8 @@ The vagus is the longest cranial nerve. It runs from the brainstem down through 
 
 This is not subtle. It is the difference between a body that is preparing for a threat and a body that has decided the threat is over.
 
+## Why "relax" is not an instruction
+
 The reason most adults never access this is that nobody tells them the mechanism. They are told to *relax*, which is not a verb the body knows how to follow. They are told to *think positively*, which has nothing to do with the autonomic system. They are told to *get more sleep*, which they cannot do because their vagal tone is too low to allow them to fall asleep in the first place.
 
 The actual instruction has been hidden in plain sight inside every contemplative tradition for three thousand years.
@@ -37,6 +44,8 @@ The actual instruction has been hidden in plain sight inside every contemplative
 Breathe slowly. Exhale longer than you inhale. Do it through the nose. Repeat.
 
 That is it.
+
+## The Vagal Reset
 
 Here is what is possible.
 
