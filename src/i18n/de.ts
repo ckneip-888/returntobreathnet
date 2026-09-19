@@ -1,6 +1,6 @@
 /**
  * German site copy. Product names stay English where German would sound off:
- * Return, Field Notes, Breathline, Standing Wave, App Store, Google Play,
+ * Return, Breathline, Standing Wave, App Store, Google Play,
  * Coherence / Release / Clarity / Stability, HRV, Custom Builder, Soft pad.
  */
 export const de = {
@@ -10,8 +10,8 @@ export const de = {
   },
   nav: {
     protocol: 'Protokoll',
-    fieldNotes: 'Field Notes',
-    about: 'About',
+    fieldNotes: 'Essays',
+    about: 'Warum Return?',
     language: 'Sprache',
     menu: 'Menü',
     close: 'Menü schliessen',
@@ -30,7 +30,7 @@ export const de = {
     line4: 'erleben',
   },
   hero: {
-    eyebrow: 'The Return Protocol',
+    eyebrow: 'Das Return Protokoll',
     headline: 'Der Atem ist dein bewusst kontrollierbares Werkzeug für sofortige Ruhe. Die meisten Menschen nutzen ihn nie bewusst.',
     subhead:
       'Return ist ein stiller Helfer zur Regulation des Nervensystems. Gebaut für Menschen unter hoher geistiger Belastung, in schwierigen Lebensphasen oder mit Zukunftsangst — und für alle, die einen Weg zurück wollen. Kein "Serie halten"-Zwang. Keine endlose Optimierung. App öffnen. Fünf Minuten atmen. Den Tag erden.',
@@ -38,7 +38,7 @@ export const de = {
   protocol: {
     eyebrow: 'Getaktete Atemmuster',
     headline: 'Was ist das Return-to-Breath-Protokoll?',
-    body: 'Die Return App ist ein Werkzeug zur Regulierung des Nervensystems. Du musst nicht raten, wie du atmen sollst. Du wählst ein vordefiniertes Muster — Einatmen, Halten, Ausatmen, Halten — und die Physiologie folgt. Wenn du einen Anfang suchst, stehen dir die zwei kurzen Anleitungen unter der Grafik zur Verfügung.',
+    body: 'Die Return App ist ein Werkzeug zur Regulierung des Nervensystems. Du musst nicht überlegen, wie du atmen sollst. Du wählst ein vordefiniertes Muster — Einatmen, Halten, Ausatmen, Halten — und die Physiologie folgt. Wenn du einen Anfang suchst, stehen dir die zwei kurzen Anleitungen unter der Grafik zur Verfügung.',
     inhale: 'Einatmen',
     hold: 'Halten',
     exhale: 'Ausatmen',
@@ -146,21 +146,21 @@ export const de = {
     headline: 'Was der Atem verändert.',
     cards: [
       {
-        title: 'The HRV Maximizer',
+        title: 'Die HRV-Maximierung',
         body: 'Herzratenvariabilität (HRV) ist, wie schnell dein Nervensystem die Gänge wechseln kann. Hohe HRV heisst: du kannst zwischen wach und ruhig wechseln. Niedrige HRV heisst: du bleibst stecken. Atmen bei etwa 5,5 Atemzügen pro Minute — das Coherence-Muster — hebt die HRV stärker als gewöhnliches, ungetaktetes Atmen.',
         counter: 'Niedrige HRV = starr, reaktiv. Hohe HRV = flexibel, resilient.',
         source: 'The FASEB Journal (2018)',
         cta: 'Trainiere deine Anpassungsfähigkeit.',
       },
       {
-        title: 'The Stress Shield',
-        body: 'Box Breathing (4-4-4-4) ist ein tragbarer Weg, eine Stressspitze abzufedern. Langsame, gleiche Counts — einatmen, halten, ausatmen, halten — senken, wie hart der Körper reagiert, wenn Druck kommt. Das Ereignis kannst du nicht steuern. Die ersten Atemzüge danach schon.',
+        title: 'Das Stress Schild',
+        body: 'Box Breathing (4-4-4-4) ist eine Möglichkeit, Stressspitzen abzufedern. Langsamer, gleicher Rhythmus — einatmen, halten, ausatmen, halten — erweicht die Reaktion des Körpers, wenn Stress aufkommt. Das Ereignis kannst du nicht steuern. Die ersten Atemzüge danach schon.',
         counter: 'Die Welt kannst du nicht steuern. Deine Antwort schon.',
         source: 'ScienceDirect (2026)',
-        cta: 'Bau deinen Schild.',
+        cta: 'Baue dein Stress Schild durch tägliches Atmen mit Return auf',
       },
       {
-        title: 'The Vagus Cable',
+        title: 'Die Vagus-Datenautobahn',
         body: 'Der Vagusnerv ist ein Bündel aus mehr als 100’000 Fasern durch den Nacken. Wenn Kiefer und Nacken eng sind, ist dieser Kanal rauschiger und langsamer. Langsames Atmen löst diese Spannung, damit mehr körpereigene Signale durchkommen — du merkst Stress früher und kommst schneller zur Ruhe.',
         counter: 'Enger Nacken, lauter Kopf. Offener Vagus, Echtzeit-Ruhe.',
         source: 'Frontiers in Neuroscience (2021)',
@@ -177,8 +177,8 @@ export const de = {
     body: 'Ein stilles Werkzeug, um das Atemsignal zu ändern. Wenn du es brauchst, ist es da.',
   },
   fieldNotes: {
-    label: 'Field Notes',
-    blurb: 'Essays über Atem, Kohärenz und die Praxis der Rückkehr.',
+    label: 'Essays',
+    blurb: 'Über Atem, Kohärenz und die Praxis der Rückkehr zum Atem.',
     link: 'Zum Archiv',
   },
   breathline: {
@@ -226,22 +226,22 @@ export const de = {
       'Nach den 9 Zyklen kehre zum natürlichen Atmen zurück.<br /><br />Frage an der Breathline (halte wieder ein paar Sekunden oben oder unten):<br /><br /><strong>„Was hat sich verschoben?“</strong><br /><br />Nicht „ist es gelöst?“, sondern „was ist jetzt anders?“<br /><br />Bleib einen Moment in der Stille und beobachte deinen Zustand.',
   },
   writing: {
-    title: 'Field Notes.',
-    pageTitle: 'Field Notes zu Atem, Kohärenz, Nervensystem - Return',
+    title: 'Essays.',
+    pageTitle: 'Essays zu Atem, Kohärenz und Nervensystem - Return',
     description: 'Essays über Atem, Kohärenz, Regulation des Nervensystems und die Praxis der Rückkehr.',
     eyebrow: 'Archiv',
     intro:
       'Essays über Atem, die Regulation des Nervensystems und die Praxis der Rückkehr. In messbarer Biologie geerdet. Keine Metaphysik.',
-    back: 'Field Notes',
-    all: 'Alle Field Notes',
-    related: 'Weitere Field Notes',
+    back: 'Essays',
+    all: 'Alle Essays',
+    related: 'Weitere Essays',
   },
   footer: {
     site: 'Seite',
     elsewhere: 'Anderswo',
     contact: 'Kontakt',
-    about: 'About',
-    fieldNotes: 'Field Notes',
+    about: 'Warum Return?',
+    fieldNotes: 'Essays',
     breathline: 'Breathline',
     startingPoint: 'Einstieg',
     standingWave: 'Standing Wave',

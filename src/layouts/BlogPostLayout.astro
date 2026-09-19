@@ -71,9 +71,9 @@ const articleJsonLd = [
 
     <div
       class="prose prose-slate prose-lg max-w-none
-             prose-headings:font-light prose-headings:tracking-tight
-             prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4
-             prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
+             prose-headings:font-light prose-headings:tracking-tight prose-headings:text-slate-50
+             prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:text-slate-50
+             prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3 prose-h3:text-slate-100
              prose-p:font-light prose-p:leading-relaxed prose-p:text-slate-300
              prose-a:text-sapphire-400 prose-a:no-underline hover:prose-a:text-sapphire-300
              prose-strong:text-slate-100 prose-strong:font-medium
@@ -115,8 +115,14 @@ const articleJsonLd = [
 
     <div class="mt-16 pt-10 border-t border-slate-900">
       <a href={writingHref} class="micro-label-accent hover:text-sapphire-300 transition-colors">
-        ← {lang === 'de' ? 'ALLE FIELD NOTES' : 'ALL FIELD NOTES'}
+        ← {t.writing.all.toUpperCase()}
       </a>
     </div>
   </article>
 </BaseLayout>
+
+<style>
+  .prose :global(:is(h2, h3, h4)) {
+    color: #f8fafc;
+  }
+</style>
